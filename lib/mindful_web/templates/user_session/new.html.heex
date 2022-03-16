@@ -1,0 +1,76 @@
+<div class="min-h-full flex">
+  <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+    <div class="mx-auto w-full max-w-sm lg:w-96">
+      <div>
+        <%= link to: "/", class: "flex justify-center" do %>
+          <img class="h-12 max-w-xs" src="https://files.mindful.care/images/mindfulcarenavylogo.svg" alt="Mindful Care">
+        <% end %>
+        <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
+          Sign in to your account
+        </h2>
+        <p class="mt-2 text-sm text-gray-600">
+          Or
+          <%= link "register a new account", to: Routes.user_path(@conn, :pick_state), class: "font-medium" %>
+        </p>
+      </div>
+
+      <div class="mt-8">
+        <div>
+          <.form let={f} for={@conn} action={Routes.user_session_path(@conn, :create)} as={:user} class="space-y-6">
+            <%= if @error_message do %>
+              <div class="bg-red-100 border border-red-400 text-sm text-red-700 px-4 py-3 rounded" role="alert">
+                <p><%= @error_message %></p>
+              </div>
+            <% end %>
+            <div>
+              <%= label f, :email, "Email address", class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= email_input f, :email, required: true, maxlength: 160, minlength: 3, pattern: "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$", title: "Email address", autocomplete: "email", class: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" %>
+              </div>
+            </div>
+
+            <div class="space-y-1">
+              <%= label f, :password, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= password_input f, :password, required: true, title: "Password", autocomplete: "current-password", class: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" %>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <%= checkbox f, :remember_me, class: "h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" %>
+                <%= label f, :remember_me, class: "ml-2 block text-sm text-gray-900" %>
+              </div>
+
+              <div class="text-sm">
+                <%= link "Forgot your password?", to: Routes.user_reset_password_path(@conn, :new), class: "font-medium" %>
+              </div>
+            </div>
+
+            <div>
+              <%= submit "Sign in", class: "whitespace-nowrap w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
+            </div>
+          </.form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden lg:block relative w-0 flex-1 fadeinleft">
+    <img class="absolute inset-0 h-full w-full object-cover" src="https://files.mindful.care/images/group_hangout_late.jpg" alt="">
+  </div>
+</div>
+
+
+<script>
+  let htmlTag = document.querySelector("html");
+  let bodyTag = document.querySelector("body");
+  let mainTag = document.querySelector("main");
+  let navTag = document.querySelector("nav");
+
+
+  htmlTag.classList.add("h-full");
+  htmlTag.classList.add("bg-white");
+  bodyTag.classList.add("h-full");
+  mainTag.classList.add("lg:h-full");
+  navTag.classList.add("hidden");
+</script>

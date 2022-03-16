@@ -1,0 +1,232 @@
+<div id="landing-page" class="legacy-page">
+	<section class="atf-hero has-text-centered">
+		<div class="text-container">
+			<h1>
+				Mental healthcare<br>
+				how it should be
+			</h1>
+			<div class="subtext">
+				Urgent appointments<br>
+				covered by insurance
+			</div>
+			<div class="cta-container">
+				<%= link "SCHEDULE NOW", to: Routes.page_path(@conn, :schedule), class: "btn btn-med" %>
+			</div>
+		</div>
+		<img class="decorative-image" id="di-1" src="https://files.mindful.care/images/watercolor_leaf_stem.png" alt="leaf on stem">
+		<img class="decorative-image" id="di-2" src="https://files.mindful.care/images/atf_big_smile.png" alt="happy woman smiling">
+		<img class="decorative-image" id="di-3" src="https://files.mindful.care/images/millenial_group_selfie.png" alt="happy millenial group selfie">
+		<img class="decorative-image" id="di-4" src="https://files.mindful.care/images/baige_watercolor_scribble.png" alt="watercolor scribble">
+		<img class="decorative-image" id="di-5" src="https://files.mindful.care/images/watercolor_big_leaves.png" alt="bit watercolor leaves">
+	</section>
+
+	<section class="benefits">
+		<div class="observe">
+			<div class="icon">
+				<img src="https://files.mindful.care/images/calendar_time_paint_icon.png" alt="same-day appointments icon">
+			</div>
+			<h3>Urgent care</h3>
+			<div class="detail">
+				You don't have to wait weeks before you can see a qualified mental health provider.
+			</div>
+			<%= link "Schedule a session", to: Routes.page_path(@conn, :schedule) %>
+		</div>
+		<div class="observe b2">
+			<div class="icon">
+				<img src="https://files.mindful.care/images/home_paint_icon.png" alt="telehealth from home icon">
+			</div>
+			<h3>At-home or in-person</h3>
+			<div class="detail">
+				Have a session at one of our local offices or online from the comfort of your home.
+			</div>
+			<%= link "Find a location", to: Routes.state_path(@conn, :index) %>
+		</div>
+		<div class="observe b3">
+			<div class="icon">
+				<img src="https://files.mindful.care/images/dollar_paint_icon.png" alt="save money icon">
+			</div>
+			<h3>Within your budget</h3>
+			<div class="detail">
+				Save hundreds of dollars by using your insurance to pay.
+			</div>
+			<%= link "Payment options", to: Routes.page_path(@conn, :payment_options) %>
+		</div>
+	</section>
+
+	<section class="philosophical">
+		<div class="info-side">
+			<h3>
+				Psychiatry and Therapy<br>
+				shouldn't have to wait.
+			</h3>
+			<p>
+				Urgent mental healthcare when you need it. Our experts are in-network with most major insurance carriers.
+			</p>
+			<div class="cta-container">
+				<%= link "WHAT WE TREAT", to: Routes.treat_path(@conn, :what_we_treat), class: "btn btn-med" %>
+			</div>
+			<div class="dec-img-container has-text-centered">
+				<img src="https://files.mindful.care/images/gold_watercolor_smear.png">
+			</div>
+		</div>
+		<div class="visual-side">
+			<img src="https://files.mindful.care/images/man_sitting_with_therapist.png" alt="person talking with psychiatrist">
+		</div>
+	</section>
+
+	<%= render(MindfulWeb.SharedView, "_treatments_section.html", assigns) %>
+
+	<section class="how-it-works">
+		<div class="title-container has-text-centered">
+
+			<h3>
+				How Mindful Care Works
+			</h3>
+		</div>
+		<div class="content-container">
+			<div class="pic-side has-text-centered">
+				<div class="img-container observe">
+					<img src="https://files.mindful.care/images/peace_of_mind_path.png" alt="path to peace of mind">
+				</div>
+				<div class="cta-container">
+					<%= link "SCHEDULE NOW", to: Routes.page_path(@conn, :schedule), class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="steps-side">
+				<div class="step step-1 observe">
+					<div class="step-info">
+						<div class="count">1</div>
+						<div class="path-img-container">
+							<img src="https://files.mindful.care/images/golden_path_line.png">
+						</div>
+					</div>
+					<div class="step-detail">
+						<h4>Schedule an evaluation</h4>
+						<p>
+							Schedule an in-person or video session with one of our board-certified providers.
+						</p>
+					</div>
+				</div>
+				<div class="step step-2 observe">
+					<div class="step-info">
+						<div class="count">2</div>
+						<div class="path-img-container">
+							<img src="https://files.mindful.care/images/golden_path_line.png">
+						</div>
+					</div>
+					<div class="step-detail">
+						<h4>Find the right treatment</h4>
+						<p>
+							Psychiatry, Therapy, or both. We will work with you to find the right care for your needs.
+						</p>
+					</div>
+				</div>
+				<div class="step step-3 observe">
+					<div class="step-info">
+						<div class="count">3</div>
+					</div>
+					<div class="step-detail">
+						<h4>Get the care you deserve</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonials">
+		<div class="wave-topper">
+			<img src="https://files.mindful.care/images/testimonials_wave_topper.svg">
+		</div>
+		<div class="content">
+			<h3 class="has-text-centered">Our patients love <span class="nowrap">what we do</span></h3>
+			<div class="testimonials-container">
+				<div id="left-arrow" class="arrow" onclick="plusTestimonials(-1)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronLeft" alt="previous testimonial button"><path d="M15 4l-8 8 8 8"/></svg>
+				</div>
+				<div class="quote-area">
+					<div class="quotation-mark left-mark">
+						<img src="https://files.mindful.care/images/quotation_marks.svg">
+					</div>
+					<div class="testimonial-quote-container prime">
+						<p>
+							Very easy to schedule and really outstanding practitioners who listen well, ask the right questions and provide quality support.
+						</p>
+						<div class="patient-name">
+							Michelle R
+						</div>
+					</div>
+					<div class="testimonial-quote-container">
+						<p>
+							This place has been the single most positive interaction with the mental healthcare sphere that I have ever had in my life.
+						</p>
+						<div class="patient-name">
+							Connor C
+						</div>
+					</div>
+					<div class="testimonial-quote-container">
+						<p>
+							Easy scheduling, always on time, super convenient.
+						</p>
+						<div class="patient-name">
+							Vincent A
+						</div>
+					</div>
+					<div class="quotation-mark right-mark">
+						<img src="https://files.mindful.care/images/quotation_marks.svg">
+					</div>
+				</div>
+				<div id="right-arrow" class="arrow" onclick="plusTestimonials(1)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronRight" alt="next testimonial button"><path d="M8 4l8 8-8 8"/></svg>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="very-bot">
+		<%= render(MindfulWeb.SharedView, "_article_cta.html", assigns) %>
+	</section>
+</div>
+
+<script>
+	// testimonials carousel
+	var testimonialIndex = 1;
+	showTestimonials(testimonialIndex);
+
+	function plusTestimonials(n) {
+	  showTestimonials(testimonialIndex += n);
+	}
+
+	function currentTestimonial(n) {
+	  showTestimonials(testimonialIndex = n);
+	}
+
+	function showTestimonials(n) {
+	  var i;
+	  var testimonials = document.getElementsByClassName("testimonial-quote-container");
+	  if (n > testimonials.length) {testimonialIndex = 1}
+	  if (n < 1) {testimonialIndex = testimonials.length}
+	  for (i = 0; i < testimonials.length; i++) {
+	      testimonials[i].style.display = "none";
+	  }
+	  testimonials[testimonialIndex-1].style.display = "block";
+	}
+
+	// animate in elements on scroll
+	const options = {
+		root: null,
+		rootMargin: '0px',
+		threshold: .2
+	}
+	let callback = (entries) => {
+		entries.forEach(entry => {
+			if(entry.isIntersecting) {
+				entry.target.classList.add('is-visible');
+			}
+		});
+	}
+	let observer = new IntersectionObserver(callback, options);
+	document.querySelectorAll('.observe').forEach(el => { observer.observe(el) });
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

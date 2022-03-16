@@ -1,0 +1,56 @@
+<div class="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+  <div class="sm:mx-auto sm:w-full md:max-w-l mb-3">
+    <%= link to: "/", class: "flex justify-center" do %>
+      <img class="mx-auto h-16 w-auto" src="https://files.mindful.care/images/mindfulcareiconcross.svg" alt="Mindful Care icon">
+    <% end %>
+    <h4 class="mt-6 text-center text-3xl font-extrabold text-gray-900" name="form_title">
+      <%= if @step == "select_office" do %>
+        Please Select A Preferred Office
+      <% end %>
+
+      <%= if @step == "select_provider" do %>
+        Select A Health Provider
+      <% end %>
+
+      <%= if @step == "select_schedule" do %>
+        Select A Convenient Date & Time
+      <% end %>
+    </h4>
+  </div>
+
+  <section class="mx-auto w-11/12 md:w-2/3">
+    <%= if @step == "select_office" do %>
+      <div class="grid grid-cols-none md:grid-cols-2 gap-6">
+        <%= for office <- @offices do %>
+          <Office.card office={office}/>
+        <% end %>
+      </div>
+    <% end %>
+
+    <%= if @step == "select_provider" do %>
+      <div class="mb-2">
+        <a phx-click="back" phx-value-back="select_office" id="back" class="text-indigo-600 cursor-pointer hover:text-gray-200">
+          Back
+        </a>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <%= for provider <- @providers do %>
+          <Provider.card provider={provider}/>
+        <% end %>
+      </div>
+    <% end %>
+
+    <%= if @step == "select_schedule" do %>
+      <div id="calendar-wrapper" class="p-6 mb-2 bg-white border border-gray-200 shadow-md rounded-md">
+        <div class="mb-2">
+          <a phx-click="back" phx-value-back="select_provider" id="back" class="text-indigo-600 cursor-pointer hover:text-gray-200">
+            Back
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-x-6">
+          Calendar Goes Here...
+        </div>
+      </div>
+    <% end %>
+  </section>
+</div>

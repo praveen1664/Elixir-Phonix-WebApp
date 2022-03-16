@@ -1,0 +1,22 @@
+<div id="new-premarket-page" class="legacy-page">
+	<section class="has-text-centered">
+		<div>
+			<img src="https://files.mindful.care/images/premarket_notify.svg" alt="woman getting a notification">
+			<p>
+				Enter your email in the form below and <strong>we'll let you know as soon as we open in your state!</strong>
+			</p>
+
+			<%= form_for @conn, Routes.premarket_path(@conn, :create), [class: "premarket-form"], fn f -> %>
+			  <%= email_input f, :email, placeholder: "Your email", required: true %>
+			  <%= hidden_input f, :state_abbr, value: String.downcase(@state_abbr) %>
+			  <%= submit "Notify me" %>
+
+			  <div class="error-info">
+		  		<%= error_tag f, :email %>
+		  		<%= error_tag f, :state_abbr %>
+		  	</div>
+      <% end %>
+
+		</div>
+	</section>
+</div>

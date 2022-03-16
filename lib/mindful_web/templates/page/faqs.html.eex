@@ -1,0 +1,251 @@
+<div id="faqs-page" class="sub-serv-page legacy-page">
+	<section class="hero has-text-centered">
+		<img src="https://files.mindful.care/images/faqspic.png" alt="question speech bubbles">
+		<div class="sub">FAQ</div>
+		<h1>
+			Frequently Asked Questions
+		</h1>
+	</section>
+
+	<section class="accord">
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		How do I schedule an appointment?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	For new patients, the best way to schedule an appointment is to schedule online at:
+		    </p>
+		    <p>
+		    	<%= link Routes.page_url(@conn, :schedule), to: Routes.page_path(@conn, :schedule) %>
+		    </p>
+		    <p>
+		    	Once you submit your appointment request, our team will contact you within 24 hours to schedule and confirm your appointment.
+		    </p>
+		    <p>
+		    	For existing patients, please call us at 516.505.7200 or email <a href="mailto:support@mindful.care">support@mindful.care</a> to schedule an appointment.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		How long does it take to be seen?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	We aim to offer same and next day appointments Sunday through Friday, 8am to 6pm. The wait can occasionally be longer due to high demand but for the most part, we are able to accommodate patients within 48 hours.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Do you accept insurance?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Yes! We accept most commercial health insurance plans, as well as Medicare and Medicaid, Managed Plans. To verify your insurance coverage, we require a copy of your health insurance card. You may submit your insurance information when scheduling an appointment. If Mindful is not covered in your insurance network, we will notify you prior to confirming your appointment. If you are not currently covered by an insurance plan, our affordable pricing ensures that you can still receive the support and treatment that you need.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What insurances do you accept?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+	    	<br>
+		    <strong>New York:</strong>
+				<ul>
+					<li>1199</li>
+					<li>Aetna</li>
+					<li>Cigna</li>
+					<li>HealthFirst</li>
+					<li>Humana</li>
+					<li>Medicare</li>
+					<li>Metroplus</li>
+					<li>Oxford</li>
+					<li>United Healthcare</li>
+				</ul>
+				<br>
+				<strong>New Jersey:</strong>
+				<ul>
+					<li>Aetna</li>
+					<li>Cigna</li>
+					<li>Horizon BCBS</li>
+					<li>Medicare</li>
+					<li>Oscar</li>
+					<li>Oxford</li>
+					<li>United Healthcare</li>
+				</ul>
+				<br>
+				<strong>Illinois:</strong>
+				<ul>
+					<li>Aetna</li>
+					<li>AmBetter of Illinois</li>
+					<li>Blue Cross Blue Shield</li>
+					<li>Cigna</li>
+					<li>Humana</li>
+					<li>Medicare</li>
+					<li>Meridian Health</li>
+					<li>Oxford</li>
+					<li>United Healthcare</li>
+				</ul>
+
+				<p>
+					This is not an exhaustive list. Your insurance coverage will be verified with you before your appointment.
+				</p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Who will I be seen by at my appointment?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Our team is made up of Nurse Practitioner’s (NP) and Certified Physician Assistant’s (PA-C) who will meet with you in-person or virtually. All of which are trained and certified to treat mental health patients. They work very closely with our Supervising Psychiatrists (MD) to coordinate and review treatment.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What Is A Nurse Practitioner (NP) or Certified Physician Assistant (PA-C)?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	NP’s and PA-C’s are licensed healthcare professionals that have completed a master’s degree program that trains providers to practice medicine, prescribe medication, provide health education, and provide coaching. They provide services to patients in primary and acute care settings, and within many specialty areas, including general medicine and mental health. These providers hold the qualifications to diagnose, provide coaching, and prescribe medications in all 50 states and in the District of Columbia.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Will I be seen in-person or virtually?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Currently, all patient visits are virtual.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What ages do you see?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	All ages 12 and up are welcome.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Can I choose my provider?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	We do try to accommodate all provider requests but please understand that this may delay getting an appointment depending on the provider’s availability.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		How long will I be treated?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	There are two different treatment timelines at Mindful Care, Urgent Care and Continued Care. All new patients are entered into our 12-week urgent care plan, which consists of five appointments over that period. During this time the goal will be to get your symptoms stabilized and develop the best treatment plan for your needs.
+		    </p>
+		    <p>
+		    	After those 12 weeks, you will either be transitioned to our Continue Care plan or to a higher level of care more suitable for your needs. Continued Care consists of regularly scheduled appointments that will continue as long as your provider determines it is best for you and your treatment.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What medications do you prescribe?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	We prescribe a wide variety of psychiatric medications for mental health that are safe and effective. We DO NOT prescribe any controlled substance. We do prescribe most other medications, including antidepressants, anti-anxiety medications, and mood stabilizers. We are here to help patients in need of care and will help you find alternative medications.
+		    </p>
+		  </div>
+		</details>
+	</section>
+
+	<section class="very-bot">
+		<div class="article-cta">
+			<div class="wrapper">
+				<h4 class="has-text-right">
+					Mindful Care offers telepsychiatry appointments for patients in IL, NJ and NY
+				</h4>
+				<div class="link-container">
+					<%= link "SCHEDULE TODAY", to: Routes.page_path(@conn, :schedule), class: "btn btn-white nowrap" %>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

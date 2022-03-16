@@ -1,0 +1,48 @@
+<div id="mission-page" class="legacy-page">
+	<h1 class="has-text-centered">
+		Welcome message<br>
+		<span>from the Medical Director</span>
+	</h1>
+
+	<p>
+		Dear Friends,
+	</p>
+	<p>
+		Thank you for choosing Mindful Care for your mental health needs.
+	</p>
+	<p>
+		Time is a precious commodity when dealing with mental illness. Many individuals wait 4-6 weeks before seeing a provider, and most providers do not accept insurance.
+	</p>
+	<p>
+		At Mindful Care, we are committed to your recovery and offer same-day appointments so that your healing begins from the moment you contact us. We believe that care should be accessible and affordable. Therefore, we are in-network with major insurance carriers and offer reasonable private-pay options.
+	</p>
+	<p>
+		We invite you to embark on a journey that will include the use of medications and supportive therapies to improve your well-being and help you feel your best.
+	</p>
+	<p>
+		Thank you for making us a leader in same day mental health and supportive services and we look forward to seeing you thrive.
+	</p>
+	<p>
+		Sincerely,<br><br>
+
+		Ram Pardeshi, MD<br>
+		Medical Director
+	</p>
+	<div class="med-dr-container has-text-centered">
+		<a href="providers/ram">
+			<img src="https://files.mindful.care/images/providers/rampardeshi316.jpeg">
+			<div class="text">
+				<div class="name">
+					Dr. Ram Pardeshi, MD
+				</div>
+				<div class="title">
+					Medical Director & Psychiatrist
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<div class="bot-cta has-text-centered">
+		<%= link "SCHEDULE TODAY", to: Routes.page_path(@conn, :schedule), class: "btn btn-white nowrap" %>
+	</div>
+</div>

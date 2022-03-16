@@ -1,0 +1,90 @@
+<div id="careers-page" class="b-page legacy-page">
+	<div class="paintcrumb has-text-centered">
+		<img src="https://files.mindful.care/images/pinkishbgsmearsmall.png">
+		<div>
+			<%= link "CAREERS", to: Routes.page_path(@conn, :careers) %>
+		</div>
+	</div>
+
+	<section class="p-hero">
+		<div class="lead-side">
+			<h1>
+				<img src="https://files.mindful.care/images/ojdecpaintspot.png">
+				We're bringing mental healthcare to the masses.
+			</h1>
+			<div class="subtext">Join our mission.</div>
+		</div>
+		<div class="tail-side">
+			<img src="https://files.mindful.care/images/mhucuser.png" alt="Diverse groupe therapy session">
+		</div>
+	</section>
+
+	<section class="content">
+		<img class="bg-top-curve" src="https://files.mindful.care/images/asymmetriccurvetop.svg">
+		<div class="main-wrapper">
+			<div class="btf-text">
+				<img src="https://files.mindful.care/images/featheryplant.png" alt="plant">
+				<p>
+					At Mindful, we believe that mindful treatment starts with having the most caring staff that embrace the Patient Experience. Our staff of talent varies across many professional and experiential domains and we are always looking to expand on our services and those who provide them.
+				</p>
+			</div>
+
+			<h1>Open Positions</h1>
+			<%= if @jobs_by_dept == %{} do %>
+				We currently don't have any jobs posted.
+			<% end %>
+			<div class="all-jobs">
+				<%= for {dept_name, dep_states} <- @jobs_by_dept do %>
+					<div class="dept">
+						<div id="<%= MindfulWeb.Helpers.Utils.slugified_name(dept_name) %>" class="name">
+							<%= dept_name %>
+							<a href="#<%= MindfulWeb.Helpers.Utils.slugified_name(dept_name) %>" >
+								<span class="anchor" title="link to <%= dept_name %> jobs at Mindful Care">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-LinkChain"><path d="M13.544 10.456a4.368 4.368 0 0 0-6.176 0l-3.089 3.088a4.367 4.367 0 1 0 6.177 6.177L12 18.177"/><path d="M10.456 13.544a4.368 4.368 0 0 0 6.176 0l3.089-3.088a4.367 4.367 0 1 0-6.177-6.177L12 5.823"/></svg>
+								</span>
+							</a>
+						</div>
+						<%= for {state, dept_jobs} <- dep_states do %>
+						<%= if  dept_name == "Clinical Services"  do%>
+						<div  class="state"><%= state %></div>
+						<% end %>
+						<%= for %{job: job_title, location: location, type: type,  url: job_url} <- dept_jobs do %>
+							<div class="job">
+								<a href="<%= job_url %>" target="_blank">
+									<%= job_title %>
+								</a>
+								<div class="attributes">
+									<div class="attribute">
+										<span class="label">Location:</span>
+										<span class="value"><%= location %></span>
+									</div>
+									<div class="attribute">
+										<span class="label">Employment Type:</span>
+										<span class="value"><%= type %></span>
+									</div>
+								</div>
+							</div>
+						<% end %>
+						<% end %>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</section>
+
+	<section class="no-pos has-text-centered">
+		<div class="wrapper">
+			<img class="dec-paint-sq" src="https://files.mindful.care/images/paintedinblock.png">
+			<p>
+				Don’t see a position for yourself? Write to us today to let us know how we can be a great fit with what you have to offer!
+			</p>
+			<p>
+				510 Hempstead Turnpike, Suite #203<br>
+				West Hempstead, NY 11552
+			</p>
+			<div class="co-link">
+				<a href="mailto:careers@mindful.care">careers@mindful.care</a>
+			</div>
+		</div>
+	</section>
+</div>

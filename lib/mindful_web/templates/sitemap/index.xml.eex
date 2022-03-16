@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<url>
+	  <loc>https://mindful.care/</loc>
+	  <lastmod>2021-10-12</lastmod>
+	  <priority>0.8</priority>
+	</url>
+
+	<url>
+	  <loc><%= Routes.page_url(@conn, :services) %></loc>
+	  <lastmod>2021-10-12</lastmod>
+	  <priority>0.6</priority>
+	</url>
+
+	<url>
+	  <loc><%= Routes.page_url(@conn, :urgent_care) %></loc>
+	  <lastmod>2021-10-12</lastmod>
+	  <priority>0.9</priority>
+	</url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :telehealth) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :group_therapy) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :individual_therapy) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :faqs) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :press) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :careers) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :mission) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :policies) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :prescription_policy) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :alt_substances) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :genesight) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :payment_options) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :schedule) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.page_url(@conn, :covid) %></loc>
+    <lastmod>2021-11-16</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :what_we_treat) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :adhd) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :anxiety) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :depression) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :bipolar) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :ptsd) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :ocd) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :eating) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :insomnia) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :adolescent) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :paranoia) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.treat_url(@conn, :grief) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.state_url(@conn, :index) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.post_url(@conn, :index) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc><%= Routes.provider_url(@conn, :index) %></loc>
+    <lastmod>2021-10-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <%= for post <- @posts do %>
+    <url>
+      <loc><%= Routes.post_url(@conn, :show, post) %></loc>
+      <lastmod><%= format_date(post.updated_at) %></lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>.5</priority>
+    </url>
+  <% end %>
+
+  <%= for provider <- @providers do %>
+    <url>
+      <loc><%= Routes.provider_url(@conn, :show, provider) %></loc>
+      <lastmod><%= format_date(provider.updated_at) %></lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.7</priority>
+    </url>
+  <% end %>
+
+  <%= for office <- @offices do %>
+    <url>
+      <loc><%= Routes.office_url(@conn, :show, office.state.slug, office) %></loc>
+      <lastmod><%= format_date(office.updated_at) %></lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1</priority>
+    </url>
+  <% end %>
+
+  <%= for state <- @states do %>
+    <url>
+      <loc><%= Routes.state_url(@conn, :show, state) %></loc>
+      <lastmod><%= format_date(state.updated_at) %></lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+    </url>
+  <% end %>
+
+</urlset>

@@ -1,0 +1,48 @@
+<div class="be-form-page edit-office-md-page legacy-page">
+	<div class="breadcrumbs">
+		<%= link @state.abbr, to: Routes.state_path(@conn, :show, @state) %>
+		<span>/</span>
+		<%= link String.upcase(@office.name), to: Routes.office_path(@conn, :show, @state, @office) %>
+		<span>/</span>
+		EDIT PAGE
+	</div>
+
+	<div class="dec-sig">
+		<img src="https://files.mindful.care/images/gold_watercolor_smear.png">
+	</div>
+
+	<section class="form-container">
+		<h1>
+			Edit Content
+		</h1>
+
+		<div class="form-top-wave">
+			<img src="https://files.mindful.care/images/be_form_wave_div.svg">
+		</div>
+
+		<%= form_for @changeset, Routes.office_path(@conn, :update_markdown, @state, @office), [id: "markdown-form", as: "md_blob"], fn f -> %>
+		  <%= if @changeset.action do %>
+		    <div class="alert alert-danger">
+		      <p>Oops, something went wrong! Please check the errors below.</p>
+		    </div>
+		  <% end %>
+
+		  <div class="markdown-help has-text-gray">
+		  	The field below uses <a href="https://www.markdownguide.org/basic-syntax/" target="_blank">markdown</a> to convert text into page content.
+		  </div>
+
+		  <div class="control">
+		  	<%= textarea f, :body, rows: 6, required: true, placeholder: "# This is Headline Text \n\nThis is paragraph text. Lorem ipsum mattis, enim eu consectetur vulputate, lacus odio maximus purus, non pharetra urna dolor sit amet velit." %>
+	  	</div>
+	  	<div class="error-info">
+	  		<%= error_tag f, :body %>
+	  		<%= error_tag f, :office_id %>
+	  	</div>
+
+		  <div class="submit-container office-sub">
+		    <%= submit "SAVE", class: "btn btn-med" %>
+		    <%= link "CANCEL", to: Routes.office_path(@conn, :show, @state, @office) %>
+		  </div>
+		<% end %>
+	</section>
+</div>

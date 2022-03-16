@@ -1,0 +1,452 @@
+<div id="telehealth-page" class="sub-serv-page legacy-page">
+	<div class="paintcrumb has-text-centered">
+		<img src="https://files.mindful.care/images/pinkishbgsmearsmall.png">
+		<div><%= link "SERVICES", to: Routes.page_path(@conn, :services) %></div>
+	</div>
+
+	<section class="hero has-text-centered">
+		<h1>
+			Telepsychiatry Services
+		</h1>
+		<div class="subtitle">
+			Virtual psychiatry appointments available in New York, New Jersey, and Illinois.
+		</div>
+		<div class="img-container">
+			<img src="https://files.mindful.care/images/telepsychwoman.png" alt="Woman doing telepsychiatry">
+		</div>
+	</section>
+
+	<section class="btf has-text-centered">
+		<div class="bg-top">
+			<img src="https://files.mindful.care/images/serviceswavetopbg.svg">
+		</div>
+		<h3 class="observe">
+			Make appointments for your mental health <strong>when and where you need them</strong>
+		</h3>
+		<div class="boxes-container">
+			<div class="box">
+				<img src="https://files.mindful.care/images/puzzleicon.svg">
+				<div>
+					Most Major Insurances Accepted
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="https://files.mindful.care/images/talkingicon.svg">
+				<div>
+					Same and Next Day Appointments Available
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="https://files.mindful.care/images/degreeicon.svg">
+				<div>
+					Board Certified and Licensed Psychiatry Providers
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="https://files.mindful.care/images/medsicon.svg">
+				<div>
+					Medication Management for Anxiety, Depression, Bipolar, and more
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="telemed">
+		<div class="pic-side">
+			<img class="observe" src="https://files.mindful.care/images/telemeddoc.png" alt="telemedecine doctor">
+		</div>
+		<div class="word-side">
+			<img class="observe" src="https://files.mindful.care/images/ojdecpaintspot.png">
+			<h3 class="observe">
+				Mental Health Telemedicine Services
+			</h3>
+			<p>
+				Typically, someone who needs psychiatric care will wait as long as six to eight weeks to see an in-network commercial insurance provider. In some cases, though, you don’t have that kind of time. Get mental health help right when you need it through Mindful Care. We offer urgent care telepsychiatry telehealth services to get you to support quickly, without forcing you to wait weeks or months for an appointment. In fact, for those who need it most, we are able to offer same-day care — all while remaining cost-effective.
+			</p>
+			<p>
+				Our team of medical doctors, physician assistants, nurse practitioners, and clinical mental health therapists are fully licensed to help and provide patients with the best treatment and plan. Either it is in our various offices in New York, New Jersey, or Chicago, our team of professionals uses HIPAA-compliant software to virtually support you with your mental health care.
+			</p>
+		</div>
+	</section>
+
+	<section class="mid-text has-text-centered">
+		<img class="observe" src="https://files.mindful.care/images/plantswipe.png">
+		<h2 class="observe">
+			Urgent Care Mental Health Telehealth Services
+		</h2>
+		<div class="cta-container">
+			<%= link "SCHEDULE NOW", to: Routes.page_path(@conn, :schedule), class: "btn btn-med" %>
+		</div>
+		<div class="call-container">
+			Or call <a href="tel:15164478897">516-447-8897</a>
+		</div>
+	</section>
+
+	<section class="accord">
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What is Telehealth?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Telehealth is a virtual psychiatric or mental health therapy appointment with a licensed medical professional, clinical counselor, or coach. Just like a regular in-person office visit, telehealth allows you to meet with our experienced clinicians, but without the hassle of coming into our office.
+		    </p>
+		    <p>
+		    	So, enjoy the convenience of working with an online psychiatrist. Skip traffic. Find a telepsychiatrist or teletherapist — without requiring you to even leave the privacy of your living room. Mindful Urgent Care is the revolutionary psychiatry practice that makes it possible for people in New York City, Long Island, Chicago, Jersey City, and Hoboken to receive professional medication management and therapeutic services anywhere.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What is the different between telepsychiatry, teletherapy, and telehealth?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Telepsychiatry and teletherapy are other words for telehealth services.  Mindful Care encompasses virtual consultation for both psychiatric and therapy services, which are part of the overarching theme of telehealth.
+		    </p>
+		    <p>
+		    	We believe telehealth is a more inclusive to holistic therapeutic term that showcases all of our services: <%= link "psychiatry", to: Routes.page_path(@conn, :services) %>, mental health therapy, <%= link "cognitive behavioral group therapy", to: Routes.page_path(@conn, :group_therapy) %>, <%= link "genesight DNA results consultation", to: Routes.page_path(@conn, :genesight) %>, medication management, and more.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Can I do Telehealth From Abroad or in Another State?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Although, telehealth services for psychiatry and therapy can be done anywhere. Mindful Care providers are only licensed in the State of New York, New Jersey, and Illinois.  All therapies, consultation, and medication management is only available in those three states.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Does Insurance Cover Virtual Visits?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Due to the COVID-19 pandemic, many insurance providers have changed their perspective on virtual consultation; so that many of our services are covered under their plan. Our business office team, as well as, psychiatrists and therapists are fully licensed and trained to provide patients with the care they need while ensuring that protocols are met to qualify procedures with insurance companies.
+		    </p>
+		    <p>
+		    	For more information about your insurance coverage, please schedule an appointment. Our business office will be able to answer all your questions about your insurance and its relationship with Mindful Care prior to your appointment.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Does Medicare Cover Telehealth?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Mindful Care accepts most major Medicare plans. Depending on which plan you have, our office may have an ongoing agreement to approve telehealth services. For more information or to find your psychiatry or therapy benefits, schedule an appointment. One of our business office members will contact you about your coverage or <%= link "alternative payment methods", to: Routes.page_path(@conn, :payment_options) %>.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Is Online Psychiatric or Therapy Telehealth Effective?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Mindful Care’s telehealth services are just as effective as in-person meetings. The format and consultation are the same.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		How Mindfulh Does Telehealth Cost?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Mindful Care telehealth services are as effective and cost-efficient as our in-person visit, but with the convenience of a location of your choosing. There is no difference between the two with billing.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		How to Schedule a Telehealth Appointment?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	We’re glad you’re ready to take the mental health journey with Mindful Care.  To schedule an appointment, go to our <%= link "online intake schedule form", to: Routes.page_path(@conn, :schedule) %>. Once received, our trained team members will follow up with you.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		How To Set Up for My Telehealth Appointment?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Setting up an appointment with Mindful Care telehealth is very easy. Once your appointment has been scheduled and confirmed, our team will contact you through e-mail with a private link that will allow you to connect to the psychiatrist or therapist.
+		    </p>
+		    <p>
+		    	On the day and time of your appointment, you can simply click on the provided link and you’re ready to go! It’s that simple.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Can I Switch To in-Person Appointments?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	As a patient at Mindful Care, you always have the option to attend an in-person appointment once COVID-19 social-distancing protocols have been lifted. Since the beginning of the pandemic, our executive team members have been closely monitoring the situation. Once approved, in-person appointments will resume and we can easily switch you to an in-person appointment.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Where Can I Schedule a Telehealth Appointment?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Telehealth services are available online through the patient registration portal. <%= link "Schedule your appointment today!", to: Routes.page_path(@conn, :schedule) %>
+		    </p>
+		  </div>
+		</details>
+	</section>
+
+	<div class="dec-wave observe">
+		<img src="https://files.mindful.care/images/paintedwavespiral.png">
+	</div>
+
+	<section class="we-treat">
+		<div class="lead-side">
+			<h4 class="observe">
+				What We Treat with Telehealth Services
+			</h4>
+			<div class="dec-img-container has-text-centered">
+				<img src="https://files.mindful.care/images/gold_watercolor_smear.png">
+			</div>
+		</div>
+		<div class="tail-side observe">
+			<div class="col1">
+				<div class="item">
+					<img src="https://files.mindful.care/images/paintbgcheck.png">
+					<%= link "Anxiety & Panic", to: Routes.treat_path(@conn, :anxiety), class: "black-link" %>
+				</div>
+				<div class="item">
+					<img src="https://files.mindful.care/images/paintbgcheck.png">
+					<%= link "Depression", to: Routes.treat_path(@conn, :depression), class: "black-link" %>
+				</div>
+				<div class="item">
+					<img src="https://files.mindful.care/images/paintbgcheck.png">
+					<%= link "Bipolar & Anger", to: Routes.treat_path(@conn, :bipolar), class: "black-link" %>
+				</div>
+				<div class="item">
+					<img src="https://files.mindful.care/images/paintbgcheck.png">
+					<%= link "PTSD", to: Routes.treat_path(@conn, :ptsd), class: "black-link" %>
+				</div>
+				<div class="item">
+					<img src="https://files.mindful.care/images/paintbgcheck.png">
+					<%= link "OCD", to: Routes.treat_path(@conn, :ocd), class: "black-link" %>
+				</div>
+			</div>
+			<div class="col2">
+				<div class="item">
+					<img src="https://files.mindful.care/images/paintbgcheck.png">
+					<%= link "Eating Disorders", to: Routes.treat_path(@conn, :eating), class: "black-link" %>
+				</div>
+				<div class="item">
+					<img src="https://files.mindful.care/images/paintbgcheck.png">
+					<%= link "Insomnia", to: Routes.treat_path(@conn, :insomnia), class: "black-link" %>
+				</div>
+				<div class="item">
+					<img src="https://files.mindful.care/images/paintbgcheck.png">
+					<%= link "Adolescent Disorders", to: Routes.treat_path(@conn, :adolescent), class: "black-link" %>
+				</div>
+				<div class="item">
+					<img src="https://files.mindful.care/images/paintbgcheck.png">
+					<%= link "Paranoia", to: Routes.treat_path(@conn, :paranoia), class: "black-link" %>
+				</div>
+				<div class="item">
+					<img src="https://files.mindful.care/images/paintbgcheck.png">
+					<%= link "Grief & Bereavement", to: Routes.treat_path(@conn, :grief), class: "black-link" %>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonials">
+		<div class="wave-topper">
+			<img src="https://files.mindful.care/images/testimonials_wave_topper.svg">
+		</div>
+		<div class="content">
+			<h3 class="has-text-centered">Our patients love <span class="nowrap">what we do</span></h3>
+			<div class="testimonials-container">
+				<div id="left-arrow" class="arrow" onclick="plusTestimonials(-1)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronLeft" alt="previous testimonial button"><path d="M15 4l-8 8 8 8"/></svg>
+				</div>
+				<div class="quote-area">
+					<div class="quotation-mark left-mark">
+						<img src="https://files.mindful.care/images/quotation_marks.svg">
+					</div>
+					<div class="testimonial-quote-container prime">
+						<p>
+							Very easy to schedule and really outstanding practitioners who listen well, ask the right questions and provide quality support.
+						</p>
+						<div class="patient-name">
+							Michelle R
+						</div>
+					</div>
+					<div class="testimonial-quote-container">
+						<p>
+							This place has been the single most positive interaction with the mental healthcare sphere that I have ever had in my life.
+						</p>
+						<div class="patient-name">
+							Connor C
+						</div>
+					</div>
+					<div class="testimonial-quote-container">
+						<p>
+							Easy scheduling, always on time, super convenient.
+						</p>
+						<div class="patient-name">
+							Vincent A
+						</div>
+					</div>
+					<div class="quotation-mark right-mark">
+						<img src="https://files.mindful.care/images/quotation_marks.svg">
+					</div>
+				</div>
+				<div id="right-arrow" class="arrow" onclick="plusTestimonials(1)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronRight" alt="next testimonial button"><path d="M8 4l8 8-8 8"/></svg>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="very-bot">
+		<div class="article-cta observe">
+			<div class="wrapper">
+				<h4 class="has-text-right">
+					Mindful Care offers telepsychiatry appointments for patients in IL, NJ and NY
+				</h4>
+				<div class="link-container">
+					<%= link "SCHEDULE TODAY", to: Routes.page_path(@conn, :schedule), class: "btn btn-white nowrap" %>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-link-container has-text-centered">
+			Have a question?
+			<%= link to: Routes.page_path(@conn, :faqs) do %>
+				See our <span class="nowrap">frequently asked questions</span>
+			<% end %>
+		</div>
+	</section>
+</div>
+
+<script>
+	// testimonials carousel
+	var testimonialIndex = 1;
+	showTestimonials(testimonialIndex);
+
+	function plusTestimonials(n) {
+	  showTestimonials(testimonialIndex += n);
+	}
+
+	function currentTestimonial(n) {
+	  showTestimonials(testimonialIndex = n);
+	}
+
+	function showTestimonials(n) {
+	  var i;
+	  var testimonials = document.getElementsByClassName("testimonial-quote-container");
+	  if (n > testimonials.length) {testimonialIndex = 1}
+	  if (n < 1) {testimonialIndex = testimonials.length}
+	  for (i = 0; i < testimonials.length; i++) {
+	      testimonials[i].style.display = "none";
+	  }
+	  testimonials[testimonialIndex-1].style.display = "block";
+	}
+
+	// animate in elements on scroll
+	const options = {
+		root: null,
+		rootMargin: '0px',
+		threshold: .2
+	}
+	let callback = (entries) => {
+		entries.forEach(entry => {
+			if(entry.isIntersecting) {
+				entry.target.classList.add('is-visible');
+			}
+		});
+	}
+	let observer = new IntersectionObserver(callback, options);
+	document.querySelectorAll('.observe').forEach(el => { observer.observe(el) });
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

@@ -1,0 +1,497 @@
+<div id="mindful-recovery" class="sub-serv-page legacy-page">
+	<div class="contain-sects">
+		<div class="paintcrumb has-text-centered">
+			<img src="https://files.mindful.care/images/pinkishbgsmearsmall.png">
+			<div><%= link "SERVICES", to: Routes.page_path(@conn, :services) %></div>
+		</div>
+
+		<section class="atf-hero">
+			<div class="lead-side">
+				<h1>Mindful Recovery</h1>
+				<div class="subtext">
+					Modern <span class="nowrap">substance-use</span><br>
+					recovery coaching.
+				</div>
+				<div class="atf-cta-container">
+					<%= link "SCHEDULE NOW", to: "https://app.squarespacescheduling.com/schedule.php?owner=24750249", class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="tail-side">
+				<div class="paint-dec-img">
+					<img src="https://files.mindful.care/images/black_paint_strokes.png">
+				</div>
+				<img src="https://files.mindful.care/images/waving_man.jpg" alt="Man waving in coaching session">
+			</div>
+		</section>
+		<div class="lb-wave">
+			<img src="https://files.mindful.care/images/serviceswavetopbg.svg">
+		</div>
+	</div>
+
+	<section class="benefits observe has-text-centered">
+		<div class="benefit">
+			<img src="https://files.mindful.care/images/monitor_talk.png" alt="online coaching">
+			<div class="title">
+				Personal Recovery Coach
+			</div>
+			<p>
+				Your coach will keep you on the right path and provide you with support and wisdom you require.
+			</p>
+		</div>
+
+		<div class="benefit">
+			<img src="https://files.mindful.care/images/phone_text.png" alt="text support">
+			<div class="title">
+				Phone and Text Support
+			</div>
+			<p>
+				Your Recovery coach will be available by phone or text to answer questions and address your concerns.
+			</p>
+		</div>
+
+		<div class="benefit">
+			<img src="https://files.mindful.care/images/treatment_plan.png" alt="treatment plan">
+			<div class="title">
+				Customized Treatment Plan
+			</div>
+			<p>
+				Everyone is different. Your coaching and treatment will be specific to what’s best for your health and recovery.
+			</p>
+		</div>
+	</section>
+
+	<section class="about-therapy has-text-centered">
+		<div class="t-wrapper">
+			<h2>
+				About Recovery
+			</h2>
+			<p>
+				Mindful Recovery is a harm reduction substance-use coaching program designed to help individuals in recovery, or considering recovery, achieve their goals.
+			</p>
+			<p>
+				Our trained coaches are dedicated to meeting individuals wherever they are on their journey and guiding them to ensure success.
+			</p>
+			<p>
+				The program includes weekly recovery support and monitoring, as well as the scheduling of necessary appointments and coordination of care, group therapy, and individual therapy.
+			</p>
+		</div>
+		<div class="sec-imgs">
+			<img src="https://files.mindful.care/images/securehipaa.png" alt="HIPAA compliant and secure SSL badges">
+		</div>
+	</section>
+
+	<section class="how-it-works">
+		<div class="area-container">
+			<div class="title-container has-text-centered">
+
+				<h3>
+					How Mindful Recovery Works
+				</h3>
+			</div>
+			<div class="content-container">
+				<div class="pic-side has-text-centered">
+					<div class="img-container observe">
+						<img src="https://files.mindful.care/images/recovery_path.jpg" alt="road to recovery">
+					</div>
+					<div class="cta-container">
+						<%= link "SCHEDULE NOW", to: "https://app.squarespacescheduling.com/schedule.php?owner=24750249", class: "btn btn-white" %>
+					</div>
+				</div>
+				<div class="steps-side">
+					<div class="step step-1 observe">
+						<div class="step-info">
+							<div class="count">1</div>
+							<div class="path-img-container">
+								<img src="https://files.mindful.care/images/golden_path_line.png">
+							</div>
+						</div>
+						<div class="step-detail">
+							<h4>Schedule a free consultation</h4>
+							<p>
+								Schedule a video session with a Mindful recovery coach to learn more about the program.
+							</p>
+						</div>
+					</div>
+					<div class="step step-2 observe">
+						<div class="step-info">
+							<div class="count">2</div>
+							<div class="path-img-container">
+								<img src="https://files.mindful.care/images/golden_path_line.png">
+							</div>
+						</div>
+						<div class="step-detail">
+							<h4>Receive your personalized recovery plan</h4>
+							<p>
+								Your recovery coach will create a recovery plan that is best for you.
+							</p>
+						</div>
+					</div>
+					<div class="step step-3 observe">
+						<div class="step-info">
+							<div class="count">3</div>
+						</div>
+						<div class="step-detail">
+							<h4>Start your road to recovery</h4>
+							<p>
+								Once your treatment has started your recovery coach will be with you every step of the way.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="accord">
+		<h3 class="has-text-centered">Frequently Asked Questions</h3>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Who is a good candidate for the Mindful Recovery program?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Mindful Recovery is designed to help anyone dealing with substance and/or alcohol misuse. We offer support to individuals considering recovery using a harm reduction approach. The program also provides ongoing support for individuals in recovery and others at various stages. Our coaches are familiar with all aspects of the journey and tailor recovery plans to provide the necessary tools to ensure long-term success.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What are the qualifications of the recovery coach?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Recovery Coaches at Mindful Recovery have advanced certification in Alcoholism and Substance-use Coaching, as well as Master Degrees in various mental health disciplines.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What does Mindful Recovery treat?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <ul>
+		    	<li>Opioid/Heroin Use Disorder</li>
+					<li>Alcohol Use Disorder</li>
+					<li>Nicotine User Disorder</li>
+					<li>Benzodiazepines Use Order</li>
+					<li>Cannabis Use Disorder</li>
+					<li>Other Substance Use/Misuse</li>
+		    </ul>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		How much does it cost?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Recovery Coaching costs either $49/month for biweekly sessions or $99/month for weekly sessions. We highly recommend weekly sessions for those starting the program to ensure success.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What is included in the monthly fee?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <ul>
+					<li>
+						Initial Recovery Assessment and physician-approved Recovery Plan including a discussion about MAT (Medication-Assisted Treatment), <%= link "MindFit Groups", to: Routes.page_path(@conn, :group_therapy) %> or similar in other states, and <%= link "MicroTherapy", to: Routes.page_path(@conn, :individual_therapy) %> or similar in other states
+					</li>
+					<li>
+						Scheduling support for additional services consistent with recovery plan
+					</li>
+					<li>
+						Referral and scheduling as needed if the patient requires a partial hospitalization, intensive outpatient, or rehab programs, and/or detoxification
+					</li>
+					<li>
+						Weekly or bi-weekly check-in calls to assess program and monitor journey
+					</li>
+					<li>
+						Unlimited texting with recovery coach
+					</li>
+					<li>
+						Collaboration with other providers including physicians, psychiatrists, and therapists on behalf of client
+					</li>
+					<li>
+						Collaboration with primary caregivers to manage addiction-related behavior and offer resources for additional support
+					</li>
+					<li>
+						Access to exclusive recovery coach matching tool
+					</li>
+					<li>
+						Monthly recovery gift
+					</li>
+					<li>
+						Monthly MindfulRecovery Virtual Team Building Event
+					</li>
+					<li>
+						Access to Mindful Recovery App (coming soon)
+					</li>
+		    </ul>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Are medications included?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	After a Recovery Plan is drafted, if the patient is a candidate for MAT, they will be referred to a provider who can provide such assistance for further assessment and evaluation.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		How often will I be seen?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Recovery coaches conduct one 30-minute initial recovery assessment and then spend time producing a thorough recovery plan. You will then meet weekly or bi-weekly depending on your plan and goals.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Is insurance accepted?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	The Recovery coaching component of the program is covered by the monthly subscription. Additional services such medication management, <%= link "MindFit groups", to: Routes.page_path(@conn, :group_therapy) %>, and/or <%= link "MicroTherapy", to: Routes.page_path(@conn, :individual_therapy) %> are covered by some insurance plans. Your recovery coach will work with you to find the best program based on your needs and preferences.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Who will I be seen by?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Your primary interaction will be with your Recovery Coach with support from our prescribers, group therapists, and individual therapists.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What is a Recovery Coach?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	A Recovery Coach is a trained professional that offers support and guidance through the recovery process to make sure you are properly coached and set up for success.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Will I be seen virtually or in-person?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Recovery Coaching is conducted via video conferencing with additional support via phone and text messaging.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		How long will I be treated?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	You are welcome to be a part of the recovery coaching program for as little or as long as you would like. We advise at least 1-year of continuous sobriety before opting to leave the program.
+		    </p>
+		  </div>
+		</details>
+	</section>
+
+	<section class="testimonials">
+		<div class="wave-topper">
+			<img src="https://files.mindful.care/images/testimonials_wave_topper.svg">
+		</div>
+		<div class="content">
+			<h3 class="has-text-centered">What patients are saying</h3>
+			<div class="testimonials-container">
+				<div id="left-arrow" class="arrow" onclick="plusTestimonials(-1)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronLeft" alt="previous testimonial button"><path d="M15 4l-8 8 8 8"/></svg>
+				</div>
+				<div class="quote-area">
+					<div class="quotation-mark left-mark">
+						<img src="https://files.mindful.care/images/quotation_marks.svg">
+					</div>
+					<div class="testimonial-quote-container prime">
+						<p>
+							Very easy to schedule and really outstanding practitioners who listen well, ask the right questions and provide quality support.
+						</p>
+						<div class="patient-name">
+							Michelle R
+						</div>
+					</div>
+					<div class="testimonial-quote-container">
+						<p>
+							This place has been the single most positive interaction with the mental healthcare sphere that I have ever had in my life.
+						</p>
+						<div class="patient-name">
+							Connor C
+						</div>
+					</div>
+					<div class="testimonial-quote-container">
+						<p>
+							Easy scheduling, always on time, super convenient.
+						</p>
+						<div class="patient-name">
+							Vincent A
+						</div>
+					</div>
+					<div class="quotation-mark right-mark">
+						<img src="https://files.mindful.care/images/quotation_marks.svg">
+					</div>
+				</div>
+				<div id="right-arrow" class="arrow" onclick="plusTestimonials(1)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronRight" alt="next testimonial button"><path d="M8 4l8 8-8 8"/></svg>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="very-bot">
+		<div class="article-cta">
+			<div class="wrapper">
+				<h4 class="has-text-right">
+					Mindful Care offers substance-use recovery coaching for patients across the country
+				</h4>
+				<div class="link-container">
+					<%= link "SCHEDULE TODAY", to: "https://app.squarespacescheduling.com/schedule.php?owner=24750249", class: "btn btn-white nowrap" %>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<script>
+	// todo: replace header schedule link with external link
+	// var headerBtn = document.querySelector("header .cta-container .btn");
+	// headerBtn.href = "https://app.squarespacescheduling.com/schedule.php?owner=24750249";
+
+	// change header background color
+	var header = document.querySelector("nav");
+	header.style.transition = "background .3s";
+	header.style.background = "#E5F2FF";
+
+
+
+
+
+	// testimonials carousel
+	var testimonialIndex = 1;
+	showTestimonials(testimonialIndex);
+
+	function plusTestimonials(n) {
+	  showTestimonials(testimonialIndex += n);
+	}
+
+	function currentTestimonial(n) {
+	  showTestimonials(testimonialIndex = n);
+	}
+
+	function showTestimonials(n) {
+	  var i;
+	  var testimonials = document.getElementsByClassName("testimonial-quote-container");
+	  if (n > testimonials.length) {testimonialIndex = 1}
+	  if (n < 1) {testimonialIndex = testimonials.length}
+	  for (i = 0; i < testimonials.length; i++) {
+	      testimonials[i].style.display = "none";
+	  }
+	  testimonials[testimonialIndex-1].style.display = "block";
+	}
+
+	// animate in elements on scroll
+	const options = {
+		root: null,
+		rootMargin: '0px',
+		threshold: .2
+	}
+	let callback = (entries) => {
+		entries.forEach(entry => {
+			if(entry.isIntersecting) {
+				entry.target.classList.add('is-visible');
+			}
+		});
+	}
+	let observer = new IntersectionObserver(callback, options);
+	document.querySelectorAll('.observe').forEach(el => { observer.observe(el) });
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

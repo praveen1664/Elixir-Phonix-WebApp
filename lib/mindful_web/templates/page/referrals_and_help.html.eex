@@ -1,0 +1,49 @@
+<div id="ref-help-page" class="base-text-page legacy-page">
+	<h1>
+		Referrals and Helplines
+	</h1>
+
+	<p>
+		<strong>
+			If you or someone you know is experiencing a serious illness or a mental health crisis, please call 911 or visit the emergency room nearest to you. Other resources available throughout New York City can be found below:
+		</strong>
+	</p>
+
+	<h3>NYC Well:</h3>
+	<p>
+		If you are seeking non-emergency support, you may contact <a href="https://nycwell.cityofnewyork.us/en/" target="_blank">NYC Well</a>. NYC Well is a connection to free, confidential mental health support. Through this service, you can speak to a counselor via phone, text or chat and get access to mental health and substance misuse services, in more than 200 languages, 24/7/365. To connect with NYC Well, you can call 1.888.692.9355 (1.888.NYC.WELL), text “Well” to 65173, or <a href="https://nycwell.cityofnewyork.us/en/get-help-now/chat-with-a-counselor-now/" target="_blank">chat</a> with someone online.
+	</p>
+
+	<h3>National Crisis Text Line:</h3>
+	<p>
+		Another resource is the <a href="https://www.crisistextline.org/" target="_blank">National Crisis Text Line</a>. To use this free service, text HOME to 741741 from anywhere in the United States, anytime, about <strong>any</strong> type of crisis. <a href="https://www.crisistextline.org/" target="_blank">Crisis Text Line</a> serves anyone, in any type of crisis, providing access to free, 24/7 support and information via a medium people already use and trust: text.
+	</p>
+
+	<h3>The Trevor Project:</h3>
+	<p>
+		The Trevor Project operates the <a href="https://www.thetrevorproject.org/get-help-now/" target="_blank">Trevor Lifeline</a> 24/7 which provides support for LGBTQ+ young people in crisis, feeling suicidal, or in need of a safe and judgement-free place to talk. You can connect with the <a href="https://www.thetrevorproject.org/get-help-now/" target="_blank">Trevor Lifeline</a> by calling 1-866-488-7386.
+	</p>
+
+	<h3>National Suicide Prevention Lifeline:</h3>
+	<p>
+		<a href="https://suicidepreventionlifeline.org/" target="_blank">The National Suicide Prevention Lifeline</a> is a national network of local crisis centers that provides free and confidential emotional support to people in suicidal crisis or emotional distress 24 hours a day, 7 days a week. The Lifeline provides 24/7 free and confidential support for people in distress, prevention and crisis resources for you or your loved ones, and best practices for professionals. Their <a href="http://chat.suicidepreventionlifeline.org/GetHelp/LifelineChat.aspx" target="_blank">Lifeline Crisis Chat</a> can be reached at 1-800-273-8255.
+	</p>
+
+	<h3>Trans Lifeline:</h3>
+	<p>
+		<a href="https://www.translifeline.org/hotline" target="_blank">The Trans Lifeline</a> is a peer support service run by trans people for trans and questioning callers. Operators are located all over the U.S. and Canada, and are all trans-identified. If you are in crisis or just need someone to talk to, even if it’s just about whether or not you’re trans, please call. The Lifeline is available 10am-4am EST. Volunteers may be available during off hours. You can connect with the <a href="https://www.translifeline.org/" target="_blank">Trans Lifeline</a> by calling 1-877-565-8860.
+	</p>
+
+	<div class="referral-items">
+		<div class="referral-item">
+			<%= link "NYC Referrals", to: Routes.page_path(@conn, :nyc_therapy_referrals), class: "btn btn-small btn-white arrow" %>
+		</div>
+		<div class="referral-item">
+			<%= link "Long Island Referrals", to: Routes.page_path(@conn, :long_island_therapy_referrals), class: "btn btn-small btn-white arrow" %>
+		</div>
+		<div class="referral-item">
+			<%= link "Rehabs & Residential Placements", to: Routes.page_path(@conn, :rehabs_and_residential_placements), class: "btn btn-small btn-white arrow" %>
+		</div>
+	</div>
+
+</div>

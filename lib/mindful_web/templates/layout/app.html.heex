@@ -1,0 +1,12 @@
+<main>
+  <%= @inner_content %>
+</main>
+
+<%= render "_flash_message.html", assigns %>
+
+<script>
+	function dismissAlert() {
+    let alertParent = document.querySelector('.alert-parent');
+		alertParent.style.display = "none";
+	}
+</script>

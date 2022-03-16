@@ -1,0 +1,263 @@
+<!-- Load Stripe.js -->
+<script src="https://js.stripe.com/v3/"></script>
+
+<div>
+  <div class="relative pb-32 overflow-hidden">
+    <div aria-hidden="true" class="inset-y-0 absolute inset-x-0 left-1/2 transform -translate-x-1/2 w-full overflow-hidden lg:inset-y-0">
+      <div class="relative flex justify-center">
+        <svg class="flex-shrink-0" width="1750" height="308" viewBox="0 0 1750 308" xmlns="http://www.w3.org/2000/svg">
+          <path d="M284.161 308H1465.84L875.001 182.413 284.161 308z" fill="#0369a1" />
+          <path d="M1465.84 308L16.816 0H1750v308h-284.16z" fill="#065d8c" />
+          <path d="M1733.19 0L284.161 308H0V0h1733.19z" fill="#0a527b" />
+          <path d="M875.001 182.413L1733.19 0H16.816l858.185 182.413z" fill="#0a4f76" />
+        </svg>
+      </div>
+    </div>
+
+    <header class="relative py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold text-white">
+          Settings
+        </h1>
+      </div>
+    </header>
+  </div>
+
+  <main class="relative -mt-32">
+    <div class="max-w-screen-xl mx-auto pb-6 px-4 sm:px-6 lg:pb-16 lg:px-8">
+      <div class="bg-white rounded-lg shadow overflow-hidden">
+        <div class="divide-y divide-gray-200 lg:grid lg:grid-cols-12 lg:divide-y-0 lg:divide-x">
+          <aside class="py-6 lg:col-span-3">
+            <nav class="space-y-1">
+              <%= link to: Routes.user_path(@conn, :dash), class: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900 group border-l-4 px-3 py-2 flex items-center text-sm font-medium" do %>
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 group-hover:text-gray-500 flex-shrink-0 -ml-1 mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                <span class="truncate">
+                  Profile
+                </span>
+              <% end %>
+
+              <%= link to: Routes.user_path(@conn, :billing), class: "bg-teal-50 border-teal-500 text-teal-700 hover:bg-teal-50 hover:text-teal-700 group border-l-4 px-3 py-2 flex items-center text-sm font-medium" do %>
+                <!-- Heroicon name: outline/credit-card -->
+                <svg class="text-teal-500 group-hover:text-teal-500 flex-shrink-0 -ml-1 mr-3 h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                </svg>
+                <span class="truncate">
+                  Billing
+                </span>
+              <% end %>
+
+              <%= link to: Routes.user_path(@conn, :insurance), class: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900 group border-l-4 px-3 py-2 flex items-center text-sm font-medium" do %>
+                <!-- Heroicon name: outline/cash -->
+                <svg class="text-gray-400 group-hover:text-gray-500 flex-shrink-0 -ml-1 mr-3 h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="truncate">
+                  Insurance
+                </span>
+              <% end %>
+
+              <%= link to: Routes.user_settings_path(@conn, :edit), class: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900 group border-l-4 px-3 py-2 flex items-center text-sm font-medium" do %>
+                <svg class="text-gray-400 group-hover:text-gray-500 flex-shrink-0 -ml-1 mr-3 h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="truncate">
+                  Account
+                </span>
+              <% end %>
+
+              <%= if VH.is_admin?(@current_user) do %>
+                <%= link to: Routes.admin_path(@conn, :index), class: "border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900 group border-l-4 px-3 py-2 flex items-center text-sm font-medium" do %>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 group-hover:text-gray-500 flex-shrink-0 -ml-1 mr-3 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                  <span class="truncate">
+                    Admin
+                  </span>
+                <% end %>
+              <% end %>
+            </nav>
+          </aside>
+
+          <div class="divide-y divide-gray-200 lg:col-span-9">
+            <div class="py-6 px-4 sm:p-6 lg:pb-8">
+              <div class="pb-6">
+                <h2 class="text-lg leading-6 font-medium text-gray-900">Billing</h2>
+                <p class="mt-1 text-sm text-gray-500">
+                  Manage your billing and payment information here.
+                </p>
+              </div>
+              <div>
+                <div>
+                  <strong class="text-sm text-gray-700">Payment method on file:</strong>
+                  <%= if @current_user.payment_method_id do %>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-green-500 inline-block h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-sm text-green-800">Card ending in <strong class="font-semibold"><%= @current_user.cc_last_4 %></strong></span>
+                  <% else %>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 inline-block h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-sm">None</span>
+                  <% end %>
+                </div>
+                <%= if @current_user.payment_method_id do %>
+                  <div class="flex space-x-4 mt-1 items-center">
+                    <.form for={@conn} action={Routes.user_path(@conn, :remove_card)} method="put" onsubmit="return confirm('Are you sure you want to remove this payment method from your account?')" class="inline-block bg-transparent"]>
+                      <%= submit "Remove card", class: "text-xs text-red-600 hover:text-red-500" %>
+                    </.form>
+                    <a href="#" class="text-xs" onclick="showForm(this)">Update payment method</a>
+                  </div>
+                <% end %>
+
+                <%= if @current_user.payment_method_id do %>
+                  <p class="pay-info hidden mt-6 mb-3 text-sm text-gray-500 fadeinup">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    You can change or update your payment method using the form below.
+                  </p>
+                <% else %>
+                  <p class="mt-2 mb-6 text-sm text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    You can add a payment method using the form below.
+                  </p>
+                <% end %>
+
+                <.form for={@conn} action={Routes.user_path(@conn, :add_card)} id="payment-form" class={if @current_user.payment_method_id, do: "hidden max-w-xl fadeinup", else: "max-w-xl"}>
+                  <div class="pb-3">
+                    <label class="block text-sm font-medium text-gray-700" for="card-element">
+                      Credit or debit card
+                    </label>
+                    <div id="card-element">
+                      <!-- A Stripe Element will be inserted here. -->
+                    </div>
+
+                    <!-- Used to display Element errors. -->
+                    <div id="card-errors" class="py-1 text-xs text-red-500" role="alert"></div>
+                  </div>
+
+                  <div class="pb-8">
+                    <div class="relative flex items-start">
+                      <div class="flex items-center h-5">
+                        <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" required class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                      </div>
+                      <div class="ml-3 text-sm">
+                        <label for="comments" class="font-medium text-gray-700">Payment Consent</label>
+                        <p id="comments-description" class="mt-0.5 text-gray-500">
+                          I hereby authorize Mindful Care to charge my payment card in accordance with the terms referenced herein; <%= link "payment policy", to: Routes.page_path(@conn, :policies) <> "#payment-consent", target: "_blank" %>.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <%= submit [id: "stripe-submit-btn", class: "relative flex items-center transition-all duration-300 mx-auto px-4 py-2 border border-transparent rounded-full text-white bg-indigo-600 shadow-sm hover:bg-indigo-700 font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"] do %>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                    </svg>
+                    Submit
+                  <% end %>
+                  <div id="spinner"></div>
+                </.form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+	var stripe = Stripe('<%= @public_key %>');
+	var elements = stripe.elements();
+	// Custom styling can be passed to options when creating an Element.
+	var style = {
+		base: {
+	    color: '#32325d',
+	    fontSize: '16px',
+	    '::placeholder': {
+	      color: '#aab7c4'
+	    }
+	  },
+	  invalid: {
+	    color: '#fa755a',
+	    iconColor: '#fa755a'
+	  }
+	};
+
+	// Create an instance of the card Element and add it into the `card-element` <div>.
+	var card = elements.create('card', {style: style});
+	card.mount('#card-element');
+
+	// Add any errors when the card is changed
+	var displayError = document.getElementById('card-errors');
+
+	card.addEventListener('change', function(event) {
+	  if (event.error) {
+	    displayError.textContent = event.error.message;
+	  } else {
+	    displayError.textContent = '';
+	  }
+	});
+
+	// Setup new payment method or display an error when the form is submitted.
+	var form = document.getElementById('payment-form');
+	var submitBtn = document.getElementById("stripe-submit-btn");
+  var spinner = document.getElementById("spinner");
+
+	form.addEventListener('submit', function(event) {
+	  event.preventDefault();
+	  // Hide submit button and show spinner indicating payment processing
+		submitBtn.style.display = "none";
+		spinner.style.display = "block";
+
+	  stripe.confirmCardSetup(
+	  	"<%= @client_secret %>",
+	  	{ payment_method: { card: card } }
+  	).then(function(result) {
+	    if (result.error) {
+	      // Inform the customer that there was an error.
+	      displayError.textContent = result.error.message;
+	      submitBtn.style.display = "flex";
+				spinner.style.display = "none";
+	    } else {
+	    	if (result.setupIntent.status == "succeeded") {
+	    		// Send the token to your server.
+	      	stripeSuccessHandler(result.setupIntent.payment_method);
+	    	} else {
+	    		// Display unsuccessful status as error.
+	    		displayError.textContent = result.setupIntent.status;
+		      submitBtn.style.display = "flex";
+					spinner.style.display = "none";
+	    	}
+	    }
+  	});
+	});
+
+	function stripeSuccessHandler(payment_method) {
+	  // Insert the payment_method ID into the form so it gets submitted to the server
+	  var form = document.getElementById('payment-form');
+	  var hiddenInput = document.createElement('input');
+	  hiddenInput.setAttribute('type', 'hidden');
+	  hiddenInput.setAttribute('name', 'paymentMethodId');
+	  hiddenInput.setAttribute('value', payment_method);
+	  form.appendChild(hiddenInput);
+	  // Submit the form
+	  form.submit();
+	}
+
+  // handle when update payment method link is clicked
+  function showForm(el) {
+    el.style.display = "none";
+    let payInfo = document.querySelector(".pay-info");
+    let form = document.querySelector("#payment-form");
+    payInfo.classList.remove("hidden");
+    form.classList.remove("hidden");
+  }
+</script>

@@ -1,0 +1,9 @@
+<p>
+  Hello,<br><br>
+
+  This email is to let you know that <strong><%= @invite.to %></strong> has connected a payment method to their Mindful Care account and may now be charged.
+<p>
+
+<p>
+  To charge a patient, visit the <a href="<%= @url %>">Charge a Patient page</a> and enter the patient's email address.
+</p>

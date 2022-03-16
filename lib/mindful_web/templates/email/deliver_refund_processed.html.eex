@@ -1,0 +1,10 @@
+<p>
+  Your refund is being processed.<br><br>
+  <strong>Amount:</strong> <%=  VH.cents_to_dollars(@amount) %><br>
+  <strong>Method:</strong> Card *<%= @user.cc_last_4 %><br>
+  <strong>Date:</strong> <%= Calendar.strftime(Timex.today("America/New_York"), "%b %-d, %Y") %>
+</p>
+
+<p>
+  You may reply to this email with any questions you have.
+</p>

@@ -1,0 +1,295 @@
+<div id="adolescent-page" class="sub-serv-page treat-page legacy-page">
+	<div class="paintcrumb has-text-centered">
+		<img src="https://files.mindful.care/images/pinkishbgsmearsmall.png">
+		<div>
+			<a href="/what-we-treat">WHAT WE TREAT</a>
+		</div>
+	</div>
+
+	<div class="hero">
+		<div class="lead-side">
+			<img src="https://files.mindful.care/images/ojdecpaintspot.png">
+			<h1>
+				Adolescent Disorders
+			</h1>
+			<p>
+				If you’re experiencing major behavioral issues with your adolescent child, they could be struggling with an adolescent disorder. Oppositional defiant disorder (ODD) and conduct disorder (CD) are serious conditions that are distressing for both you and your child. We can help.
+			</p>
+		</div>
+		<div class="tail-side">
+			<img src="https://files.mindful.care/images/treatkids.jpg" alt="child">
+		</div>
+	</div>
+
+	<section class="btf-top has-text-centered">
+		<img class="bg-top-curve" src="https://files.mindful.care/images/asymmetriccurvetop.svg">
+		<div class="dec-p-wrapper">
+			<img class="dec-p1 observe" src="https://files.mindful.care/images/featheryplant.png">
+		</div>
+		<div class="t-wrapper">
+			<h2 class="observe">
+				Licensed New York, New Jersey, and Chicago Psychiatrists for Adolescent Disorders
+			</h2>
+			<p class="observe">
+				At Mindful Care, our team of compassionate mental health professionals will provide your adolescent with treatment the very day you choose to ask for help. You will be invited in to a comfortable front office, with relaxing music and refreshments, helping both of you feel at ease while taking that all-important first step.
+			</p>
+			<p class="observe">
+				We now offer telehealth virtual consultation, group therapy, and in person consultation in our offices throughout New York, New Jersey, and Chicago.
+			</p>
+			<div class="cta-dbl observe">
+				<%= link "SCHEDULE NOW", to: Routes.page_path(@conn, :schedule), class: "btn btn-med" %>
+				<div class="call-container">
+					Or call <a href="tel:15164478897">516-447-8897</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="dec-ribbon has-text-centered">
+		<img src="https://files.mindful.care/images/paintedwavespiral.png">
+	</div>
+
+	<section class="qa">
+		<h3 class="has-text-centered">
+			Adolescent Disorders <span class="nowrap">Q & A</span>
+		</h3>
+
+		<div class="accord">
+			<details>
+		    <summary>
+		    	<div class="wrapper">
+			    	<span>
+			    		You first visit
+			    	</span>
+			    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+			    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+			    </div>
+		    </summary>
+		    <div class="wrapper">
+			    <p>
+			    	You will see a psychiatric medical provider on your first visit, who will assess and work with you to diagnose the problem. They will help you understand that anxiety is a feeling that can be regulated, and not a weakness or personality flaw. They will prescribe medication to reduce your symptoms, and will recommend a treatment plan personalized to suit your needs, including lifestyle modifications to improve your overall sense of wellbeing. We recommend weekly therapy as a supplement to our care, and will provide referrals to the best providers available. They will give you skills to manage your anxiety or fear and explore the psychological basis for your anxiety.
+			    </p>
+			  </div>
+			</details>
+			<details>
+		    <summary>
+		    	<div class="wrapper">
+			    	<span>
+			    		How are ODD and CD treated?
+			    	</span>
+			    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+			    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+			    </div>
+		    </summary>
+		    <div class="wrapper">
+			    <p>
+			    	Adolescents who struggle with defiance and conduct are often treated as delinquents, rather than being treated in a psychiatric setting. The good news is that with the appropriate help, your child can learn to behave in a way that benefits them and the people around them.
+			    </p>
+			    <p>
+			    	Adolescent disorders such as ODD and CD are treated with a combination of medication, therapy, and behavior modification.
+			    </p>
+			    <p>
+			    	Adolescents who are suffering from co-occurring disorders, such as depression and anxiety, ADHD, and substance abuse, may benefit from medication typically used to treat these conditions.
+			    </p>
+			    <p>
+			    	Primary treatment, however, is behavioral. Behavior modification is used to train adolescents to regulate their feelings, especially those of anger and negativity, as well as to curb behavior that will be disruptive or destructive.
+			    </p>
+			    <p>
+			    	In many cases, treatment provided for parents is beneficial to the family as a whole. Parents can receive training to help them use techniques that will be effective in getting the desired responses from their children. Family therapy can help all members of the family learn to relate to each other in healthier ways. Finally, parents and adolescents can learn to engage in collaborative problem solving, which asks all parties to participate in solving behavioral issues.
+			    </p>
+			    <p>
+			    	Adolescent disorders are often shrugged off as simple bad discipline, but they can become extremely disruptive for the youth and those around them. With help from Mindful Care, your adolescent can learn to regulate their emotions and curb problematic behavior.
+			    </p>
+			  </div>
+			</details>
+		</div>
+	</section>
+
+	<section class="our-locations">
+		<h2 class="has-text-centered observe">
+			Our Psychiatry Locations:
+		</h2>
+
+		<h3 class="observe">
+			<a href="/locations/new-york">New York</a>
+		</h3>
+		<div class="locs observe">
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>Fort Greene</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>Grand Central</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>Flatiron District</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>Long Island City</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>Hicksville</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>West Hempstead</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>White Plains</span>
+			</div>
+		</div>
+
+		<div class="region-wrapper">
+			<div>
+				<h3 class="observe">
+					<a href="/locations/new-jersey">New Jersey</a>
+				</h3>
+				<div class="locs observe">
+					<div class="loc">
+						<img src="https://files.mindful.care/images/paintbgcheck.png">
+						<span>Hoboken</span>
+					</div>
+					<div class="loc">
+						<img src="https://files.mindful.care/images/paintbgcheck.png">
+						<span>Jersey City</span>
+					</div>
+				</div>
+
+				<h3 class="observe">
+					<a href="/locations/illinois">Illinois</a>
+				</h3>
+				<div class="locs observe">
+					<div class="loc">
+						<img src="https://files.mindful.care/images/paintbgcheck.png">
+						<span>Fulton Market</span>
+					</div>
+					<div class="loc">
+						<img src="https://files.mindful.care/images/paintbgcheck.png">
+						<span>Near North Side</span>
+					</div>
+				</div>
+			</div>
+			<div class="pic-container observe">
+				<img src="https://files.mindful.care/images/watercolor_leaf_stem.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonials">
+		<div class="wave-topper">
+			<img src="https://files.mindful.care/images/testimonials_wave_topper.svg">
+		</div>
+		<div class="content">
+			<h3 class="has-text-centered">Our patients love <span class="nowrap">what we do</span></h3>
+			<div class="testimonials-container">
+				<div id="left-arrow" class="arrow" onclick="plusTestimonials(-1)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronLeft" alt="previous testimonial button"><path d="M15 4l-8 8 8 8"/></svg>
+				</div>
+				<div class="quote-area">
+					<div class="quotation-mark left-mark">
+						<img src="https://files.mindful.care/images/quotation_marks.svg">
+					</div>
+					<div class="testimonial-quote-container prime">
+						<p>
+							Very easy to schedule and really outstanding practitioners who listen well, ask the right questions and provide quality support.
+						</p>
+						<div class="patient-name">
+							Michelle R
+						</div>
+					</div>
+					<div class="testimonial-quote-container">
+						<p>
+							This place has been the single most positive interaction with the mental healthcare sphere that I have ever had in my life.
+						</p>
+						<div class="patient-name">
+							Connor C
+						</div>
+					</div>
+					<div class="testimonial-quote-container">
+						<p>
+							Easy scheduling, always on time, super convenient.
+						</p>
+						<div class="patient-name">
+							Vincent A
+						</div>
+					</div>
+					<div class="quotation-mark right-mark">
+						<img src="https://files.mindful.care/images/quotation_marks.svg">
+					</div>
+				</div>
+				<div id="right-arrow" class="arrow" onclick="plusTestimonials(1)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronRight" alt="next testimonial button"><path d="M8 4l8 8-8 8"/></svg>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="very-bot">
+		<div class="article-cta observe">
+			<div class="wrapper">
+				<h4 class="has-text-right">
+					Mindful Care offers telepsychiatry appointments for patients in IL, NJ and NY
+				</h4>
+				<div class="link-container">
+					<%= link "SCHEDULE TODAY", to: Routes.page_path(@conn, :schedule), class: "btn btn-white nowrap" %>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-link-container has-text-centered">
+			Have a question?
+			<%= link to: Routes.page_path(@conn, :faqs) do %>
+				See our <span class="nowrap">frequently asked questions</span>
+			<% end %>
+		</div>
+	</section>
+</div>
+
+<script>
+	// testimonials carousel
+	var testimonialIndex = 1;
+	showTestimonials(testimonialIndex);
+
+	function plusTestimonials(n) {
+	  showTestimonials(testimonialIndex += n);
+	}
+
+	function currentTestimonial(n) {
+	  showTestimonials(testimonialIndex = n);
+	}
+
+	function showTestimonials(n) {
+	  var i;
+	  var testimonials = document.getElementsByClassName("testimonial-quote-container");
+	  if (n > testimonials.length) {testimonialIndex = 1}
+	  if (n < 1) {testimonialIndex = testimonials.length}
+	  for (i = 0; i < testimonials.length; i++) {
+	      testimonials[i].style.display = "none";
+	  }
+	  testimonials[testimonialIndex-1].style.display = "block";
+	}
+
+	// animate in elements on scroll
+	const options = {
+		root: null,
+		rootMargin: '0px',
+		threshold: .2
+	}
+	let callback = (entries) => {
+		entries.forEach(entry => {
+			if(entry.isIntersecting) {
+				entry.target.classList.add('is-visible');
+			}
+		});
+	}
+	let observer = new IntersectionObserver(callback, options);
+	document.querySelectorAll('.observe').forEach(el => { observer.observe(el) });
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

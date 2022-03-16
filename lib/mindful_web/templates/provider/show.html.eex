@@ -1,0 +1,83 @@
+<div id="show-provider-page" class="legacy-page">
+	<div class="back-link-container">
+		<%= link to: Routes.provider_path(@conn, :index) do %>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronLeft"><path d="M15 4l-8 8 8 8"/></svg>
+			Back to all providers
+		<% end %>
+	</div>
+	<h1 class="has-text-centered">
+		<%= @provider.first_name <> " " <> @provider.last_name %>,
+		<span class="nowrap"><%= @provider.credential_initials %></span>
+	</h1>
+	<div class="job-subheader has-text-centered">
+		<%= @provider.job_title %>
+	</div>
+
+	<section class="hero">
+		<img src="<%= VH.uploaded_img_url(@provider.image_path) %>" alt="<%= VH.formalize_name(@provider) %>">
+	</section>
+
+	<section class="btf">
+		<div class="about-side">
+			<%= if VH.is_admin?(@current_user) do %>
+				<div class="admin-main-opts">
+					<%= link "Edit profile", to: Routes.provider_path(@conn, :edit, @provider) %>
+					<%= link "Delete provider", to: Routes.provider_path(@conn, :delete, @provider), method: :delete, data: [confirm: "Are you sure you want to delete #{@provider.first_name}?"], class: "red-link" %>
+				</div>
+			<% end %>
+			<h2>About <%= @provider.first_name %></h2>
+			<div class="about-ps">
+				<%= text_to_html(@provider.about) %>
+			</div>
+			<%= if VH.is_admin?(@current_user) do %>
+				<div class="admin-detail-opts">
+					<small>
+						<%= if @provider.details do %>
+							<%= link "(Edit provider details)", to: Routes.provider_path(@conn, :edit_details, @provider), class: "lb-link" %>
+						<% else %>
+							<%= link "(Add provider details)", to: Routes.provider_path(@conn, :edit_details, @provider), class: "lb-link" %>
+						<% end %>
+					</small>
+				</div>
+			<% end %>
+			<%= if @provider.details do %>
+				<div class="md-container">
+					<%= VH.blob_to_html(@provider.details) %>
+				</div>
+			<% end %>
+		</div>
+		<div class="offices-side">
+			<%= if @provider.offices != [] do %>
+				<h3>
+					<%= if length(@provider.offices) > 1, do: "Offices", else: "Office" %>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-Location"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8z"/></svg>
+				</h3>
+				<%= for office <- @provider.offices do %>
+					<div class="office-container">
+						<div class="o-name">
+							<%= link office.name, to: Routes.office_path(@conn, :show, office.state.slug, office) %>
+						</div>
+						<div class="address">
+							<%= office.street %>
+              <%= if office.suite, do: office.suite %>
+              <br>
+              <%= office.city <> ", " <> String.upcase(office.state_abbr) <> " " <> office.zip %>
+						</div>
+						<div class="phone">
+							<%= link office.phone, to: "tel:" <> MindfulWeb.SharedView.callable_phone(office.phone), class: "lb-link" %>
+						</div>
+						<div class="sched-link-container">
+							<%= link to: Routes.office_path(@conn, :show, office.state.slug, office) do %>
+								Schedule
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronRight"><path d="M8 4l8 8-8 8"/></svg>
+							<% end %>
+						</div>
+					</div>
+				<% end %>
+			<% end %>
+		</div>
+	</section>
+</div>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

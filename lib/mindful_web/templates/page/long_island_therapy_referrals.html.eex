@@ -1,0 +1,256 @@
+<div id="ref-long-island-therapy-referrals-page" class="base-text-page legacy-page">
+    <h1>Long Island Referrals</h1>
+    <div>
+        <p>
+            Mindful Care believes that supplement therapy is imperative in completing the patient journey. Finding an
+            appropriate therapeutic resource can be hard to do, but we are here to help! Below are some of our
+            partnering
+            resources:
+        </p>
+        <h3>MindFit Group Therapy</h3>
+        <p>
+            MindFit Group Therapy strengthens your mental health now. Therapists guide an interactive and supportive
+            conversation that makes a difference for everyone. We use a CBT-based approach. Cognitive Behavioral Therapy
+            (CBT) focuses on challenging and changing unhelpful thoughts, beliefs, attitudes and behaviors. CBT is a
+            practical approach to improve the quality of your life.
+        </p>
+        <p>
+            <%= link "MindFit Group Therapy", target: "_blank", to: Routes.page_path(@conn, :group_therapy) %>
+        </p>
+        <p>
+            Best on-line resource for helping to find a therapist:
+        </p>
+    </div>
+
+    <p>
+        <a href="https://www.zencare.co/us/new-york/therapists" target="_blank" title="zencare">Zencare</a>
+    </p>
+    <p>
+        Best Resource for finding affordable options:
+    </p>
+    <p>
+        <a href="https://nycwell.cityofnewyork.us/en/find-services/" target="_blank" title="nycwell">NYC Well</a>
+    </p>
+    <p>
+        <a href="https://openpathcollective.org/" target="_blank" title="openpathcollective">openpathcollective.org</a>
+    </p>
+    <div>
+        <ul>
+            <li>Affordable options that are not rated or reviewed by Mindful Staff</li>
+            <li>Price range is from $30-$60 per session</li>
+            <li>Therapist in your area via zip code</li>
+        </ul>
+    </div>
+
+    <section>
+       <p> <a href="https://www.jcoreacounseling.com/" target="_blank" title="jcoreacounseling">JCorea Counseling </a></p>
+        <p>585 Stewart Ave. Suite 700 Garden City, NY 11530 </p>
+        <p>516-280-7285 Fax: 516-280-7286 </p>
+        <p>Email: <a href="mailto:jcoreacounseling@gmail.com">jcoreacounseling@gmail.com</a></p>
+        <p>Anxiety, depression, relationship issues, compulsions/addictions, self-esteem In network with most
+            insurances</p>
+
+    </section>
+
+    <section>
+        <p>
+            <a href="https://pslongisland.com/" target="_blank" title="pslongisland">Psychological Services Long
+                Island</a>
+        </p>
+        <p>400 South Oyster Bay Rd Suite 102 Hicksville, NY 11801 </p>
+        <p>516-818-8383 </p>
+        <p>
+            <a href="mailto:therapy@PSLongIsland.com">therapy@PSLongIsland.com</a>
+        </p>
+        <p>ADHD, PTSD, depression, adjustment to divorce, social phobia, separation anxiety, panic attacks</p>
+    </section>
+
+    <section>
+        <p>
+            <a href="https://www.psychologytoday.com/us/therapists/11743" target="_blank" title="psychologytoday">Shafeena Khan-Salim </a>
+        </p>
+        <p>Phone number : 516-537-8112 </p>
+        <p>shafeenaLMHC@gmail.com </p>
+        <p>210 E. Main Street, Suite 8, Huntington, NY 11743</p>
+    </section>
+
+    <section>
+        <p>
+            <a href="https://www.therapistgonzalez.net/contact-info" target="_blank" title="lorraine gonzalez">Lorraine
+                Gonzalez, LCSWR </a>
+        </p>
+        <p>
+            2174 Hewlett Ave, Suite 207, Merrick, NY, 11566
+        </p>
+        <p>
+            516-259-1835
+        </p>
+        <p>
+            <a href="mailto:therapist.gonzalez@gmail.com">therapist.gonzalez@gmail.com</a>
+        </p>
+    </section>
+
+    <section>
+        <p><a target="_blank" href="https://www.psychologytoday.com/us/therapists/christine-keene-rockville-centre-ny/398294">Christine
+            Keene, LCSW </a></p>
+        <p>516-699-2123</p>
+        <p>Email: <a href="mailto:christinekeene@gmail.com">christinekeene@gmail.com</a></p>
+        <p>165 N. Village Ave, Suite 4, Rockville Centre, NY 11570</p>
+    </section>
+
+    <section>
+        <p>
+            <a target="_blank"
+               href="https://www.psychologytoday.com/us/therapists/kristen-castro-scala-rockville-centre-ny/189040">Kristen
+                Scala, LCSW </a>
+        </p>
+        <p>Phone number: 516-244-5122 </p>
+        <p>165 North Village Ave, Suite 4, Rockville Centre,NY 11570</p>
+    </section>
+
+    <section>
+        <p>
+            <a href="https://www.psychologytoday.com/us/therapists/cathy-menzies-floral-park-ny/64398" target="_blank"
+               title="psychologytoday">Cathy Menzies , LCSW-R Clinical Social Worker/EMDR Trauma Therapist </a>
+        </p>
+        <p>
+            631-466-7053
+        </p>
+        <p>
+            99 Tulip Ave, Suite 305 Floral Park, NY 11001
+        </p>
+        <p>
+            Email: <a href="mailto:Cathy.Menzies@gmail.com">Cathy.Menzies@gmail.com</a>
+        </p>
+    </section>
+
+    <section>
+        <p>
+            <a href="https://www.lipsychotherapy.com/" target="_blank" title="lipsychotherapy">Long Island Psychotherapy
+                and
+                Counseling</a>
+        </p>
+        <p>136 Woodbury Rd, Woodbury NY 11797</p>
+        <p>309 Madison St, Westbury NY 11590 </p>
+        <p>347-772-8373 </p>
+        <p>In network with most insurances </p>
+    </section>
+
+    <section>
+        <p>
+            <a href="https://www.psychologytoday.com/us/therapists/pauline-walfisch-rockville-centre-ny/166606"
+               target="_blank" title="pauline walfisch rockville">
+                Pauline Walfisch, LCSW
+            </a>
+        </p>
+        <p>165 N. Village Ave, Suite 114A Rockville Centre NY 11570 </p>
+        <p>516-996-9232 </p>
+    </section>
+
+    <section>
+        <p>
+            <a href="https://www.southnassau.org/sn/primary-care-hempstead" target="_blank"
+               title="primary care hempstead">
+                South Nassau Center for Primary & Behavioral Healthcare
+            </a>
+        </p>
+        <p>
+            250 Fulton Ave, Hempstead, NY 11550
+        </p>
+        <p>
+            516-497-7520
+        </p>
+        <p>
+            Med management, individual and group therapy to any age
+        </p>
+    </section>
+
+    <section>
+        <p><a href="http://ww1.wavelenghtspsychologypc.com/" target="_blank">Wavelengths, Psychology, Neurofeedback and
+            Counseling </a></p>
+        <p>Massapequa Park </p>
+        <p>1-800-871-5491 – ADHD Office (Garden City)</p>
+        <p>1-855-558-2343 </p>
+        <p>Wavelenghtspsychologypc.com</p>
+    </section>
+
+    <section>
+        <p><a href="http://www.kellychapmanlcsw.com/" target="_blank">Kelly Chapman, LCSW</a></p>
+        <p>52E East Park Ave, Long Beach, NY 11561 </p>
+        <p>646-519-1196 , <a href="mailto:info@kellychapmanlcsw.com">info@kellychapmanlcsw.com </a></p>
+    </section>
+
+    <section>
+        <p><a href="http://balancemhc.com/" target="_blank">Tanairy Fernandez MS.Ed, LMHC,NCC </a></p>
+        <p>210 East Main Street, Suite 8, Huntington, NY 11743</p>
+        <p><a href="mailto:e.tanairyf@balancemhc.com">e.tanairyf@balancemhc.com </a></p>
+        <p>631-572-8912</p>
+        <p>
+            www.balancemhc.com
+        </p>
+    </section>
+
+    <section>
+        <p>
+            <a href="http://www.familyandpersonalcounseling.com" target="_blank">Family and Personal Counseling </a>
+        </p>
+        <p>Bohemia, Main office</p>
+        <p>631-758-8290, multiple locations in Islip,Queens, St James and Levittown </p>
+        <p>Accepts most major insurances except metroplus</p>
+        <p>Same day appointment by call</p>
+        <p>Telepsych</p>
+    </section>
+
+    <section>
+        <p>
+            <a href="https://www.hillarycallcounseling.com" target="_blank">Hillary Call Counseling </a>
+        </p>
+        <p>
+            Board certified LMHC,certified clinical trauma professional
+        </p>
+        <p>520 Franklin Ave, Suite L22, Garden City, Ny 11530 </p>
+        <p>516-321-0461 </p>
+        <p>
+            <a href="mailto:hillary@hillarycall.com">hillary@hillarycall.com</a>
+        </p>
+        <p>www.hillarycallcounseling.com </p>
+    </section>
+
+    <section>
+        <p>
+            <a href="https://cbtpsychologicalassociates.com" target="_blank">CBT Psychological Associates </a>
+        </p>
+        <p>2171 Jerico Turnpike, Suite 345, Commack NY 11725 </p>
+        <p>631-486-5140 </p>
+        <p>Accepts most major insurances except for medicaid </p>
+    </section>
+
+    <section>
+        <p>
+            <a target="_blank" href="https://www.psychologytoday.com/us/therapists/jennifer-selden-east-norwich-ny/480374">Jennifer
+                Selder, LCAT, ATR-BC </a>
+        </p>
+        <p>
+            Art Therapy and Psychotherapy
+        </p>
+        <p>
+            Locust Valley
+        </p>
+        <p>516-714-3255 </p>
+        <p>Accepts open Path </p>
+        <p>Available in the evenings </p>
+        <p>Counseling Associates of Long Island, Inc.</p>
+        <p>727 North Broadway Suite A2</p>
+        <p>Massapequa, NY 11758</p>
+        <p>516-797-4851</p>
+        <p>Accepts all major insurance carriers and specializes in Individual, Couples, & Family Psychotherapy (ages
+            12+)</p>
+        <p>Home Visit Therapist: ( MEDICARE INS ONLY ACCEPTED) </p>
+        <ol>
+            <li>Robin Kremer Malamud 516-314-3225</li>
+            <li>Cindy Bubla Kircher 631-219-8469</li>
+            <li>Visiting Counselors of NY 516-210-2390</li>
+            <li>Long Island Elder Care 631-320-1070</li>
+        </ol>
+    </section>
+</div>

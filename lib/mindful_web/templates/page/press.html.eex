@@ -1,0 +1,118 @@
+<div id="press-page" class="b-page legacy-page">
+	<div class="paintcrumb has-text-centered">
+		<img src="https://files.mindful.care/images/pinkishbgsmearsmall.png">
+		<div>
+			<a href="/press">PRESS</a>
+		</div>
+	</div>
+
+	<section class="p-hero">
+		<div class="lead-side">
+			<h1>Mindful Care</h1>
+			<div class="subtext">in the press</div>
+			<img src="https://files.mindful.care/images/gold_watercolor_smear.png">
+		</div>
+		<div class="tail-side">
+			<img src="https://files.mindful.care/images/pressreading.jpg" alt="Diverse groupe therapy session">
+		</div>
+	</section>
+
+	<section class="content">
+		<img class="bg-top-curve" src="https://files.mindful.care/images/asymmetriccurvetop.svg">
+		<div class="main-wrapper">
+			<div class="news-side">
+				<h2>Latest News</h2>
+
+				<div class="stories">
+					<div class="story">
+						<div class="head">
+							<a href="https://www.businesswire.com/news/home/20211005005823/en/Mindful-Care-Closes-2.7M-Oversubscribed-Series-A-Round-to-Expand-Mental-Health-Urgent-Care-Centers-and-Telehealth-Solutions" target="_blank">Business Wire</a>
+							<span class="date nowrap">October 5, 2021</span>
+						</div>
+						<p>
+							Mindful Care Closes $2.7M Oversubscribed Series A Round to Expand Mental Health Urgent Care Centers and Telehealth Solutions
+						</p>
+					</div>
+
+					<div class="story">
+						<div class="head">
+							<a href="https://polsky.uchicago.edu/2021/10/05/mindful-care-closes-2-7m-series-a-with-investment-from-uchicago/" target="_blank">Polsky</a>
+							<span class="date nowrap">October 5, 2021</span>
+						</div>
+						<p>
+							NVC, Booth Alum Startup Mindful Care Closes $2.7M Series A with Investment from UChicago
+						</p>
+					</div>
+
+					<div class="story">
+						<div class="head">
+							<a href="https://www.pr.com/press-release/810657" target="_blank">PR.com</a>
+							<span class="date nowrap">April 22, 2020</span>
+						</div>
+						<p>
+							Free Virtual Group Therapy for COVID-Related Post Traumatic Stress Disorder (PTSD) Offered by NY-Based Mindful Urgent Care
+						</p>
+					</div>
+
+					<div class="story">
+						<div class="head">
+							<a href="https://www.forbes.com/sites/brucejapsen/2018/08/16/how-retail-mental-health-could-be-medicines-next-frontier/?sh=619e1595e063" target="_blank">Forbes</a>
+							<span class="date nowrap">August 16, 2018</span>
+						</div>
+						<p>
+							How Retail Mental Health Could Be Medicine's Next Frontier
+						</p>
+					</div>
+
+					<div class="story">
+						<div class="head">
+							<a href="https://news.uchicago.edu/story/could-walk-clinics-ease-opioid-crisis" target="_blank">UChicago News</a>
+							<span class="date nowrap">June 13, 2018</span>
+						</div>
+						<p>
+							Could walk-in clinics ease the opioid crisis?
+						</p>
+					</div>
+
+					<div class="story">
+						<div class="head">
+							<a href="https://polsky.uchicago.edu/2018/04/12/two-first-place-winners-selected-at-2018-global-new-venture-challenge-finals/" target="_blank">Polsky</a>
+							<span class="date nowrap">April 12, 2018</span>
+						</div>
+						<p>
+							Two First-Place Winners Selected at 2018 Global New Venture Challenge Finals
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="contact-side">
+				<div class="box">
+					<div class="label">MEDIA CONTACT</div>
+					<div class="name">
+						Wes Spangler<br>
+						<a href="mailto:press@mindful.care">press@mindful.care</a>
+					</div>
+
+					<div class="label">HEADQUARTERS</div>
+					<div class="address">
+						510 Hempstead Turnpike #203<br>
+						West Hempstead, NY 11552
+					</div>
+
+					<div class="label">FOLLOW MINDFUL CARE</div>
+					<div class="social-links">
+						<a href="https://www.facebook.com/mindful.care.mental.health" target="_blank">
+							<img src="https://files.mindful.care/images/facebook_icon.svg" alt="Facebook icon">
+						</a>
+						<a href="https://www.instagram.com/mindful.care.mental.health/" target="_blank">
+							<img src="https://files.mindful.care/images/instagram_icon.svg" alt="Instagram icon">
+						</a>
+						<a href="https://twitter.com/mindfuluc" target="_blank">
+							<img src="https://files.mindful.care/images/twitter_icon.svg" alt="Twitter icon">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

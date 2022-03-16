@@ -1,0 +1,59 @@
+<div class="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+  <div class="sm:mx-auto sm:w-full sm:max-w-md">
+     <%= link to: "/", class: "flex justify-center" do %>
+      <img class="mx-auto h-16 w-auto" src="https://files.mindful.care/images/mindfulcareiconcross.svg" alt="Mindful Care icon">
+    <% end %>
+    <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+      Reset your password
+    </h2>
+    <p class="mt-2 text-center text-sm text-gray-600">
+      Use the form below to reset your password.
+    </p>
+  </div>
+
+  <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+      <.form let={f} for={@changeset} action={Routes.user_reset_password_path(@conn, :update, @token)} class="space-y-6">
+        <%= if @changeset.action do %>
+          <div class="bg-red-100 border border-red-400 text-sm text-red-700 px-4 py-3 rounded" role="alert">
+            <p>Oops, something went wrong! Please check the errors below.</p>
+          </div>
+        <% end %>
+
+        <div>
+          <%= label f, :password, "New password", class: "block text-sm font-medium text-gray-700" %>
+          <div class="mt-1">
+            <%= password_input f, :password, required: true, title: "Password", autocomplete: "off", class: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" %>
+          </div>
+          <%= error_tag f, :password %>
+        </div>
+
+        <div>
+          <%= label f, :password_confirmation, "Confirm new password", class: "block text-sm font-medium text-gray-700" %>
+          <div class="mt-1">
+            <%= password_input f, :password_confirmation, required: true, title: "Password", autocomplete: "off", class: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" %>
+          </div>
+          <%= error_tag f, :password_confirmation %>
+        </div>
+
+        <div>
+          <%= submit "Reset password", class: "whitespace-nowrap  w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
+        </div>
+      </.form>
+    </div>
+  </div>
+</div>
+
+<script>
+  let htmlTag = document.querySelector("html");
+  let bodyTag = document.querySelector("body");
+  let mainTag = document.querySelector("main");
+  let navTag = document.querySelector("nav");
+
+
+  htmlTag.classList.add("h-full");
+  htmlTag.classList.add("bg-gray-50");
+  bodyTag.classList.add("h-full");
+  mainTag.classList.add("lg:h-full");
+  navTag.classList.add("hidden");
+</script>

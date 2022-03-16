@@ -1,0 +1,118 @@
+<div id="edit-state-page" class="be-form-page legacy-page">
+	<div class="breadcrumbs">
+		<%= link "STATES", to: Routes.state_path(@conn, :index) %>
+		<span>/</span>
+		<%= link @state.abbr, to: Routes.state_path(@conn, :show, @state) %>
+		<span>/</span>
+		EDIT
+	</div>
+
+	<div class="dec-sig">
+		<img src="https://files.mindful.care/images/gold_watercolor_smear.png">
+	</div>
+
+	<section class="form-container">
+		<h1>Edit <%= @state.name %></h1>
+
+		<div class="form-top-wave">
+			<img src="https://files.mindful.care/images/be_form_wave_div.svg">
+		</div>
+		<%= form_for @changeset,  Routes.state_path(@conn, :update, @state), [multipart: true], fn f -> %>
+		  <%= if @changeset.action do %>
+		    <div class="alert alert-danger">
+		      <p>Oops, something went wrong! Please check the errors below.</p>
+		    </div>
+		  <% end %>
+
+		  <fieldset>
+		  	<%= label f, :description, "State description text" %>
+			  <%= textarea f, :description, rows: 5, required: true %>
+			  <div class="error-info">
+			  	<%= error_tag f, :description %>
+			  </div>
+		  </fieldset>
+
+		  <fieldset class="hor wide">
+		  	<div>
+			  	<div>
+			  		State status
+			  	</div>
+			  	<div class="radio-opts">
+				  	<div>
+				  		<label class="opt-container first-opt" for="cs_opt_1">
+				  			<%= radio_button f, :coming_soon, true, id: "cs_opt_1", checked: @state.coming_soon %>
+				  			<span>Coming soon</span>
+				  		</label>
+				  	</div>
+				  	<div>
+				  		<label class="opt-container" for="cs_opt_2">
+						  	<%= radio_button f, :coming_soon, false, id: "cs_opt_2", checked: !@state.coming_soon %>
+						  	<span>Operational</span>
+						  </label>
+						</div>
+					</div>
+				</div>
+				<div class="error-info">
+					<%= error_tag f, :coming_soon %>
+				</div>
+		  </fieldset>
+
+		  <fieldset>
+		  	<span>Upload image (min. width 1200px)</span>
+		  	<div class="current-img-container">
+		  		<img id="selected-state-image" src="<%= @changeset.changes[:image_path] || MindfulWeb.SharedView.thumbnail_url(@state.image_path) %>">
+		  	</div>
+		  	<%= label f, :state_image, class: "upload-label" do %>
+		  		<div class="file-upload-block has-text-centered">
+			  		<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" display="block" id="CloudUpload"><path d="M12 12v9m0-9l-2.5 2m2.5-2l2.5 2"/><path d="M5.034 9.117A4.002 4.002 0 0 0 6 17h1"/><path d="M15.83 7.138a5.5 5.5 0 0 0-10.796 1.98S5.187 10 5.5 10.5"/><path d="M17 17a5 5 0 1 0-1.17-9.862L14.5 7.5"/></svg>
+			  		<div id="file-label-text">
+			  			<%= if @changeset.changes[:image_path] do %>
+			  				File selected
+			  			<% else %>
+			  				Choose a file
+			  			<% end %>
+			  		</div>
+			  		<span>max. file size 7 mb</span>
+			  		<%= file_input f, :state_image, accept: "image/png, image/jpeg", onChange: "fileAdded(this)" %>
+			  	</div>
+		  	<% end %>
+			  <%= hidden_input f, :image_path %>
+			  <div class="error-info">
+			  	<%= error_tag f, :image_path %>
+			  </div>
+		  </fieldset>
+
+
+		  <div class="submit-container">
+		    <%= submit "SAVE CHANGES", class: "btn btn-med" %>
+		    <%= link "CANCEL", to: Routes.state_path(@conn, :show, @state) %>
+		  </div>
+		<% end %>
+
+	</section>
+</div>
+
+<script>
+	// Validate and update state image file upload field when a file is selected for upload
+	function fileAdded(object) {
+		var file = object.files[0];
+
+		if(file.size > 8000000) {
+	      alert("File is too big!");
+	      this.value = "";
+	    } else {
+	    	var labelText = document.getElementById("file-label-text");
+				labelText.innerHTML = "File selected";
+
+				// Place newly uploaded image in place of old image
+				// FileReader support
+		    if (FileReader) {
+	        var fr = new FileReader();
+	        fr.onload = function () {
+            document.getElementById("selected-state-image").src = fr.result;
+	        }
+	        fr.readAsDataURL(file);
+		    }
+	    };
+	}
+</script>

@@ -1,0 +1,168 @@
+<div id="services-page" class="legacy-page">
+	<section class="hero">
+		<div class="content-container">
+			<h1>
+				Keep<span>ing</span> your<br>
+				mind fit <span>with</span>
+			</h1>
+			<div class="paint-dec-container">
+				<img src="https://files.mindful.care/images/paintedinblock.png">
+			</div>
+			<div class="atf-checks">
+				<div>
+					<div class="paint-point-container p1">
+						<img src="https://files.mindful.care/images/paintcheckmark.png">
+					</div>
+					<div class="point-text">
+						Psychiatric Urgent Care
+					</div>
+				</div>
+				<div>
+					<div class="paint-point-container p2">
+						<img src="https://files.mindful.care/images/paintcheckmark.png">
+					</div>
+					<div class="point-text">
+						Medication Management
+					</div>
+				</div>
+				<div>
+					<div class="paint-point-container">
+						<img src="https://files.mindful.care/images/paintcheckmark.png">
+					</div>
+					<div class="point-text">
+						1-on-1 and Group Therapy
+					</div>
+				</div>
+			</div>
+
+			<div class="atf-cta-section">
+				<%= link "GET STARTED", to: Routes.page_path(@conn, :schedule), class: "btn btn-med" %>
+			</div>
+		</div>
+	</section>
+
+	<section class="big-text has-text-centered">
+		<img class="observe" src="https://files.mindful.care/images/baige_watercolor_scribble.png">
+		<h2 class="observe">
+			You shouldn't feel stressed about finding the <span class="nowrap">right care</span>
+		</h2>
+		<p class="observe">
+			Mindful Care provides compassionate care and support to our patients mental health. Our team of expert providers are skilled in a wide variety of treatment options to best fit each individual.
+		</p>
+	</section>
+
+	<section class="best">
+		<div class="pic-side">
+			<img src="https://files.mindful.care/images/bestmentalhealthgirl.png" alt="woman happy with mental health">
+		</div>
+		<div class="word-side observe">
+			<h2>What we <span class="nowrap">do best</span></h2>
+			<div class="blocks-container">
+				<%= link to: Routes.page_path(@conn, :urgent_care), class: "block b1" do %>
+					<div class="icon-container">
+						<img src="https://files.mindful.care/images/clock.svg" alt="clock icon">
+					</div>
+					<div class="info-container">
+						<div class="title">Psychiatric Urgent Care</div>
+						<p>
+							Revolutionary care for urgent psychiatric and mental health concerns.
+						</p>
+						<div class="l-more">
+							Learn more
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronRight"><path d="M8 4l8 8-8 8"/></svg>
+						</div>
+					</div>
+				<% end %>
+
+				<%= link to: Routes.page_path(@conn, :individual_therapy), class: "block b2" do %>
+					<div class="icon-container">
+						<img src="https://files.mindful.care/images/medmgmthappy.svg" alt="healthy icon">
+					</div>
+					<div class="info-container">
+						<div class="title">Individual MicroTherapy</div>
+						<p>
+							Individual therapy that was designed to meet the needs and realities of 2021.
+						</p>
+						<div class="l-more">
+							Learn more
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronRight"><path d="M8 4l8 8-8 8"/></svg>
+						</div>
+					</div>
+				<% end %>
+
+				<%= link to: Routes.page_path(@conn, :group_therapy), class: "block b3" do %>
+					<div class="icon-container grp-icon">
+						<img src="https://files.mindful.care/images/grp_box_icon.svg" alt="happy face icon">
+					</div>
+					<div class="info-container">
+						<div class="title">MindFit Group Therapy</div>
+						<p>
+							In a group therapy environment, learn to manage the difficult emotional experiences we all face.
+						</p>
+						<div class="l-more">
+							Learn more
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronRight"><path d="M8 4l8 8-8 8"/></svg>
+						</div>
+					</div>
+				<% end %>
+
+				<%= link to: Routes.page_path(@conn, :telehealth), class: "block b4" do %>
+					<div class="icon-container">
+						<img src="https://files.mindful.care/images/telepsychcall.svg" alt="mobile icon">
+					</div>
+					<div class="info-container">
+						<div class="title">Virtual Care</div>
+						<p>
+							Virtual psychiatrist appointments via your mobile device in your home, school, or office.
+						</p>
+						<div class="l-more">
+							Learn more
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronRight"><path d="M8 4l8 8-8 8"/></svg>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</section>
+
+	<section class="bot-hero has-text-centered">
+		<div class="dec-smear-container observe">
+			<img src="https://files.mindful.care/images/baige_watercolor_curve_smear.png">
+		</div>
+		<h3>
+			Mental healthcare<br>
+			without the headaches
+		</h3>
+		<div class="cta-container">
+			<%= link "GET STARTED", to: Routes.page_path(@conn, :schedule), class: "btn" %>
+		</div>
+		<div class="dec-wave">
+			<img src="https://files.mindful.care/images/watercolorbrightribbon.png">
+		</div>
+	</section>
+</div>
+
+<script>
+	// show header over hero section
+	let header = document.querySelector('nav');
+	header.style.zIndex = 2;
+
+	// animate in elements on scroll
+	const options = {
+		root: null,
+		rootMargin: '0px',
+		threshold: .2
+	}
+	let callback = (entries) => {
+		entries.forEach(entry => {
+			if(entry.isIntersecting) {
+				entry.target.classList.add('is-visible');
+			}
+		});
+	}
+	let observer = new IntersectionObserver(callback, options);
+	document.querySelectorAll('.observe').forEach(el => { observer.observe(el) });
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

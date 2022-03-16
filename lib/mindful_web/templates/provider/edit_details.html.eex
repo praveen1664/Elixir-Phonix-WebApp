@@ -1,0 +1,45 @@
+<div id="edit-provider-details-page" class="be-form-page edit-provider-md-page legacy-page">
+	<div class="breadcrumbs">
+		<%= link "PROVIDERS", to: Routes.provider_path(@conn, :index) %>
+		<span>/</span>
+		<%= link String.upcase(@provider.first_name <> " " <> @provider.last_name), to: Routes.provider_path(@conn, :show, @provider) %>
+		<span>/</span>
+		EDIT
+	</div>
+
+	<div class="dec-sig">
+		<img src="https://files.mindful.care/images/gold_watercolor_smear.png">
+	</div>
+
+	<section class="form-container">
+		<h1>Edit Provider Details</h1>
+
+		<div class="form-top-wave">
+			<img src="https://files.mindful.care/images/be_form_wave_div.svg">
+		</div>
+		<%= form_for @changeset,  Routes.provider_path(@conn, :update_details, @provider), [multipart: true, id: "provider-form"], fn f -> %>
+		  <%= if @changeset.action do %>
+		    <div class="alert alert-danger">
+		      <p>Oops, something went wrong! Please check the errors below.</p>
+		    </div>
+		  <% end %>
+
+		  <div class="markdown-help has-text-gray">
+		  	The field below uses <a href="https://www.markdownguide.org/basic-syntax/" target="_blank">markdown</a> to convert text into page content.
+		  </div>
+
+		  <div class="control">
+		  	<%= textarea f, :details, rows: 6, placeholder: "# This is Headline Text \n\nThis is paragraph text. Lorem ipsum mattis, enim eu consectetur vulputate, lacus odio maximus purus, non pharetra urna dolor sit amet velit." %>
+	  	</div>
+	  	<div class="error-info">
+	  		<%= error_tag f, :details %>
+	  	</div>
+
+		  <div class="submit-container">
+		    <%= submit "SAVE CHANGES", class: "btn btn-med" %>
+		    <%= link "CANCEL", to: Routes.provider_path(@conn, :show, @provider) %>
+		  </div>
+		<% end %>
+
+	</section>
+</div>

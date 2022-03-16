@@ -1,0 +1,327 @@
+<div id="terms-page" class="base-text-page legacy-page">
+	<div class="content-container">
+		<h1 class="has-text-centered text-2xl">Terms of Use</h1>
+		<p class="font-bold">Effective Date: January 5th, 2022</p>
+
+		<p class="font-bold">Arbitration Clause in Section 11</p>
+
+		<p>
+			These Terms of Use (“Terms”), which include an agreement to arbitrate and consent to electronic communications, govern your access to and use of services provided by or on behalf of Mindful Care, Inc. (“MINDFUL”, “us”, “our” or “we”), including any mobile applications that may be developed (collectively, the “Platform”). Such services include in-person and telehealth psychiatric and mental health services and other therapeutic services provided by MINDFUL or its affiliates. Please read these Terms and the Medical Terms of Service carefully before using the Platform. By accessing or using the Platform you agree to be bound by and subject to these Terms and the Medical Terms of Service.
+		<p>
+
+		<p>
+			Please refer to our <%= link "Privacy Policy", to: Routes.page_path(@conn, :privacy) %> to learn how MINDFUL collects, uses, shares and protects your personal information. Refer to our <%= link "Notice of Privacy Practices", to: Routes.page_path(@conn, :privacy_notice) %> to learn how Mindful collects, uses, shares and protects your protected health information.
+		</p>
+
+		<p class="font-semibold">
+			YOU AGREE THAT DISPUTES BETWEEN YOU AND MINDFUL WILL BE RESOLVED BY BINDING, INDIVIDUAL ARBITRATION UNLESS YOU OPT-OUT IN ACCORDANCE WITH THE DISPUTE RESOLUTION PROCESS DESCRIBED IN SECTION 11 BELOW. UNLESS YOU OPT-OUT OF ARBITRATION, YOU ARE WAIVING YOUR RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS ACTION OR REPRESENTATIVE PROCEEDING. IF YOU WISH TO OPT OUT OF ARBITRATION, FOLLOW THE OPT-OUT PROCEDURE SPECIFIED IN SECTION 11.
+		</p>
+
+		<p class="font-semibold">
+			DO NOT USE THE PLATFORM FOR EMERGENCY MEDICAL NEEDS. IF YOU EXPERIENCE A MEDICAL EMERGENCY, IMMEDIATELY CALL 911. OTHER THAN GUIDANCE OR ADVICE YOU RECEIVE DIRECTLY FROM YOUR PROVIDER, ANY GENERAL ADVICE THAT MAY BE POSTED ON THE PLATFORM OR THAT YOU MAY RECEIVE VIA THE PLATFORM IS FOR INFORMATIONAL PURPOSES ONLY AND IS NOT INTENDED TO REPLACE OR SUBSTITUTE FOR ANY MEDICAL OR OTHER ADVICE. TO THE MAXIMUM EXTENT NOT PROHIBITED BY LAW, WE MAKE NO REPRESENTATIONS OR WARRANTIES AND EXPRESSLY DISCLAIM ANY AND ALL LIABILITY CONCERNING ANY TREATMENT, ACTION BY, OR EFFECT ON ANY PERSON FOLLOWING THE GENERAL INFORMATION OFFERED OR PROVIDED WITHIN OR THROUGH THE PLATFORM. IF YOU HAVE SPECIFIC CONCERNS OR A SITUATION ARISES IN WHICH YOU REQUIRE MEDICAL ADVICE, YOU SHOULD CONSULT WITH AN APPROPRIATELY TRAINED AND QUALIFIED MEDICAL SERVICES PROVIDER.
+		</p>
+
+		<p class="font-semibold text-lg">
+			1. Updates to the Terms
+		</p>
+
+		<p>
+			We may modify these Terms from time to time. We will notify you of changes by posting the amended terms on the Platform. Please make sure we have your current email address so that you will receive notice of any material changes. If you do not agree with the proposed changes, you should discontinue your use of the Platform before the effective date of the changes. By you and through your continued use of the Platform after the effective date, you will be bound by the updated Terms.
+		</p>
+
+		<p class="font-semibold text-lg">
+			2. Account Registration and Security; Chats
+		</p>
+
+		<p>
+			You may use the Platform only for your own personal, non-commercial use. To access certain features of the Platform, you will have to create an account. It is important that you provide us with accurate and complete information for your account, and update it as needed. You are responsible for all activities that occur under your account. You should immediately notify us of any suspected or actual unauthorized use of your account. We will not be responsible for any loss, damage, and/or misuse of your account or of the information contained therein if you do not protect your account and your personal information.
+		</p>
+
+		<p>
+			When you register to use the Platform, you thereafter may voluntarily share information through our private chat function and/or during individual and group therapy sessions you participate in via the Platform. You may have the option to communicate with our personnel via text, photograph, video and/or audio-based methods. To use these features, you may be asked to enable settings that allow our mobile application(s) access to your device including, but not limited to, access to your camera, microphone and/or photos.
+		</p>
+
+		<p class="font-semibold text-lg">
+			3. Platform Use Termination
+		</p>
+
+		<p>
+			You may terminate your use of the Platform at any time by ceasing your use of the Platform. We may terminate your use of the Platform at any time by sending notice to you at the email address you provided as part of your user profile or otherwise contacting you or posting a notice on the Platform. To the extent required by applicable law, we will provide you with notice prior to terminating your use of the Platform, but we may not be required to provide such notice or a reason for termination in all instances.
+		</p>
+
+		<p class="font-semibold text-lg">
+			4. Use of the Platform
+		</p>
+
+		<p>
+			Subject to your compliance with and adherence to these Terms, we grant you a limited, non-exclusive, non-transferable, non-sublicensable license to use the Platform solely for your personal, non-commercial use. Your use of the Platform must be in accordance with all applicable laws. You acknowledge that you do not acquire any ownership rights, title, or interest in the Platform by and through your use of the Platform.
+		</p>
+
+		<p>
+			The following is a list of the type of actions that you may not engage in with respect to the Platform at any time. Any suspected or actual occurrence of the following actions or those that would reasonably be deemed similar is scope, purpose and/or result shall result in the immediate and permanent suspension of your access to the Platform:
+		</p>
+
+		<ul class="list-disc space-y-4 mb-6">
+			<li>
+				You will not use any robot, spider, site search/retrieval application, or other manual or automatic device or process to download, access, retrieve, index, data-mine, or in any way reproduce or circumvent, avoid, bypass, remove, or deactivate the navigational structure or technical measures or presentation of the Platform or its contents;
+			</li>
+
+			<li>
+				You will not interfere, access, tamper with or disrupt the Platform or the servers or networks connected to the Platform;
+			</li>
+
+			<li>
+				You will not attempt to probe, scan or test the vulnerability of the Platform or any of our systems or network or breach any security or authentication measures;
+			</li>
+
+			<li>
+				You will not use any meta tags or other hidden text or metadata utilizing our trademarks, logos, URLs or product names without our express written consent;
+			</li>
+
+			<li>
+				You will not use the Platform or content, or any portion thereof, for any commercial purpose or for the benefit of any third party or in any manner not permitted by these Terms;
+			</li>
+
+			<li>
+				You will not post, distribute, or reproduce in any way any content that infringes on any third-party intellectual property rights or violates third-party rights of privacy or rights of publicity;
+			</li>
+
+			<li>
+				You will not use, display, “frame” or “mirror” any part of the Platform, our names, any of our trademarks, logos or other proprietary information, or the layout and design of any page or form contained on a page, without prior written authorization from us;
+			</li>
+
+			<li>
+				You will not collect or store any personal information, including personally identifiable information, from users without their express written permission;
+			</li>
+
+			<li>
+				You will not provide any inaccurate, incomplete, false or misleading information when using the Platform;
+			</li>
+
+			<li>
+				You will not allow any other person to use your account, username or password to access the Platform, unless otherwise permitted herein;
+			</li>
+
+			<li>
+				You will not use another person’s information to create an account or to access an existing account that is not your account, unless otherwise permitted herein (e.g., you are the parent or legal guardian of a user of the Platform); and
+			</li>
+
+			<li>
+				You will not assist or permit any person to engage in any of the activities described in this Section and you agree to notify us of any suspected or actual occurrence of the aforementioned prohibitions.
+			</li>
+		</ul>
+
+		<p class="font-semibold text-lg">
+			5. Consent to Electronic Communications
+		</p>
+
+		<p>
+			You agree that MINDFUL may send the following to you by email or by posting them on the Platform: legal disclosures; these Terms; Privacy Policy; future changes to any of the foregoing; and other notices, policies, communications or disclosures and information related to the Platform. You agree that MINDFUL may contact you via email, phone, or mail regarding the Platform. You consent to receive such communications electronically. You agree to update your contact information to ensure accuracy. Your consent to conduct actions electronically covers all interactions between you and MINDFUL.
+		</p>
+
+		<p>
+			If you later decide that you do not want to receive certain future communications electronically, please send an email to support@mindful.care or a letter to:
+		</p>
+
+		<p>
+			Mindful Care, Inc.<br>
+			Attn: IT Department<br>
+			510 Hempstead Turnpike #203<br>
+			West Hempstead, NY 11552
+		</p>
+
+		<p>
+			You may also opt out of certain electronic communications through your account or by following the unsubscribe instructions in any marketing or promotional communication you receive from MINDFUL. Your withdrawal of consent shall be effective within a commercially reasonable time after we receive your withdrawal notice described above.
+		</p>
+
+		<p>
+			MINDFUL will need to send you certain communications electronically regarding the Platform or our services. You will not be able to opt out of those communications—e.g., communications regarding updates to the Terms. Your withdrawal of consent will not affect the legal validity or enforceability of the Terms provided to and accepted by, you. If you withdraw your consent to receive communications electronically, all or part of the Platform may become unavailable to you.
+		</p>
+
+		<p class="font-semibold text-lg">
+			6. Intellectual Property Rights
+		</p>
+
+		<p>
+			MINDFUL and our licensors retain all ownership rights, title and interest (including all intellectual property rights) worldwide to the Platform, including to all software and content therein. No rights are granted to you other than as expressly set forth in these Terms. All trademarks, service marks and trade names are owned by MINDFUL or other respective owners.
+		</p>
+
+		<p class="font-semibold text-lg">
+			7. Disclaimers
+		</p>
+
+		<p>
+			TO THE MAXIMUM EXTENT NOT PROHIBITED BY LAW, UNDER NO CIRCUMSTANCES WILL WE OR ANY OF OUR LICENSORS, AFFILIATES, EMPLOYEES, OFFICERS, DIRECTORS OR AGENTS BE RESPONSIBLE FOR ANY LOSS OR DAMAGE, INCLUDING PERSONAL INJURY OR DEATH, RESULTING FROM ANYONE’S USE OF OR INABILITY TO USE THE PLATFORM, OR RESULTING FROM ANY CONTENT POSTED ON THE PLATFORM.
+		</p>
+
+		<p>
+			TO THE MAXIMUM EXTENT NOT PROHIBITED BY LAW, THE PLATFORM IS PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT ANY WARRANTIES OF ANY KIND, AND WE AND OUR LICENSORS DISCLAIM ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT, AND WARRANTIES ARISING FROM COURSE OF DEALING, COURSE OF PERFORMANCE AND USAGE OF TRADE. YOUR USE OF THE PLATFORM IS SOLELY AT YOUR OWN RISK. FURTHERMORE, WE AND OUR LICENSORS DO NOT WARRANT THAT THE PLATFORM WILL BE UNINTERRUPTED OR ERROR FREE, OR THAT DEFECTS WILL BE CORRECTED. WE DO NOT WARRANT
+		</p>
+
+		<p>
+			THAT FILES AVAILABLE FOR DOWNLOAD WILL BE FREE OF VIRUSES, WORMS, TROJAN HORSES OR OTHER DESTRUCTIVE PROGRAMMING. ANY MATERIAL OBTAINED THROUGH THE USE OF THE PLATFORM IS ACCESSED AT YOUR OWN DISCRETION AND RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM ANY SUCH MATERIAL. WE MAKE NO WARRANTY REGARDING THE QUALITY, ACCURACY, TIMELINESS, TRUTHFULNESS, COMPLETENESS OR RELIABILITY OF ANY CONTENT.
+		</p>
+
+		<p>
+			The Platform is intended for use only within the United States and its territories. We make no representation that the Platform is appropriate, or is available for use outside the U.S. Those who choose to access and use the Platform from outside the U.S. do so on their own initiative, at their own risk, and are responsible for compliance with applicable laws.
+		</p>
+
+		<p class="font-semibold text-lg">
+			8. Indemnification
+		</p>
+
+		<p>
+			By accessing and/or using the Platform, you agree to indemnify, defend and hold MINDFUL, our subsidiaries and affiliates, and their respective officers, directors, employees, members, agents, representatives, business partners, information providers, licensors and licensees and their respective heirs and assigns (collectively the “Indemnified Parties”) harmless from and against any and all liability costs, including, without limitation, reasonable attorney’s fees and expenses incurred by the Indemnified Parties in connection with any claim arising out of, or breach by you of, these Terms, any related terms, or by any unauthorized use by you of the Platform. You agree to cooperate as fully as reasonably required in the defense of any claim. We reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you. You shall not enter into any settlement agreement that affects the rights of any of the Indemnified Parties or requires the taking of any action by any of them, without our prior written approval.
+		</p>
+
+		<p class="font-semibold text-lg">
+			9. Limitation of Liability
+		</p>
+
+		<p>
+			TO THE MAXIMUM EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL WE AND OUR AFFILIATES, LICENSORS, EMPLOYEES, OFFICERS, DIRECTORS OR AGENTS BE LIABLE FOR ANY CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL OR PUNITIVE DAMAGES, INCLUDING, WITHOUT LIMITATION, THOSE RELATING TO LOST PROFITS, LOSS OF DATA OR LOSS OF GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE, THE COST OF SUBSTITUTE PRODUCTS OR SERVICES, ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE PLATFORM, WHETHER BASED ON CONTRACT, WARRANTY, PRODUCT LIABILITY, TORT OR OTHER LEGAL THEORY AND EVEN IF WE HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. TO THE MAXIMUM EXTENT NOT PROHIBITED BY LAW, NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU ARISING FROM THESE TERMS, OR THE USE OF OR INABILITY TO USE THE PLATFORM WILL AT ALL TIMES NOT EXCEED $100.00.
+		</p>
+
+		<p>
+			SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THE ABOVE EXCLUSION MAY NOT APPLY TO YOU. IN SUCH JURISDICTIONS, OUR LIABILITY IS LIMITED TO THE GREATEST EXTENT PERMITTED BY THE LAW.
+		</p>
+
+		<p class="font-semibold text-lg">
+			10. Exclusive Remedy
+		</P>
+
+		<p>
+			If you are dissatisfied with the Platform, your sole and exclusive remedy is to stop using the Platform and cancel your account (if applicable).
+		</p>
+
+		<p class="font-semibold text-lg">
+			11. Dispute Resolution
+		</P>
+
+		<p class="font-semibold">
+			Agreement to Arbitrate
+		</p>
+
+		<p>
+			You agree that any dispute, claim or controversy arising out of or in any way relating to these Terms or the Platform (collectively, “Disputes”) will be settled by binding arbitration, except that each party retains the right: (i) to bring an individual action in small claims court and (ii) to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a party’s copyrights, trademarks, trade secrets, patents or other intellectual property rights (the action described in the foregoing clause (ii), an “IP Protection Action”).
+		</p>
+
+		<p class="font-semibold">
+			Right out of Arbitration
+		</p>
+
+		<p>
+			Important: Arbitration is not a mandatory condition of your contractual relationship with us. If you do not want to be subject to this arbitration provision, you may opt out of this arbitration provision by providing us with written notice (“Arbitration Opt-out Notice”) by email at support@mindful.care or by regular mail to Attn: Legal Department, 510 Hempstead Turnpike #203 West Hempstead, NY 11552 within thirty (30) calendar days following the date you first accept these Terms, or if you have not registered for an account, then within thirty (30) calendar days following the date you first use the Platform. If you do not provide us with an Arbitration Opt-out Notice within the aforementioned thirty (30) calendar day period, you will be deemed to have knowingly and intentionally waived your right to litigate any Dispute except as expressly set forth in clauses (i) and (ii) above. The exclusive jurisdiction and venue of any IP Protection Action or, if you timely provide us with an Arbitration Opt-out Notice, will be the appropriate state and federal courts located in the State of New York, and each of the parties hereto waives any objection to jurisdiction and venue in such courts. Unless you timely provide us with an Arbitration Opt-out Notice, <strong>you acknowledge and agree that you are each waiving the right to a trial by jury or to participate as a plaintiff or class member in any purported class action or representative proceeding. WHETHER TO AGREE TO ARBITRATION IS AN IMPORTANT BUSINESS DECISION. IT IS YOUR DECISION TO MAKE, AND YOU SHOULD NOT RELY SOLELY UPON THE INFORMATION PROVIDED IN THIS AGREEMENT AS IT IS NOT INTENDED TO CONTAIN A COMPLETE EXPLANATION OF THE CONSEQUENCES OF ARBITRATION. YOU SHOULD TAKE REASONABLE STEPS TO CONDUCT FURTHER RESEARCH AND TO CONSULT WITH OTHERS.</strong> Further, unless you otherwise agree in writing, the arbitrator may not consolidate more than one person’s claims, and may not otherwise preside over any form of any class or representative proceeding. If a decision is issued stating that applicable law precludes enforcement of any limitations set forth in this Agreement to Arbitrate on the right to arbitrate claims on a class or representative basis, or as part of a consolidated proceeding, as to a given claim for relief, then that claim (and only that claim) must be severed from the arbitration and brought in the state or federal courts located in the State of New York. All other claims will be arbitrated. This “Dispute Resolution” section will survive any termination of these Terms.
+		</p>
+
+		<p class="font-semibold">
+			Arbitration Rules
+		</p>
+
+		<p>
+			The arbitration will be administered by the American Arbitration Association (“AAA”) in accordance with the Commercial Arbitration Rules and the Supplementary Procedures for Consumer Related Disputes (the “AAA Rules”) then in effect, except as modified by this “Dispute Resolution” section. (The AAA Rules are available at https://www.adr.org/Rules or by calling the AAA at 1-800-778-7879.) The Federal Arbitration Act will govern the interpretation and enforcement of this Section.
+		</p>
+
+		<p class="font-semibold">
+			Arbitration Process
+		</p>
+
+		<p>
+			A party who desires to initiate arbitration must provide the other party with a written Demand for Arbitration as specified in the AAA Rules. The arbitrator will be either a retired judge or an attorney licensed to practice law and will be selected by the parties from the AAA’s roster of arbitrators. If the parties are unable to agree upon an arbitrator within seven (7) calendar days of delivery of the Demand for Arbitration, then the AAA will appoint the arbitrator in accordance with the AAA Rules.
+		</p>
+
+		<p class="font-semibold">
+			Arbitration Location and Procedure
+		</p>
+
+		<p class="font-semibold">
+			Unless you agree with us otherwise, the arbitration will be conducted in the county where you reside. If your claim does not exceed $10,000, then the arbitration will be conducted solely on the basis of the documents that are submitted to the arbitrator, unless you request a hearing or the arbitrator determines that a hearing is necessary. If your claim exceeds $10,000, your right to a hearing will be determined by the AAA Rules. Subject to the AAA Rules, the arbitrator will have the discretion to direct a reasonable exchange of information by the parties, consistent with the expedited nature of the arbitration.
+		</p>
+
+		<p class="font-semibold">
+			Arbitrator’s Decision
+		</p>
+
+		<p>
+			The arbitrator will render an award within the time frame specified in the AAA Rules. The arbitrator’s decision will include the essential findings and conclusions upon which the arbitrator based the award. Judgment on the arbitration award may be entered in any court having jurisdiction thereof. The arbitrator’s award of damages must be consistent with the terms of the “Limitation of Liability” section above as to the types and amounts of damages for which a party may be held liable. The arbitrator may award declaratory or injunctive relief only in favor of the claimant and only to the extent necessary to provide relief warranted by the claimant’s individual claim. If a party prevails in arbitration that party will be entitled to an award of attorneys’ fees and expenses to the extent provided under applicable law.
+		</p>
+
+		<p class="font-semibold">
+			Fees
+		</p>
+
+		<p>
+			Your responsibility to pay any AAA filing, administrative and arbitrator fees will be solely as set forth in the AAA Rules. However, if your claim for damages does not exceed $75,000, we will pay all such fees unless the arbitrator finds that either the substance of your claim or the relief sought in your Demand for Arbitration was frivolous or was brought for an improper purpose (as measured by the standards set forth in Federal Rule of Civil Procedure 11(b)).
+		</p>
+
+		<p class="font-semibold">
+			Changes
+		</p>
+
+		<p>
+			Notwithstanding anything to the contrary in these Terms, if we change this “Dispute Resolution” section after the date you accepted these Terms or access the Platform, you may reject any such change by sending us written notice (including by email to support@mindful.care) within 30 calendar days of the date such change became effective, as indicated in the “Effective Date” listed at the beginning of these Terms or in the date of our email to you notifying you of such change. By rejecting any change, you are agreeing that you will arbitrate any Dispute between you and us in accordance with the provisions of this “Dispute Resolution” section as of the date you accepted these Terms, or accessed the Platform.
+		</p>
+
+		<p class="font-semibold">
+			Statute of Limitations
+		</p>
+
+		<p>
+			YOU AND MINDFUL AGREE THAT ANY CAUSE OF ACTION ARISING OUT OF OR RELATED TO THE PLATFORM MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES. OTHERWISE, SUCH ACTION IS PERMANENTLY BARRED.
+		</p>
+
+		<p class="font-semibold text-lg">
+			12. Links to Third-Party Websites
+		</P>
+
+		<p>
+			The Platform may contain links to other sites that are owned and operated by third parties. We are not responsible for the privacy and services practices or the content, advertising, products, services or other materials made available on or through any such linked sites. We provide these links to you only as a convenience, and the inclusion of any link does not imply endorsement of any kind by us.
+		</p>
+
+		<p class="font-semibold text-lg">
+			13. App Stores
+		</P>
+
+		<p>
+			You acknowledge and agree that these Terms are between you and MINDFUL, and are not an agreement with the operator of any third-party platform from which you download the Apps, such as the Apple App Store or Google Play (each an “App Store”). The App Store provider is not responsible for maintenance or other support for the Apps. You also agree to comply with any App Store terms and conditions. To the extent that any App Store terms and conditions are less restrictive than or otherwise conflict with these Terms, these Terms shall govern.
+		</p>
+
+		<p class="font-semibold text-lg">
+			14. General Provisions
+		</P>
+
+		<ul class="list-disc space-y-4 mb-6">
+			<li>
+				These Terms make up the entire agreement relating to your use of the Platform, and supersede all prior agreements relating to the subject matter hereof.
+			</li>
+
+			<li>
+				These Terms will be governed by the laws of the State of New York without regard to its conflict of laws provisions.
+			</li>
+
+			<li>
+				We may change, suspend, or discontinue the Platform or any part thereof at any time. We will try to give you prior notice of any material changes to the Platform as described in Section 1. We will not be liable to you or to any third-party for any modification, suspension or discontinuance of the Platform.
+			</li>
+
+			<li>
+				These Terms do not confer any third-party beneficiary rights. You may not transfer any of your rights or obligations under these Terms to anyone else without our express written consent. MINDFUL may assign our rights in connection with a merger, acquisition, or sale of assets, or by operation of law or otherwise.
+			</li>
+
+			<li>
+				We appreciate your feedback, suggestions, and other communications (collectively, “Feedback”) about the Platform. You should know that we can, but are not obligated to, use your Feedback without restriction or any obligation to compensate you, and we have no obligation to keep them confidential.
+			</li>
+
+			<li>
+				Even after termination, these Terms will remain in effect such that all terms that by their nature may survive termination will be deemed to survive such termination.
+			</li>
+
+			<li>
+				In order to protect the integrity of the Platform, we may, at any time in our sole discretion, block users from certain IP addresses from accessing the Platform.
+			</li>
+
+		<p>
+			If you have any questions about these Terms, please contact <a href="mailto:support@mindful.care">support@mindful.care</a>.
+		</p>
+
+	</div>
+</div>

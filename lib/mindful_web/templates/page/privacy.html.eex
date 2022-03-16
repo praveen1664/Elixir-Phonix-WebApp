@@ -1,0 +1,311 @@
+<div id="privacy-page" class="base-text-page legacy-page">
+	<div class="content-container">
+		<h1 class="has-text-centered text-2xl">Privacy Policy</h1>
+
+		<p>
+			Last Updated: January 5th, 2022
+		</p>
+
+		<p>
+			This Privacy Policy describes how Mindful Care, Inc. (“us,” “we,” “Mindful Care” or “our”) collects, uses, and discloses your personal information on the websites and mobile applications where this Privacy Policy appears or is referenced (the “Platform”). This Privacy Policy is only applicable to the Platform. Please read this Privacy Policy carefully so that you understand our privacy practices. By providing personal information (as defined herein) to us or by using the Platform, you acknowledge the Privacy Policy, and you are consenting to the collection, use, and disclosure of that information in accordance with this Privacy Policy. The Platform and the information provided in this Privacy Policy is solely intended for residents within the United States of America including the territories thereof.
+		</p>
+
+		<p>
+			If any information collected on the Platform constitutes Protected Health Information (“PHI”) as defined under the Health Insurance Portability and Accountability Act of 1996 (“HIPAA”), then our <%= link "Notice of Privacy Practices", to: Routes.page_path(@conn, :privacy_notice) %> (“NPP”) will apply to that information. In the event of a conflict between this Privacy Policy and the NPP, the NPP shall apply.
+		</p>
+
+		<p>
+			When you use the Platform, you acknowledge that you have read and understand this Privacy Policy. Your access to and use of the Platform is subject to the <%= link "Terms of Use", to: Routes.page_path(@conn, :terms) %>. For additional information regarding the Platform’s payment terms of service, please <%= link "click here", to: Routes.page_path(@conn, :policies) <> "#payment-consent" %>.
+		</p>
+
+		<p>
+			This Privacy Policy includes the following sections. We recommend that you read the entire Privacy Policy, but you may use the links below to be directed to any specific information you are seeking:
+		</p>
+
+		<ul class="space-y-3 mb-6">
+			<li>
+				<a href="#section1">1. What personal information we collect</a>
+			</li>
+
+			<li>
+				<a href="#section2">2. How we use personal information</a>
+			</li>
+
+			<li>
+				<a href="#section3">3. Sources from which we collect personal information</a>
+			</li>
+
+			<li>
+				<a href="#section4">4. We share personal information with others</a>
+			</li>
+
+			<li>
+				<a href="#section5">5. You have choices about how we use your personal information</a>
+			</li>
+
+			<li>
+				<a href="#section6">6. Personal information collected from children</a>
+			</li>
+
+			<li>
+				<a href="#section7">7. Security</a>
+			</li>
+
+			<li>
+				<a href="#section8">8. Links to third-party websites and services</a>
+			</li>
+
+			<li>
+				<a href="#section9">9. Contact us</a>
+			</li>
+
+			<li>
+				<a href="#section10">10. We may update this Privacy Policy</a>
+			</li>
+		</ul>
+
+		<p class="underline text-center text-lg">
+			<a id="section1"></a>
+			SECTION 1: What personal information we collect
+		</p>
+
+		<p>
+			Personal information is any information that can be used to identify you. Mindful Care (and the vendors and other third parties we use to perform services on our behalf) collects, receives, and develops several categories of personal information about you depending on the nature of your interactions with us.
+		</p>
+
+		<p>
+			We collect Contact Information and Other Identifiers. For example, we might collect your name, email address, phone number, mailing address, your Platform login ID, or IP address.
+		</p>
+
+		<p>
+			We collect Commercial, Customer Records, and Preference Information. For example, we may collect information about which types of services you’re interested in, your purchasing tendencies and order history (such as the therapy sessions you purchase), your participation in promotional events or other programs, and your preferences. We also collect your comments, reviews, questions, and suggestions that you submit to us.
+		</p>
+
+		<p>
+			We collect Device, Internet and Network Activity Information. When you use or access the Platform, we may collect information about the browser, device and operating system you are using, device identifiers, MAC address, and your IP address. We might collect information about the site you came from, or the site you visit when you leave us. We may collect site interaction information and other electronic communications and content from your use of the Platform (such as the date, time, and location of your visit, content entry, mouse movements, screen captures, what areas of the Platform you visit and for how long, what search terms or other data you enter, and what services, content, and links you view and click on). We may also embed technologies (which may include, for example, web beacons, tags, scripts, and pixels) in the emails and other communications we or our vendors send to you to help us understand how you interact with those messages, such as whether and when you opened a message or clicked on any content within the message. We may engage or otherwise permit other parties to also collect information in these ways.
+		</p>
+
+		<p>
+			We collect Location Information. We collect information about your location when you use the Platform, using your IP address. We may also collect your zip code, state of residence, and mailing address, such as when you search for providers near you. With your consent, we may collect precise location data through our mobile applications.
+		</p>
+
+		<p>
+			We collect Demographic Information. For example, we may collect your date of birth, gender, race, ethnicity, medical history, disability status, and similar information to tailor our therapeutic services to you and improve the quality of such services.
+		</p>
+
+		<p>
+			We collect Billing and Payment Information. We, or our vendors, may collect information about your medical insurance for billing purposes. We or our vendors may also collect your credit or debit card information, or other payment details if you make a payment for services. <%= link "Click here", to: Routes.page_path(@conn, :policies) <> "#payment-consent" %> for our payment terms of service.
+		</p>
+
+		<p>
+			We collect Employment-Related Information. In conjunction with certain events and promotions, we may collect your company name and job title. If you apply for a job, we collect information you submit as part of your application and resume. This might include your work experience and previous employment, the job(s) you are interested in, and your certifications. We may also conduct a credit check, background check, and/or employment verification to the extent permitted by applicable law.
+		</p>
+
+		<p>
+			We collect Audio/Visual Information. For example, we may record video or audio during therapy sessions with your prior consent.
+		</p>
+
+		<p>
+			We collect and develop Inferences. Using the other pieces of personal information collected about you, we may draw inferences about you, reflecting what we believe to be your preferences, characteristics, predispositions, and attitudes.
+		</p>
+
+		<p>
+			We collect Information You Submit or Provide. For example, we collect feedback and any other information you provide when you contact us.
+		</p>
+
+		<p class="underline text-center text-lg">
+			<a id="section2"></a>
+			SECTION 2: How we use personal information
+		</p>
+
+		<p>
+			We use the above-referenced categories of personal information for the following purposes:
+		</p>
+
+		<p>
+			We use information to provide you with services and fulfill and process transactions.
+		</p>
+
+		<p>
+			We use information for marketing purposes. For example, we might use personal information to provide you with information and updates about our services, promotions, special offers, and new services. These might be our own offers or products, or third-party offers or products we think you might find interesting. We may use information to serve you content and ads that we think you may be interested in. To learn about your choices for these communications, read <a href="#section5">Section 5</a> below.
+		</p>
+
+		<p>
+			We use information to communicate with you about our relationship. For instance, we will use your information to provide support and to respond to your requests or questions. We may use information to contact you in response to your feedback or to communicate other matters related to our relationship with you (such as about updates to this Privacy Policy or our Terms of Use).
+		</p>
+
+		<p>
+			We use information to test, analyze, develop, improve, and provide the Platform and our services. For example, we may use your information to make improvements to the functionality or operation of the Platform. We might use your information to customize your experience with us and to conduct research and analysis. We might use your information and feedback to change or improve the services we offer. We might conduct research with your information to assist with our overall business planning and operations.
+		</p>
+
+		<p>
+			We use information to comply with our obligations, administer the Platform, and for internal operations. For example, we use personal information to administer the Platform, such as troubleshooting, data analysis, and testing.
+		</p>
+
+		<p>
+			We use information for security, safety, and due diligence purposes. For example, we may use personal information to protect our company, customers, and business partners and their respective personnel. We may also use personal information to protect the Platform, as well as to detect and investigate activities that may be fraudulent, or otherwise illegal or prohibited (such as cyber-attacks, spam or phishing attempts, or fraudulent transactions or activities). We may also use information to conduct background, employment, and credit checks.
+		</p>
+
+		<p>
+			We use information for hiring purposes. If you submit a job application, we will use any related information to review your job applications and contact you about employment opportunities. If you choose to voluntarily submit your ethnicity, gender, disability status, and/or veteran status in connection with a job application, we will use that information for statistical tracking purposes (not for hiring decisions), in accordance with applicable law.
+		</p>
+
+		<p>
+			We use information for verification purposes. For example, we will use certain pieces of personal information to verify your identity if you make requests pursuant to this Privacy Policy. The verification steps and the pieces of personal information that we request may vary depending on the sensitivity and nature of your request. To access areas of the Platform reserved for account holders, we will use your information to authenticate your login attempt.
+		</p>
+
+		<p>
+			We use information as otherwise required or permitted by law, or as we may notify you. For instance, we use your information for general compliance purposes and to operate our business on a day-to-day basis.
+		</p>
+
+		<p>
+			We may use personal information to create deidentified or aggregated data which does not identify you or any other individual from whom such information is derived, or from which your identity cannot reasonably be ascertained. We may use and disclose this anonymous or aggregated data as we choose, including without limitation for commercial and/or research-based purposes.
+		</p>
+
+		<p class="underline text-center text-lg">
+			<a id="section3"></a>
+			SECTION 3: Sources from which we collect personal information
+		</p>
+
+		<p>
+			We and our vendors collect personal information about you from various sources, directly and indirectly, including from the following sources:
+		</p>
+
+		<p>
+			We collect personal information directly from you. For example, we collect information if you create an account, participate in a promotion or other program, contact us, sign up for our communications, send feedback, make a request, or complete a survey. We also collect and receive information if you request an appointment through one of our providers, fill out patient forms, or pay for services. We also obtain information, including health-related information, that you reveal to your therapist during sessions on the Platform. If you apply for a job, we will collect any information you provide with your application.
+		</p>
+
+		<p>
+			We collect personal information from your devices. We use tracking tools including but not limited to browser cookies, scripts, and web beacons to automatically collect information about you and your devices. We collect information using these tracking tools when you interact with the Platform or the emails that we or our vendors send to you. To learn about your choices for these tracking tools, read <a href="#section5">Section 5</a> of this Privacy Policy.
+		</p>
+
+		<p>
+			We receive personal information from vendors we hire to work on our behalf. For example, vendors that host or maintain the Platform, process payments, or send promotional emails for us may give us information. Our employment and recruiting vendors also give us information. Our marketing agencies, advertising technology vendors, and analytics providers may also provide us with information.
+		</p>
+
+		<p>
+			We receive information about you from other sources. Other parties may give us personal information about you. These other parties might also include business and marketing partners, network providers, and social media platforms that give us information they have collected either directly or indirectly from you. In the context of job applications, we may also receive personal information from your current or past employers, background check providers, and record verification providers, State regulatory bodies, and if you choose to import your information from a job network or social network, we will get information from those networks as well.
+		</p>
+
+		<p>
+			We combine information. We may combine information that we have collected offline with information we collect online. Or, we may combine information we get from another party with information we already have. We may also aggregate your information with other individuals’ information to understand preferences and trends over time, including without limitation for commercial and research-based purposes.
+		</p>
+
+		<p class="underline text-center text-lg">
+			<a id="section4"></a>
+			SECTION 4: We share personal information with other parties
+		</p>
+
+		<p>
+			We may share personal information within Mindful Care. This includes our affiliates, providers, and business units. We share personal information within Mindful Care for all purposes described in this Privacy Policy. We limit sharing of PHI as described in the NPP.
+		</p>
+
+		<p>
+			We share your personal information with vendors and service providers who perform services on our behalf. We may share personal information with vendors who assist us with the uses of personal information described in this Privacy Policy. This may include vendors who send emails for us, help us manage and operate the Platform, provide advertising or marketing services for us, provide payment processing services, place our advertisements on other platforms, provide analytics and search engine support, track advertising impressions, investigate unlawful activity, inspect and prevent data incidents, provide physical and digital security services, audit our business and financial statements, vet job applicants, and provide legal advice.
+		</p>
+
+		<p>
+			We share your personal information with our business partners and for marketing purposes. We might share information with third parties who co-sponsor a promotion or promote our services. Some of these partners may send you information about products or services by mail or email. They may share your information with other third parties. We may also share information with companies that help us with our marketing efforts, including social media platforms, advertising networks, and ad tech companies. For example, we may share email addresses or other contact information with social media platforms so they can serve our advertising to you on their platform. We may share information with other parties so that they can provide you with information and marketing messages about products or services that may interest you. These parties may use the information for their own marketing purposes or the marketing purposes of others. Personal information received by our partners and other parties may also be subject to their privacy policies.
+		</p>
+
+		<p>
+			We will share your personal information for safety and security purposes, if we think we have to in order to comply with the law, or to protect ourselves, our customers, and others. We may share any or all personal information to respond to a court order or subpoena. We may also share any or all personal information if a government agency or investigatory body requests it. We might share your personal information in order to enforce our agreements and to protect our rights and/or the rights of others. We might share your personal information when we are investigating potential fraud.
+		</p>
+
+		<p>
+			We may share your personal information with a successor to all or part of our business. If part of our business (including any of our affiliates, divisions, and business units) is acquired by a third party, we may include personal information as part of that transaction and/or the negotiation and diligence related to that transaction, which may include some or all categories of your personal information. We may also share your personal information if there is a change to our corporate structure. We may also share your information with others as they conduct diligence.
+		</p>
+
+		<p>
+			We may share personal information for other reasons we may describe to you from time to time or as permitted or required by law.
+		</p>
+
+		<p class="underline text-center text-lg">
+			<a id="section5"></a>
+			SECTION 5: You have choices about how we use your personal information
+		</p>
+
+		<p>
+			You can opt out of receiving our marketing emails. To stop receiving our promotional emails, you can follow the instructions in any promotional message you get from us, which may direct you to click an “unsubscribe” link within the email itself. Even if you opt out of getting marketing messages, we will still send you transactional messages. These include responses to your questions.
+		</p>
+
+		<p>
+			You can control certain cookies and tracking tools.
+		</p>
+
+		<ul class="space-y-4 mb-6">
+			<li>
+				Your Internet browser may give you the ability to control cookies or other tracking tools. How you do so depends on the type of tool. Certain browsers can be set to reject browser cookies. See the “help” section of your particular web browser for more details on rejecting, blocking, and deleting cookies.
+			</li>
+
+			<li>
+				We and third-party advertising networks, social media companies, and other services may collect information about your use of the Platform so that they or we may display interest-based advertising using information gathered about you over time across multiple websites or other platforms. To do this, we and our vendors use several tracking tools, such as browser cookies, web beacons, and other technologies. You can visit www.aboutads.info/choices and https://optout.privacyrights.info/ to opt out of certain uses of cookies for advertising purposes.
+			</li>
+
+			<li>
+				We use Google Analytics to better understand how our users interact with our websites. You can learn about Google Analytics’ currently available opt-outs at https://tools.google.com/dlpage/gaoptout/.
+			</li>
+		</ul>
+
+		<p>
+			Please note that options you select and choices you make with regard to cookies and tracking tools are browser- and device-specific. This means, for instance, that you need to make your selection on each browser and each device you use to access the Platform. If you clear your cookies or your browser’s cache, you will need to set your preferences again. If you block cookies, certain functionality of the Platform may become impaired or disabled.
+		</p>
+
+		<p>
+			Our “Do Not Track” Policy. Some browsers have “do not track” features that allow you to tell a website not to track you. These features are not all uniform. We do not currently respond to those signals. If you block cookies, certain features on our site may not work. If you block or reject cookies, not all of the tracking described here will stop.
+		</p>
+
+		<p class="underline text-center text-lg">
+			<a id="section6"></a>
+			SECTION 6: Personal information collected from children
+		</p>
+
+		<p>
+			The Platform is directed to adults, but may be used by minors with the consent of their parents and/or legal guardians. We do not knowingly collect personal information from children under 18 without consent from a parent or guardian. If you are a parent or legal guardian and think your child has given us information without your consent, you can contact us at <a href="mailto:support@mindful.care">support@mindful.care</a>.
+		</p>
+
+		<p class="underline text-center text-lg">
+			<a id="section7"></a>
+			SECTION 7: Security
+		</p>
+
+		<p>
+			The Internet is not 100% secure. We cannot promise that your use of the Platform will be completely safe. Any transmission of your data to the Platform is at your own risk. We encourage you to use caution when using the Internet. We keep personal information as long as it is necessary or relevant for the practices described in this Privacy Policy, including, for example, for legal compliance, dispute resolution, contract enforcement, backup, archival, and other internal operations purposes. We also keep information as otherwise required by law. Personal information may be accessed by persons within our organization, or our third-party vendors, and those other parties described in this Privacy Policy, including those who require such access to carry out the purposes described in this Privacy Policy, and such other purposes as permitted or required by applicable law.
+		</p>
+
+		<p class="underline text-center text-lg">
+			<a id="section8"></a>
+			SECTION 8: Links to third-party websites or services
+		</p>
+
+		<p>
+			If you click on a link to a third-party website, you will be taken to a website or service we do not control. This Privacy Policy does not apply to the privacy practices of that website or service, which may collect information from you. Read the privacy policies of other websites and services carefully. We are not responsible for these third-party websites or services or their policies.
+		</p>
+
+		<p class="underline text-center text-lg">
+			<a id="section9"></a>
+			SECTION 9: Contact us
+		</p>
+
+		<p>
+			If you have any comments, concerns, complaints, or questions regarding our Privacy Policy or the Platform, please contact us at <a href="mailto:support@mindful.care">support@mindful.care</a>. You may send mail to us at:
+		</p>
+
+		<p>
+			Mindful Care, Inc.<br>
+			Attn: IT Department<br>
+			510 Hempstead Turnpike #203<br>
+			West Hempstead, NY 11552
+		</p>
+
+		<p class="underline text-center text-lg">
+		<a id="section10"></a>
+			SECTION 10: We may update this Privacy Policy
+		</p>
+
+		<p>
+			From time to time we may change this Privacy Policy. We will notify you of any material changes to our Privacy Policy to the extent required by law. We will post an updated copy on the Platform. Please check the Platform periodically for updates. Your continued use of the Platform means that you consent to the collection, use and disclosure of your personal information as set out in the updated Privacy Policy.
+		</p>
+
+	</div>
+</div>

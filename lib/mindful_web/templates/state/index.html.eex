@@ -1,0 +1,87 @@
+<div id="locations-page" class="locations-fam legacy-page">
+  <div class="h-banner">
+    <h1 class="has-text-centered">Our Locations</h1>
+  </div>
+
+  <div class="states-container">
+    <%= for state <- @states do %>
+      <%= link to: Routes.state_path(@conn, :show, state), class: "tile" do %>
+        <img src="<%= MindfulWeb.SharedView.thumbnail_url(state.image_path) %>">
+
+        <%= if state.coming_soon do %>
+          <div class="soon-text">COMING SOON</div>
+        <% end %>
+
+        <div class="state-name">
+          <%= state.name %>
+        </div>
+      <% end %>
+    <% end %>
+    <div class="tile no-state has-text-centered">
+      <div>
+        <div class="q">
+          Don't see your state? <span class="nowrap">What state do</span> <span class="nowrap">you live in?</span>
+        </div>
+        <select class="btn btn-white has-text-centered" onchange="window.location = this.options[this.selectedIndex].value">
+          <option value="">Choose state</option>
+          <option value="/premarket?state=AL">Alabama</option>
+          <option value="/premarket?state=AK">Alaska</option>
+          <option value="/premarket?state=AZ">Arizona</option>
+          <option value="/premarket?state=AR">Arkansas</option>
+          <option value="/premarket?state=CA">California</option>
+          <option value="/premarket?state=CO">Colorado</option>
+          <option value="/premarket?state=CT">Connecticut</option>
+          <option value="/premarket?state=DE">Delaware</option>
+          <option value="/premarket?state=DC">District of Columbia</option>
+          <option value="/premarket?state=FL">Florida</option>
+          <option value="/premarket?state=GA">Georgia</option>
+          <option value="/premarket?state=GU">Guam</option>
+          <option value="/premarket?state=HI">Hawaii</option>
+          <option value="/premarket?state=ID">Idaho</option>
+          <option value="/premarket?state=IN">Indiana</option>
+          <option value="/premarket?state=IA">Iowa</option>
+          <option value="/premarket?state=KS">Kansas</option>
+          <option value="/premarket?state=KY">Kentucky</option>
+          <option value="/premarket?state=LA">Louisiana</option>
+          <option value="/premarket?state=ME">Maine</option>
+          <option value="/premarket?state=MD">Maryland</option>
+          <option value="/premarket?state=MA">Massachusetts</option>
+          <option value="/premarket?state=MI">Michigan</option>
+          <option value="/premarket?state=MN">Minnesota</option>
+          <option value="/premarket?state=MS">Mississippi</option>
+          <option value="/premarket?state=MO">Missouri</option>
+          <option value="/premarket?state=MT">Montana</option>
+          <option value="/premarket?state=NE">Nebraska</option>
+          <option value="/premarket?state=NV">Nevada</option>
+          <option value="/premarket?state=NH">New Hampshire</option>
+          <option value="/premarket?state=NM">New Mexico</option>
+          <option value="/premarket?state=NC">North Carolina</option>
+          <option value="/premarket?state=ND">North Dakota</option>
+          <option value="/premarket?state=MP">Northern Mariana Is</option>
+          <option value="/premarket?state=OH">Ohio</option>
+          <option value="/premarket?state=OK">Oklahoma</option>
+          <option value="/premarket?state=OR">Oregon</option>
+          <option value="/premarket?state=PA">Pennsylvania</option>
+          <option value="/premarket?state=PR">Puerto Rico</option>
+          <option value="/premarket?state=RI">Rhode Island</option>
+          <option value="/premarket?state=SC">South Carolina</option>
+          <option value="/premarket?state=SD">South Dakota</option>
+          <option value="/premarket?state=TN">Tennessee</option>
+          <option value="/premarket?state=TX">Texas</option>
+          <option value="/premarket?state=UT">Utah</option>
+          <option value="/premarket?state=VT">Vermont</option>
+          <option value="/premarket?state=VA">Virginia</option>
+          <option value="/premarket?state=VI">Virgin Islands</option>
+          <option value="/premarket?state=WA">Washington</option>
+          <option value="/premarket?state=WV">West Virginia</option>
+          <option value="/premarket?state=WI">Wisconsin</option>
+          <option value="/premarket?state=WY">Wyomin</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

@@ -1,0 +1,130 @@
+<div id="new-post" class="be-form-page legacy-page">
+	<div class="breadcrumbs">
+		<%= link "BLOG", to: Routes.post_path(@conn, :index) %>
+		<span>/</span>
+		NEW
+	</div>
+
+	<div class="dec-sig">
+		<img src="https://files.mindful.care/images/gold_watercolor_smear.png">
+	</div>
+
+	<section class="form-container">
+		<h1>Add Blog Post</h1>
+
+		<div class="form-top-wave">
+			<img src="https://files.mindful.care/images/be_form_wave_div.svg">
+		</div>
+		<%= form_for @changeset,  Routes.post_path(@conn, :create), [multipart: true], fn f -> %>
+		  <%= if @changeset.action do %>
+		    <div class="alert alert-danger">
+		      <p>Oops, something went wrong! Please check the errors below.</p>
+		    </div>
+		  <% end %>
+
+		  <fieldset>
+		  	<div>
+			  	<%= label f, :title, "Title *" %>
+			  	<%= text_input f, :title, placeholder: "e.g. October Mental Healt Monthly", required: true %>
+			  </div>
+		  	<div class="error-info">
+		  		<%= error_tag f, :title %>
+		  		<%= error_tag f, :slug %>
+		  	</div>
+		  </fieldset>
+
+		  <fieldset>
+		  	<div>
+			  	<%= label f, :subtitle %>
+			  	<%= text_input f, :subtitle %>
+			  </div>
+		  	<div class="error-info">
+		  		<%= error_tag f, :subtitle %>
+		  	</div>
+		  </fieldset>
+
+		  <fieldset>
+		  	<div>
+			  	<%= label f, :published_at %>
+			  	<%= date_input f, :published_at %>
+			  </div>
+		  	<div class="error-info">
+		  		<%= error_tag f, :published_at %>
+		  	</div>
+		  </fieldset>
+
+		  <fieldset>
+		  	<div>
+			  	<%= label f, :body, "Body *" %>
+			  </div>
+			  <div class="markdown-help has-text-gray">
+			  	The field below uses <a href="https://www.markdownguide.org/basic-syntax/" target="_blank">markdown</a> to convert text into page content.
+			  </div>
+
+			  <div class="control">
+			  	<%= textarea f, :body, rows: 12, required: true, placeholder: "# This is Headline Text \n\nThis is paragraph text. Lorem ipsum mattis, enim eu consectetur vulputate, lacus odio maximus purus, non pharetra urna dolor sit amet velit." %>
+		  	</div>
+		  	<div class="error-info">
+		  		<%= error_tag f, :body %>
+		  	</div>
+		  </fieldset>
+
+		  <fieldset>
+		  	<span>Upload image * <small class="has-text-gray">(min. width 1200px)</small></span>
+		  	<div class="current-img-container">
+		  		<img id="selected-state-image" src="<%= @changeset.changes[:pic_path] %>">
+		  	</div>
+		  	<%= label f, :post_image, class: "upload-label" do %>
+		  		<div class="file-upload-block has-text-centered">
+			  		<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" display="block" id="CloudUpload"><path d="M12 12v9m0-9l-2.5 2m2.5-2l2.5 2"/><path d="M5.034 9.117A4.002 4.002 0 0 0 6 17h1"/><path d="M15.83 7.138a5.5 5.5 0 0 0-10.796 1.98S5.187 10 5.5 10.5"/><path d="M17 17a5 5 0 1 0-1.17-9.862L14.5 7.5"/></svg>
+			  		<div id="file-label-text">
+			  			<%= if @changeset.changes[:pic_path] do %>
+			  				File selected
+			  			<% else %>
+			  				Choose a file
+			  			<% end %>
+			  		</div>
+			  		<span>max. file size 7 mb</span>
+			  		<%= file_input f, :post_image, accept: "image/png, image/jpeg", onChange: "fileAdded(this)" %>
+			  	</div>
+		  	<% end %>
+			  <%= hidden_input f, :pic_path %>
+			  <div class="error-info">
+			  	<%= error_tag f, :pic_path %>
+			  </div>
+		  </fieldset>
+
+
+		  <div class="submit-container">
+		    <%= submit "CREATE POST", class: "btn btn-med" %>
+		    <%= link "CANCEL", to: Routes.user_path(@conn, :dash) %>
+		  </div>
+		<% end %>
+
+	</section>
+</div>
+
+<script>
+	// Validate and update post image file upload field when a file is selected for upload
+	function fileAdded(object) {
+		var file = object.files[0];
+
+		if(file.size > 8000000) {
+      alert("File is too big!");
+      this.value = "";
+    } else {
+    	var labelText = document.getElementById("file-label-text");
+			labelText.innerHTML = "File selected";
+
+			// Place newly uploaded image in place of old image
+			// FileReader support
+	    if (FileReader) {
+        var fr = new FileReader();
+        fr.onload = function () {
+          document.getElementById("selected-state-image").src = fr.result;
+        }
+        fr.readAsDataURL(file);
+	    }
+    };
+	}
+</script>

@@ -1,0 +1,70 @@
+<div id="post-page" class="blog-post legacy-page">
+	<div class="paintcrumb has-text-centered">
+		<img src="https://files.mindful.care/images/pinkishbgsmearsmall.png">
+		<div>
+			<%= link "BLOG", to: Routes.post_path(@conn, :index) %>
+		</div>
+	</div>
+
+	<div class="wave-topper">
+		<img src="https://files.mindful.care/images/testimonials_wave_topper.svg">
+	</div>
+
+	<section class="b-hero has-text-centered">
+		<div class="wrapper">
+			<div class="date">
+				<small class="has-text-gray">
+					<strong><%= Calendar.strftime(@post.published_at, "%b %-d, %Y") %></strong>
+				</small>
+      </div>
+			<h1><%= @post.title %></h1>
+			<div class="subtitle"><%= @post.subtitle %></div>
+		</div>
+		<div class="img-container">
+			<img src="<%= VH.uploaded_img_url(@post.pic_path) %>">
+		</div>
+	</section>
+
+	<section class="content">
+		<%= VH.blob_to_html(@post.body) %>
+	</section>
+
+	<%= if VH.is_admin?(@current_user) do %>
+		<div class="post-opts has-text-centered">
+      <%= link to: Routes.post_path(@conn, :edit, @post), class: "lb-link" do %>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Edit"><path d="M16.474 5.408l2.118 2.117m-.756-3.982L12.109 9.27a2.118 2.118 0 0 0-.58 1.082L11 13l2.648-.53c.41-.082.786-.283 1.082-.579l5.727-5.727a1.853 1.853 0 1 0-2.621-2.621z"/><path d="M19 15v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3"/></svg>
+        edit post
+      <% end %>
+
+      <%= link to: Routes.post_path(@conn, :delete, @post), method: :delete, data: [confirm: "Are you sure you want to delete this post?"], class: "red-link" do %>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="TrashCan"><path d="M4 6h16l-1.58 14.22A2 2 0 0 1 16.432 22H7.568a2 2 0 0 1-1.988-1.78L4 6z"/><path d="M7.345 3.147A2 2 0 0 1 9.154 2h5.692a2 2 0 0 1 1.81 1.147L18 6H6l1.345-2.853z"/><path d="M2 6h20"/><path d="M10 11v5"/><path d="M14 11v5"/></svg>
+        delete post
+      <% end %>
+    </div>
+	<% end %>
+
+	<div class="ribbon-sep">
+		<img src="https://files.mindful.care/images/watercolorbrightribbon.png">
+	</div>
+
+	<section class="very-bot">
+		<div class="article-cta">
+			<div class="wrapper">
+				<h4 class="has-text-right">
+					Mindful Care offers telepsychiatry appointments for patients in IL, NJ and NY
+				</h4>
+				<div class="link-container">
+					<%= link "SCHEDULE TODAY", to: Routes.page_path(@conn, :schedule), class: "btn btn-white nowrap" %>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-link-container has-text-centered">
+			Have a question?
+			<%= link to: Routes.page_path(@conn, :faqs) do %>
+				See our <span class="nowrap">frequently asked questions</span>
+			<% end %>
+		</div>
+	</section>
+
+</div>

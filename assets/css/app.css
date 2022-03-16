@@ -1,0 +1,32 @@
+/* This file is for your main application CSS */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "stripe_form.css";
+@import "keyframes.css";
+@import "legacy_style.css";
+
+
+@layer base {
+  html {
+    @apply font-montserrat;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-lora;
+  }
+  a {
+    @apply text-indigo-600 transition-colors duration-300 hover:text-indigo-500;
+  }
+}
+
+#spinner {
+  display: none;
+  border: .5rem solid #cfd7df;
+  border-radius: 50%;
+  border-top: .5rem solid #32325d;
+  width: 42px;
+  height: 42px;
+  -webkit-animation: spinner 1s linear infinite;
+  animation: spinner 1s linear infinite;
+  margin: 0 auto;
+}

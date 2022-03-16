@@ -1,0 +1,10 @@
+<p>
+  Hi,<br><br>
+
+  You can change your email by visiting the URL below:<br>
+  <a href="<%= @url %>" target="_blank"><%= @url %></a>
+</p>
+
+<p>
+  If you didn't request this change, please ignore this.
+</p>

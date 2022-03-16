@@ -1,0 +1,54 @@
+<div id="covid-page" class="base-text-page legacy-page">
+
+	<div>
+		<h1>
+			Covid-19 Update
+		</h1>
+		<p>
+			Dear Patients,
+		</p>
+		<p>
+			Your safety and well-being are our top priority, and we are committed to making decisions that are in your best interest. In response to Governor Andrew Cuomo’s statements yesterday and the current nationwide state of emergency declared by President Trump, Mindful Care will suspend all brick-and-mortar operations effective Monday, March 16, 2020.
+		</p>
+		<p>
+			The Mindful Care team is working hard to ensure that there is no disruption in your care. Effective Monday, March 16, 2020 patient care will transition entirely to telehealth video-conferencing until further notice. This service will be provided at no additional cost beyond your standard copay, if applicable.
+		</p>
+		<p>
+			If you have an upcoming appointment, a member of our team will contact you in the near future with instructions and next steps regarding logging into your video session.
+		</p>
+		<p>
+			For new patients, request an appointment on our site and a member of our team will reach out to you to confirm your appointment.
+		</p>
+		<p>
+			Please be sure to review our channels over the next few days as we navigate this unprecedented and challenging situation. Thank you for your patience and understanding.
+		</p>
+		<p>
+			Stay safe and healthy!
+		</p>
+		<p>
+			Sincerely,
+		</p>
+		<p>
+			Ramsing Pardeshi, MD<br>
+			Medical Director
+		</p>
+	</div>
+
+
+	<div class="has-text-centered">
+		<%= link "SCHEDULE NOW", to: Routes.page_path(@conn, :schedule), class: "btn btn-grn-gradient" %>
+	</div>
+
+	<div>
+		<h3>
+			Mental Health & COVID-19:<br>
+			<strong>A Guide to Staying Healthy and Connected</strong>
+		</h3>
+		<p>
+			We are here for you at Mindful Care and anticipate your mental health needs now more than ever, as we feel trapped inside our own homes day after day. We would like to share some self-care and wellness recommendations for you, your families, colleagues, and friends that are positive ways to cope.
+		</p>
+		<div>
+			<%= link "Read More", to: "https://mindful.care/blog/mental-health-covid-19-a-guide-to-staying-healthy-and-connected", class: "btn btn-med btn-white" %>
+		</div>
+	</div>
+</div>

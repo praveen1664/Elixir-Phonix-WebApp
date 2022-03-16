@@ -1,0 +1,58 @@
+<div id="schedule-page" class="legacy-page">
+	<div class="wrapper">
+		<h1 class="has-text-centered">
+			Schedule an Appointment
+		</h1>
+		<%= if @show_part_2? do %>
+			<div id="spinner"></div>
+			<div id="part-2">
+				<script type="text/javascript" src="https://hipaa.jotform.com/jsform/212364228779161"></script>
+			</div>
+		<% else %>
+			<div id="prompt-container">
+				<div class="q-text has-text-centered">
+					Are you a new patient?
+				</div>
+				<div id="pt-type-opts">
+					<%= link "Yes", style: "padding-right: 2rem", to: Routes.onboarding_registration_path(@conn, :registration) %>
+					<%= link "No", to: Routes.user_session_path(@conn, :new) %>
+				</div>
+			</div>
+			<div id="existing-pres" class="has-text-centered">
+				<p>
+					Returning patients, please email <a href="mailto:support@mindful.care">support@mindful.care</a> or call us at <a class="nowrap" href="tel:15165057200">516-505-7200</a> to schedule an appointment.
+				</p>
+			</div>
+			<div id="new-pres" class="has-text-centered">
+				<div class="jf-container">
+					<script type="text/javascript" src="https://hipaa.jotform.com/jsform/203558207290151"></script>
+				</div>
+			</div>
+		<% end %>
+	</div>
+	<div class="pic-sep has-text-centered">
+		<img src="https://files.mindful.care/images/paintedwavespiral.png">
+	</div>
+</div>
+
+<script>
+	var promptContainer = document.getElementById("prompt-container");
+	var existingPres = document.getElementById("existing-pres");
+	var newPres = document.getElementById("new-pres");
+
+	function presentNew() {
+		promptContainer.style.display = "none";
+		newPres.style.display = "block";
+	}
+
+	// show spinner for part 2 at first to give Jotform time to load
+	var part2 = document.getElementById("part-2");
+	var spinner = document.getElementById("spinner");
+
+	if (part2) {
+		setTimeout(function() {
+			spinner.style.display = "none";
+			part2.style.opacity = "1";
+		}, 4000);
+	};
+</script>

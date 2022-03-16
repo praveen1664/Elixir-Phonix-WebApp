@@ -1,0 +1,344 @@
+<div id="state-page" class="locations-fam legacy-page">
+  <div class="h-banner" style="background-image: linear-gradient(to right, #f4f4f4, rgba(244, 244, 244, 0.25)), url(<%= VH.uploaded_img_url(@state.image_path) %>);">
+    <div class="t-container">
+      <div class="pretext">
+        Mental Health Offices in
+      </div>
+      <h1><%= @state.name %></h1>
+      <div class="dec-paint">
+        <img src="https://files.mindful.care/images/black_paint_dash.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="breadcrumbs has-text-centered">
+    <div id="share-btn-container">
+      <button class="btn btn-small btn-white" onclick="showShareLinks()">SHARE THIS PAGE</button>
+    </div>
+    <div id="share-links">
+      <%= linkedin_link(@conn, @state) %>
+      <%= tweet_link(@conn, @state) %>
+      <%= fb_link(@conn, @state) %>
+    </div>
+  </div>
+
+  <div class="description has-text-centered">
+    <%= text_to_html(@state.description) %>
+  </div>
+
+  <%= if VH.is_admin?(@current_user) do %>
+    <div class="admin-state-opts">
+      <div class="opt has-text-centered">
+        <%= link to: Routes.state_path(@conn, :edit, @state) do %>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Pencil"><path d="M4.333 16.048L16.57 3.81a2.56 2.56 0 0 1 3.62 3.619L7.951 19.667a2 2 0 0 1-1.022.547L3 21l.786-3.93a2 2 0 0 1 .547-1.022z"/><path d="M14.5 6.5l3 3"/></svg>
+          <strong>
+            Edit<br>
+            state
+          </strong>
+        <% end %>
+      </div>
+      <div class="opt has-text-centered">
+        <%= link to: Routes.state_path(@conn, :delete, @state), method: :delete, data: [confirm: "Are you sure you want to delete #{@state.name}?"], class: "red-link" do %>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="TrashCan"><path d="M4 6h16l-1.58 14.22A2 2 0 0 1 16.432 22H7.568a2 2 0 0 1-1.988-1.78L4 6z"/><path d="M7.345 3.147A2 2 0 0 1 9.154 2h5.692a2 2 0 0 1 1.81 1.147L18 6H6l1.345-2.853z"/><path d="M2 6h20"/><path d="M10 11v5"/><path d="M14 11v5"/></svg>
+          <strong>
+            Delete<br>
+            state
+          </strong>
+        <% end %>
+      </div>
+      <div class="opt has-text-centered">
+        <%= link to: Routes.office_path(@conn, :new, @state), class: "grn-link" do %>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Location"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8z"/></svg>
+          <strong>
+            Add<br>
+            office
+          </strong>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+
+  <%= if @state.coming_soon do %>
+    <div id="new-premarket-page">
+      <section class="has-text-centered">
+        <div>
+          <p>
+            Enter your email in the form below and <strong>we'll let you know as soon as we open in your state!</strong>
+          </p>
+
+          <%= form_for @conn, Routes.premarket_path(@conn, :create), [class: "premarket-form"], fn f -> %>
+          <%= email_input f, :email, placeholder: "Your email", required: true %>
+          <%= hidden_input f, :state_abbr, value: String.downcase(@state.abbr) %>
+          <%= submit "Notify me" %>
+
+          <div class="error-info">
+            <%= error_tag f, :email %>
+            <%= error_tag f, :state_abbr %>
+          </div>
+          <% end %>
+
+        </div>
+      </section>
+    </div>
+  <% else %>
+    <%= if Enum.empty?(@offices) do %>
+      <div class="has-text-centered">
+        <small class="has-text-gray">no offices added</small>
+      </div>
+    <% else %>
+      <section class="office-locations">
+        <div class="offices-list">
+          <%= for office <- @offices do %>
+            <div class="office-block">
+              <div class="name">
+                <%= link office.name, to: Routes.office_path(@conn, :show, @state, office), class: "black-link" %>
+              </div>
+              <div class="address-container">
+                <%= office.street %>
+                <%= if office.suite, do: office.suite %>
+                <br>
+                <%= office.city <> ", " <> String.upcase(office.state_abbr) <> " " <> office.zip %>
+              </div>
+              <div class="phone">
+                <%= link office.phone, to: "tel:" <> MindfulWeb.SharedView.callable_phone(office.phone), class: "lb-link" %>
+              </div>
+              <div class="learn-more">
+                <%= link to: Routes.office_path(@conn, :show, @state, office) do %>
+                  LEARN MORE
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronRight"><path d="M8 4l8 8-8 8"/></svg>
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+        <div class="map-container" id="map-side" data-offices="<%= MindfulWeb.SharedView.offices_to_datalist(@offices, @conn, @state) %>">
+          <div id="map"></div>
+        </div>
+      </section>
+    <% end %>
+  <% end %>
+</div>
+
+<script
+  src='https://maps.googleapis.com/maps/api/js?key=<%= Application.get_env(:mindful, :google_maps)[:api_key] %>&callback=initMap&libraries=&v=weekly'
+    async
+></script>
+
+<script>
+  // google maps integration
+  let map;
+  let bounds;
+  var mapEl = document.getElementById("map");
+  var stylesArray = [
+    {
+      "featureType": "poi.attraction",
+      "elementType": "labels",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.business",
+      "elementType": "labels",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.government",
+      "elementType": "labels",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.medical",
+      "elementType": "labels",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "labels",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.school",
+      "elementType": "labels",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.sports_complex",
+      "elementType": "labels",
+      "stylers": [
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "featureType": "poi",
+      "stylers": [
+        {
+          "hue": "#00FF6A"
+        },
+        {
+          "saturation": -1.0989010989011234
+        },
+        {
+          "lightness": 11.200000000000017
+        },
+        {
+          "gamma": 1
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "stylers": [
+        {
+          "hue": "#0078FF"
+        },
+        {
+          "saturation": -13.200000000000003
+        },
+        {
+          "lightness": 2.4000000000000057
+        },
+        {
+          "gamma": 1
+        }
+      ]
+    },
+    {
+      "featureType": "road.local",
+      "stylers": [
+        {
+          "hue": "#FF0300"
+        },
+        {
+          "saturation": -100
+        },
+        {
+          "lightness": 52
+        },
+        {
+          "gamma": 1
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
+      "stylers": [
+        {
+          "hue": "#FFC200"
+        },
+        {
+          "saturation": -61.8
+        },
+        {
+          "lightness": 45.599999999999994
+        },
+        {
+          "gamma": 1
+        }
+      ]
+    },
+    {
+      "featureType": "landscape",
+      "stylers": [
+        {
+          "hue": "#FFBB00"
+        },
+        {
+          "saturation": 43.400000000000006
+        },
+        {
+          "lightness": 37.599999999999994
+        },
+        {
+          "gamma": 1
+        }
+      ]
+    }
+  ]
+
+
+
+  function initMap() {
+    if(mapEl) {
+      bounds  = new google.maps.LatLngBounds();
+      map = new google.maps.Map(mapEl, {
+        // default location is New York
+        center: { lat: 40.730610, lng: -73.935242 },
+        zoom: 8,
+        maxZoom: 18,
+        streetViewControl: false,
+        mapTypeControl: false,
+        fullscreenControl: false,
+        styles: stylesArray
+      });
+
+      // data looks like: [["name", "lat", "lng", "path"]]
+      var offices_data = JSON.parse(document.getElementById("map-side").dataset.offices);
+      var geocoder = new google.maps.Geocoder();
+      var infowindow = new google.maps.InfoWindow();
+
+      for (var i = 0; i < offices_data.length; i++) {
+        let name = offices_data[i][0];
+        let path = offices_data[i][3];
+        let content = '<div class="has-text-centered" style="line-height:1.75;"><h3>' + name + '</h3><a href="' + path + '">view location</a></div>'
+        let loc = new google.maps.LatLng(offices_data[i][1], offices_data[i][2]);
+
+
+        let marker = new google.maps.Marker({
+          map: map,
+          position: loc,
+          title: name,
+          color: "blue"
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(content);
+          infowindow.open(map, marker);
+        });
+
+
+        bounds.extend(loc);
+        if(offices_data.length == 1) { map.setCenter(loc); }
+        if(offices_data.length > 1) {
+          map.fitBounds(bounds);
+        }
+        map.panToBounds(bounds);
+      }
+    }
+  }
+
+  // show social share links when share this page button is clicked
+  function showShareLinks() {
+    var btnContainer = document.getElementById('share-btn-container');
+    var shareLinksCont = document.getElementById('share-links');
+    btnContainer.style.display = 'none';
+    shareLinksCont.classList.add('open');
+  }
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

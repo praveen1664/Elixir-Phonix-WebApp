@@ -1,0 +1,20 @@
+<html>
+  <head>
+  	<style type="text/css"></style>
+  </head>
+  <body>
+    <main role="main">
+      <div class="container">
+        <%= @inner_content %>
+      </div>
+    </main>
+    <footer style='margin-top:1rem;'>
+    	<a href="<%= Routes.page_url(MindfulWeb.Endpoint, :index) %>" target="_blank">
+        <img style='max-width:256px; max-height:30px;' src='https://files.mindful.care/images/mindfulcareweblogo.svg'>
+      </a>
+      <p style='font-size:12px; margin-top:.5rem;'>
+        For support, email <a href='mailto:support@mindful.care' target='_blank'>support@mindful.care</a>.
+      </p>
+    </footer>
+  </body>
+</html>

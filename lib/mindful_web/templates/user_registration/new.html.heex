@@ -1,0 +1,61 @@
+<div class="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+  <div class="sm:mx-auto sm:w-full sm:max-w-md fadein">
+     <%= link to: "/", class: "flex justify-center" do %>
+      <img class="mx-auto h-16 w-auto" src="https://files.mindful.care/images/mindfulcareiconcross.svg" alt="Mindful Care icon">
+    <% end %>
+    <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+      Sign up to Mindful Care
+    </h2>
+    <p class="mt-2 text-center text-sm text-gray-600">
+      Already have an account? <%= link "Sign in", to: Routes.user_session_path(@conn, :new), class: "font-medium" %>
+    </p>
+  </div>
+
+  <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md fadeinleft">
+    <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+      <.form let={f} for={@changeset} class="space-y-6" action={Routes.user_registration_path(@conn, :create)}>
+        <%= if @changeset.action do %>
+          <div class="bg-red-100 border border-red-400 text-sm text-red-700 px-4 py-3 rounded" role="alert">
+            <p>Oops, something went wrong! Please check the errors below.</p>
+          </div>
+        <% end %>
+        <%= hidden_input f, :state_abbr, value: String.downcase(@state_abbr) %>
+        <div>
+          <%= label f, :email, "Email address", class: "block text-sm font-medium text-gray-700" %>
+          <div class="mt-1">
+            <%= email_input f, :email, required: true, maxlength: 160, minlength: 3, pattern: "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$", title: "Email address", autocomplete: "email", class: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" %>
+          </div>
+          <%= error_tag f, :email %>
+        </div>
+
+        <div>
+          <%= label f, :password, class: "block text-sm font-medium text-gray-700" %>
+          <div class="mt-1">
+            <%= password_input f, :password, required: true, title: "Password", autocomplete: "current-password", class: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" %>
+          </div>
+          <%= error_tag f, :password %>
+        </div>
+
+        <div>
+          <div class="flex">
+            <input id="terms-consent" name="terms-consent" type="checkbox" class="mt-1 h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" required oninvalid="this.setCustomValidity('You must consent to our terms of use and privacy policy to proceed.')" oninput="this.setCustomValidity('')"/>
+            <label for="terms-consent" class="ml-2 block text-sm text-gray-900">
+              I agree to Mindful Care's <%= link "terms of use", to: Routes.page_path(@conn, :terms), target: "_blank" %> and <%= link "privacy policy", to: Routes.page_path(@conn, :privacy), target: "_blank" %>.
+            </label>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-end">
+
+          <div class="text-sm">
+            <%= link "Forgot your password?", to: Routes.user_reset_password_path(@conn, :new), class: "font-medium text-indigo-600 hover:text-indigo-500" %>
+          </div>
+        </div>
+
+        <div>
+          <%= submit "Register", class: "w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
+        </div>
+      </.form>
+    </div>
+  </div>
+</div>

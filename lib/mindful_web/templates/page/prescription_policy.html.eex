@@ -1,0 +1,14 @@
+<div id="prescription-policy-page" class="base-text-page legacy-page">
+	<div><h1 class="has-text-centered">Prescription Policy</h1>
+
+	<h3><strong>Mindful Care Has A Commitment To Prescribing Medications Safely.</strong></h3>
+	<p class="">
+		Mindful Care has a commitment to prescribing medications safely. We do not prescribe any controlled substances, habit-forming medications, or long-acting injectables, with the exception of buprenorphine for those receiving services from Mindful Recovery. We do offer safer alternatives that can be reviewed at your visit. You can read more here: <%= link Routes.page_url(@conn, :alt_substances), to: Routes.page_path(@conn, :alt_substances) %>.
+	</p>
+	<p class="">We do prescribe most other medications, including anti-depressants, anti-anxiety medications, and mood stabilizers.&nbsp;We are here to help patients in need of care and will help you find alternative medications.</p>
+	<p class="">All patients requesting&nbsp;<a href="https://www.deadiversion.usdoj.gov/schedules/" target="_blank" rel="noopener noreferrer">DEA Schedule II, III and IV drugs</a>&nbsp;will be referenced through the&nbsp;<a href="https://www.health.ny.gov/professionals/narcotic/prescription_monitoring/" target="_blank" rel="noopener noreferrer">NY Prescription Monitoring Program</a>.</p>
+	<p class="">If you are specifically seeking controlled medications, please call our office prior to your visit to discuss treatment options.</p>
+	<p class="">Links:</p>
+	<p class="">DEA Schedule II, III and IV Drugs<br><a href="https://www.deadiversion.usdoj.gov/schedules/" target="_blank" rel="noopener noreferrer">https://www.deadiversion.usdoj.gov/schedules/</a></p>
+	<p class="">NY Prescription Monitoring Program<br><a href="https://www.health.ny.gov/professionals/narcotic/prescription_monitoring/" target="_blank" rel="noopener noreferrer">https://www.health.ny.gov/professionals/narcotic/prescription_monitoring/</a></p></div>
+</div>

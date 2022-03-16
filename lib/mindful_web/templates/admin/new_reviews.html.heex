@@ -1,0 +1,23 @@
+
+<meta name="google-signin-scope" content="profile email https://www.googleapis.com/auth/business.manage">
+<meta name="google-signin-client_id" content={@client_id}>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<div class="h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+  <h1 class="my-4 text-lg">Fetch Google reviews</h1>
+  <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+
+</div>
+
+<script>
+  var gmb_api_version = 'https://mybusinessbusinessinformation.googleapis.com/v1';
+  function onSignIn(googleUser) {
+    // Useful data for your client-side scripts:
+    var profile = googleUser.getBasicProfile();
+    console.log('Full Name: ' + profile.getName());
+    console.log("Email: " + profile.getEmail());
+    var access_token = googleUser.getAuthResponse().access_token;
+
+    window.location.replace("<%= Routes.admin_url(@conn, :new_reviews) %>" + "/" + access_token);
+  }
+</script>

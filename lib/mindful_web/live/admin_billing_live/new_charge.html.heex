@@ -1,0 +1,318 @@
+<div class="p-8 bg-gray-800">
+  <div class="max-w-7xl mx-auto">
+    <div>
+      <div>
+        <nav class="sm:hidden" aria-label="Back">
+          <%= link to: Routes.admin_path(@socket, :index), class: "flex items-center text-sm font-medium text-gray-400 hover:text-gray-200" do %>
+            <svg class="flex-shrink-0 -ml-1 mr-1 h-5 w-5 text-gray-500" x-description="Heroicon name: solid/chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            Back
+          <% end %>
+        </nav>
+        <nav class="hidden sm:flex" aria-label="Breadcrumb">
+          <ol role="list" class="flex items-center space-x-4">
+            <li>
+              <div class="flex"><%= link "Dashboard", to: Routes.user_path(@socket, :dash), class: "text-sm font-medium text-gray-400 hover:text-gray-200" %></div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="flex-shrink-0 h-5 w-5 text-gray-500" x-description="Heroicon name: solid/chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <%= link "Admin", to: Routes.admin_path(@socket, :index), class: "ml-4 text-sm font-medium text-gray-400 hover:text-gray-200" %>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="flex-shrink-0 h-5 w-5 text-gray-500" x-description="Heroicon name: solid/chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <%= link "Charge a Patient", to: Routes.admin_billing_new_charge_path(@socket, :new_charge), class: "ml-4 text-sm font-medium text-gray-400 hover:text-gray-200" %>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="mt-2 md:flex md:items-center md:justify-between">
+        <div class="flex-1 min-w-0">
+          <h2 class="text-2xl font-bold leading-7 text-white sm:text-3xl sm:truncate">
+            Charge a Patient
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-8 md:mt-16 pb-16 bg-white sm:rounded-lg max-w-xl mx-auto">
+  <%= if @drchrono_redirect_url do %>
+    <div class="sm:mx-4 text-center">
+      <div class="px-4 py-5 sm:p-6">
+        <div class="mt-2 text-sm text-gray-500">
+          <p>
+            To continue, <a href={@drchrono_redirect_url}> connect your Dr. Chrono account.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% else %>
+    <div class="md:bg-indigo-100 md:shadow-md sm:rounded-lg sm:mx-4">
+      <div class="px-4 py-5 sm:p-6">
+        <h3 class="text-lg leading-6 font-medium text-gray-900">
+          Step 1: Select Patient
+          <%= if is_binary(@patient_name) do %>
+            <svg xmlns="http://www.w3.org/2000/svg" class="float-right h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          <% end %>
+        </h3>
+        <%= if is_nil(@patient_name) do %>
+          <div class="mt-2 max-w-xl text-sm text-gray-500">
+            <p>
+              Enter the email of the patient you want to charge.
+            </p>
+          </div>
+          <.form let={_f} for={:patient_email} phx-submit="fetch_patient" class="mt-5 sm:flex sm:items-center">
+            <div class="w-full sm:max-w-xs">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" name="email" autocomplete="off" id="email" class="py-2 px-3 border shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="you@example.com">
+            </div>
+            <%= submit "Search", class: "mt-3 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm" %>
+          </.form>
+        <% end %>
+
+        <%= if @patient_error == :not_found do %>
+          <div class="mt-4">
+            <div class="bg-red-100 border border-red-400 text-red-700 text-sm px-4 py-3 rounded relative" role="alert">
+              <span class="block sm:inline">
+                <span class="block sm:inline">
+                  Dr. Chrono couldn't find a patient with that email.
+                </span>
+              </span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+
+  <%= if is_binary(@patient_name) do %>
+    <div class="mt-8 md:bg-indigo-100 md:shadow-md sm:rounded-lg sm:mx-4">
+      <div class="px-4 py-5 sm:p-6">
+        <h3 class="text-lg leading-6 font-medium text-gray-900">
+          Step 2: Verify Payment Method
+          <%= if @charge_amount do %>
+            <svg xmlns="http://www.w3.org/2000/svg" class="float-right h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          <% end %>
+        </h3>
+        <div class="mt-2 max-w-xl text-sm text-gray-500">
+          <p>
+            <u><%= @patient_email %></u>
+          </p>
+        </div>
+        <div class="mt-6">
+          <div class="flow-root">
+            <ul role="list" class="-mb-8">
+              <li>
+                <div class="relative pb-8">
+                  <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-400 sm:bg-white" aria-hidden="true"></span>
+                  <div class="relative flex space-x-3">
+                    <div>
+                      <span class="h-8 w-8 rounded-full bg-gray-400 flex items-center justify-center ring-8 ring-white sm:ring-indigo-100">
+                        <!-- Heroicon name: solid/user -->
+                        <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="min-w-0 flex-1 pt-1.5">
+                      <div>
+                        <p class="text-sm text-gray-500">Patient found <span class="font-medium text-gray-900">(<%= @patient_name %>)</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="relative pb-8">
+                  <%= if @patient_user do %>
+                    <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-400 sm:bg-white" aria-hidden="true"></span>
+                  <% end %>
+                  <div class="relative flex space-x-3">
+                    <div>
+                      <%= if is_nil(@patient_user) do %>
+                        <span class="h-8 w-8 rounded-full bg-red-500 flex items-center justify-center ring-8 ring-white sm:ring-indigo-100">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      <% else %>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-white sm:ring-indigo-100">
+                          <!-- Heroicon name: solid/thumb-up -->
+                          <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
+                          </svg>
+                        </span>
+                      <% end %>
+                    </div>
+                    <div class="min-w-0 flex-1 pt-1.5">
+                      <div>
+                        <p class="text-sm text-gray-500">
+                          <%= if @patient_user do %>
+                            Patient has a Mindful Care account
+                          <% else %>
+                            Patient <span class="font-medium text-gray-900">doesn't have an account</span>
+                              <div class="mt-1 text-xs text-gray-500 font-semibold">
+                                <%= if @past_invite && @past_invite.reason == "join_and_pay" do %>
+                                  Last invite sent <%= @past_invite.inserted_at.month %>/<%= @past_invite.inserted_at.day %><br>
+                                  <%= link "Send another invite?", to: "#", phx_click: "send_join_invite_email", class: "inline-block mt-1" %>
+                                <% else %>
+                                  <%= link "Invite them to join and connect a payment method?", to: "#", phx_click: "send_join_invite_email" %>
+                                <% end %>
+                              </div>
+                          <% end %>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <%= if @patient_user do %>
+                <li>
+                  <div class="relative pb-8">
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <%= if @patient_user.payment_method_id do %>
+                          <span class="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-white sm:ring-indigo-100">
+                            <!-- Heroicon name: solid/check -->
+                            <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                          </span>
+                        <% else %>
+                          <span class="h-8 w-8 rounded-full bg-red-500 flex items-center justify-center ring-8 ring-white sm:ring-indigo-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                            </svg>
+                          </span>
+                        <% end %>
+                      </div>
+                      <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
+                        <div>
+                          <p class="text-sm text-gray-500">
+                            <%= if @patient_user.payment_method_id do %>
+                              Patient has a card on file
+                            <% else %>
+                              Patient doesn't have a card connected
+                              <div class="mt-1 text-xs text-gray-500 font-semibold">
+                                <%= if @past_invite && @past_invite.reason == "pay" do %>
+                                  Last invite to add a card sent <%= @past_invite.inserted_at.month %>/<%= @past_invite.inserted_at.day %><br>
+                                  <%= link "Send another invite?", to: "#", phx_click: "send_pay_invite_email", class: "inline-block mt-1" %>
+                                <% else %>
+                                  <%= link "Invite them to connect a card?", to: "#", phx_click: "send_pay_invite_email" %>
+                                <% end %>
+                              </div>
+                            <% end %>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+        <%= if @patient_user && @patient_user.payment_method_id && is_nil(@charge_amount) do %>
+          <.form let={_f} for={:charge_amount} phx-submit="submit_charge_amount" class="mt-3 flex flex-col items-center">
+            <div class="w-full max-w-xs mx-auto">
+              <div>
+                <label for="charge_amount" class="block text-sm font-medium text-gray-700">Amount to Charge</label>
+                <div class="mt-1 relative rounded-md shadow-sm">
+                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <span class="text-gray-500 sm:text-sm">
+                      $
+                    </span>
+                  </div>
+                  <input type="text" name="charge_amount" id="charge_amount" class="py-2 px-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md" placeholder="0.00" aria-describedby="price-currency" autocomplete="off">
+                  <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                    <span class="text-gray-500 sm:text-sm" id="price-currency">
+                      USD
+                    </span>
+                  </div>
+                </div>
+                <%= if @amount_error do %>
+                  <div class="mt-0.5 text-xs text-red-500">
+                    Enter a number between 1 and 100.
+                  </div>
+                <% end %>
+              </div>
+            </div>
+            <div class="mt-5">
+              <%= submit "Continue", class: "inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
+            </div>
+          </.form>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+
+  <%= if @charge_amount do %>
+    <div class="mt-8 md:bg-indigo-100 md:shadow-md sm:rounded-lg sm:mx-4">
+      <div class="px-4 py-5 sm:p-6">
+        <h3 class="text-lg leading-6 font-medium text-gray-900">
+          Step 3: Confirm Charge
+          <%= if @pay_status == :success do %>
+            <svg xmlns="http://www.w3.org/2000/svg" class="float-right h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          <% end %>
+        </h3>
+        <div class="mt-2 max-w-xl text-sm text-gray-500">
+          <%= if @pay_status == :success do %>
+            <p class="text-green-600">
+              You have successfully charged <%= @patient_name %> <strong>$<%= :erlang.float_to_binary(@charge_amount, [decimals: 2]) %></strong>.
+            </p>
+          <% else %>
+            <%= if is_nil(@pay_error) do %>
+              <p>
+                You are about to charge <%= @patient_name %> <strong class="text-gray-700">$<%= :erlang.float_to_binary(@charge_amount, [decimals: 2]) %></strong>.
+              </p>
+              <div id="charge-container" class="mt-5 flex justify-center items-center">
+                <%= live_redirect "Cancel", to: Routes.admin_billing_new_charge_path(@socket, :new_charge), class: "mr-5 text-gray-400" %>
+                <%= link "Charge Patient $#{:erlang.float_to_binary(@charge_amount, [decimals: 2])}", to: "#", phx_click: "charge_patient", onclick: "showSpinner()", class: "inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
+              </div>
+            <% else %>
+              <p class="text-red-500 text-center font-semibold">
+                <%= @pay_error %>
+              </p>
+              <div class="mt-4 text-sm flex justify-center">
+                <%= link "Go back", to: Routes.admin_path(@socket, :index), class: "mr-5 text-gray-400" %>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <%= if @pay_status == :success do %>
+    <div class="mt-8 text-center">
+      <div class="mt-4 text-sm flex justify-center">
+        <%= link "Back", to: Routes.admin_path(@socket, :index), class: "mr-5 text-gray-400" %>
+        <%= live_redirect "Charge another patient?", to: Routes.admin_billing_new_charge_path(@socket, :new_charge) %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<script>
+  function showSpinner() {
+    document.getElementById("charge-container").innerHTML = '<div class="text-center"><div id="spinner" style="display:block"></div></div>';
+  }
+</script>

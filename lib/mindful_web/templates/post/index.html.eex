@@ -1,0 +1,29 @@
+<div id="posts-page" class="posts-fam legacy-page">
+  <div class="h-banner">
+    <h1 class="has-text-centered">Blog</h1>
+  </div>
+
+  <div class="posts-container">
+    <%= for post <- @posts do %>
+      <%= link to: Routes.post_path(@conn, :show, post), class: "tile" do %>
+        <img src="<%= MindfulWeb.SharedView.thumbnail_url(post.pic_path) %>">
+        <div class="date">
+          <%= Calendar.strftime(post.published_at, "%b %-d, %Y") %>
+        </div>
+        <div class="post-title">
+          <%= post.title %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <%= if 1 do %>
+  	<div class="page-controls has-text-centered">
+  		<%= if @newer_link, do: link("< Newer posts", to: @newer_link, class: "new-link") %>
+  		<%= if @older_link, do: link("Older posts >", to: @older_link) %>
+  	</div>
+  <% end %>
+</div>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

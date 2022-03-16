@@ -1,0 +1,76 @@
+<div id="pay-opts-page" class="base-text-page legacy-page">
+
+	<div>
+		<h1>
+			Affordable psychiatric care,<br>
+			covered by your insurance.
+		</h1>
+		<p>
+			Mindful Care is in-network with most insurance plans and Medicare. We know that understanding your mental health benefits can be confusing, and we would be happy to answer any questions you might have. Our staff will work with you to check your insurance plan’s mental health benefits, so you have peace of mind before visiting us. Mindful Care’s insurance specialists are here to help.
+		</p>
+		<p>
+			If you are not currently covered by an insurance plan, our affordable pricing ensures that you can still receive the support and treatment that you need.
+		</p>
+	</div>
+
+
+	<div class="action-area">
+		<%= link "SCHEDULE NOW", to: Routes.page_path(@conn, :schedule), class: "btn btn-small btn-white" %>
+		<a href="https://form.jotform.com/91607318684161" target="_blank">Pay Online</a>
+	</div>
+
+	<div>
+		<h3>
+			<strong>Mindful Has You Covered</strong>
+		</h3>
+		<p>
+			Mindful Care works with all types of health insurance. If you are not currently covered by an insurance plan, our affordable pricing ensures that you can still receive the support and psychiatric urgent care that you need.
+		</p>
+	</div>
+
+	<div>
+		<p>
+			We've partnered with most major insurance providers to make mental healthcare more accessible and affordable. Our current list of payers includes:
+		</p>
+		<strong>New York:</strong>
+		<ul>
+			<li>1199</li>
+			<li>Aetna</li>
+			<li>Cigna</li>
+			<li>HealthFirst</li>
+			<li>Humana</li>
+			<li>Medicare</li>
+			<li>Metroplus</li>
+			<li>Oxford</li>
+			<li>United Healthcare</li>
+		</ul>
+
+		<strong>New Jersey:</strong>
+		<ul>
+			<li>Aetna</li>
+			<li>Cigna</li>
+			<li>Horizon BCBS</li>
+			<li>Medicare</li>
+			<li>Oscar</li>
+			<li>Oxford</li>
+			<li>United Healthcare</li>
+		</ul>
+
+		<strong>Illinois:</strong>
+		<ul>
+			<li>Aetna</li>
+			<li>AmBetter of Illinois</li>
+			<li>Blue Cross Blue Shield</li>
+			<li>Cigna</li>
+			<li>Humana</li>
+			<li>Medicare</li>
+			<li>Meridian Health</li>
+			<li>Oxford</li>
+			<li>United Healthcare</li>
+		</ul>
+
+		<p>
+			This is not an exhaustive list. Your insurance coverage will be verified with you before your appointment.
+		</p>
+	</div>
+</div>

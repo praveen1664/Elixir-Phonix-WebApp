@@ -1,0 +1,69 @@
+<div class="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+  <div class="sm:mx-auto sm:w-full sm:max-w-md">
+     <%= link to: "/", class: "flex justify-center" do %>
+      <img class="mx-auto h-16 w-auto" src="https://files.mindful.care/images/mindfulcareiconcross.svg" alt="Mindful Care icon">
+    <% end %>
+    <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+      Edit user's Pverify data
+    </h2>
+  </div>
+
+  <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+      <.form let={f} for={@pverify_data_changeset} class="divide-y divide-gray-200 lg:col-span-9" action={Routes.user_pverify_data_path(@conn, :update, @user_pverify_data)} multipart={true}>
+        <%= if @pverify_data_changeset.action do %>
+          <div class="bg-red-100 border border-red-400 text-sm text-red-700 px-4 py-3" role="alert">
+            <p>Oops, something went wrong! Please check the errors below.</p>
+          </div>
+        <% end %>
+
+        <div class="py-6 px-4 sm:p-6 lg:pb-8">
+          <div>
+            <h2 class="text-lg leading-6 font-medium text-gray-900">Insurance</h2>
+              <p class="mt-1 text-sm text-gray-500">
+                Update patient's insurance details here.
+              </p>
+          </div>
+
+          <div class="mt-6 flex flex-col lg:flex-row">
+            <div class="flex-grow space-y-6">
+              <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 sm:col-span-12">
+                  <%= label f, :payer_code, "Payer Code", class: "block text-sm font-medium text-gray-700" %>
+                  <%= text_input f, :payer_code, class: "mt-1 block border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm" %>
+                  <%= error_tag f, :payer_code %>
+                </div>
+
+                <div class="col-span-12 sm:col-span-12">
+                  <%= label f, :subscriber_member_id, "Subscriber Member ID", class: "block text-sm font-medium text-gray-700" %>
+                  <%= text_input f, :subscriber_member_id, class: "mt-1 block border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm" %>
+                  <%= error_tag f, :subscriber_member_id %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="py-6 px-4 flex justify-end sm:px-6">
+            <%= link "Back", to: Routes.user_pverify_data_path(@conn, :index), class: "ml-5 bg-sky-700 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500" %>
+            <%= submit "Save", class: "ml-5 bg-sky-700 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500" %>
+          </div>
+        </div>
+      </.form>
+    </div>
+  </div>
+</div>
+
+<script>
+  let htmlTag = document.querySelector("html");
+  let bodyTag = document.querySelector("body");
+  let mainTag = document.querySelector("main");
+  let navTag = document.querySelector("nav");
+
+  htmlTag.classList.add("h-full");
+  htmlTag.classList.add("bg-gray-50");
+  bodyTag.classList.add("h-full");
+  mainTag.classList.add("lg:h-full");
+  navTag.classList.add("hidden");
+</script>

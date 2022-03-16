@@ -1,0 +1,143 @@
+<div id="new-office-page" class="be-form-page legacy-page">
+	<div class="breadcrumbs">
+		<%= link "STATES", to: Routes.state_path(@conn, :index) %>
+		<span>/</span>
+		<%= link @state.abbr, to: Routes.state_path(@conn, :show, @state) %>
+		<span>/</span>
+		NEW OFFICE
+	</div>
+
+	<div class="dec-sig">
+		<img src="https://files.mindful.care/images/gold_watercolor_smear.png">
+	</div>
+
+	<section class="form-container">
+		<h1>Add New Office</h1>
+
+		<div class="form-top-wave">
+			<img src="https://files.mindful.care/images/be_form_wave_div.svg">
+		</div>
+
+		<%= form_for @changeset, Routes.office_path(@conn, :create, @state), [id: "office-form"], fn f -> %>
+		  <%= if @changeset.action do %>
+		    <div class="alert alert-danger">
+		      <p>Oops, something went wrong! Please check the errors below.</p>
+		    </div>
+		  <% end %>
+
+		  <h3 class="first-h">Office details</h3>
+
+		 	<fieldset class="mini-group">
+		  	<%= label f, :name, "Location name" %>
+		  	<%= text_input f, :name, placeholder: "e.g. West Hempstead", required: true %>
+		  	<div class="error-info">
+		  		<%= error_tag f, :name %>
+		  	</div>
+			</fieldset>
+
+		 	<fieldset class="mini-group">
+		  	<%= label f, :description, "Description text" %>
+		  	<%= textarea f, :description, rows: 4, required: true %>
+		  	<div class="error-info">
+		  		<%= error_tag f, :description %>
+		  	</div>
+			</fieldset>
+
+			<h3>Address</h3>
+			<div class="error-info geo-error"><%= error_tag f, :lat %></div>
+
+			<div class="fieldgroup">
+			 	<fieldset>
+			  	<%= label f, :street, "Street address" %>
+			  	<%= text_input f, :street, size: "30", placeholder: "e.g. 510 Hempstead Turnpike", required: true %>
+			  	<div class="error-info">
+			  		<%= error_tag f, :street %>
+			  	</div>
+				</fieldset>
+
+				<fieldset>
+			  	<%= label f, :suite, "Suite, unit, etc." %>
+			  	<%= text_input f, :suite, size: "16", placeholder: "e.g. #203" %>
+			  	<div class="error-info">
+			  		<%= error_tag f, :suite %>
+			  	</div>
+				</fieldset>
+			</div>
+
+			<div class="fieldgroup city-addy">
+			 	<fieldset>
+			  	<%= label f, :city %>
+			  	<%= text_input f, :city, required: true %>
+			  	<div class="error-info">
+			  		<%= error_tag f, :city %>
+			  	</div>
+				</fieldset>
+
+			 	<fieldset class="state-f">
+			 		<label>State</label>
+			 		<input disabled value="<%= @state.abbr %>" type="text" size="3" title="<%= @state.name %>">
+				</fieldset>
+
+			 	<fieldset>
+			  	<%= label f, :zip %>
+			  	<%= text_input f, :zip, size: "8", required: true %>
+			  	<div class="error-info">
+			  		<%= error_tag f, :zip %>
+			  	</div>
+				</fieldset>
+			</div>
+
+			<%= hidden_input f, :lat %>
+			<%= hidden_input f, :lng %>
+
+		  <div class="submit-container office-sub">
+		    <%= submit "CREATE OFFICE", class: "btn btn-med" %>
+		    <%= link "CANCEL", to: Routes.state_path(@conn, :show, @state) %>
+		  </div>
+		  <div id="spinner"></div>
+		<% end %>
+	</section>
+</div>
+
+<script
+  src='https://maps.googleapis.com/maps/api/js?key=<%= Application.get_env(:mindful, :google_maps)[:api_key] %>&callback=&libraries=&v=weekly'
+    async
+></script>
+
+<script>
+  // geocode address and insert it into hidden input fields on submit
+  var form = document.getElementById('office-form');
+  var submitContainer = document.querySelector(".submit-container");
+  var spinner = document.getElementById("spinner");
+
+  form.addEventListener("submit", geocodeAddress);
+
+  function geocodeAddress(e) {
+  	e.preventDefault();
+  	// Hide submit button and show spinner
+		submitContainer.style.display = "none";
+		spinner.style.display = "block";
+
+		var street = document.getElementById("office-form_street").value;
+		var suite = document.getElementById("office-form_suite").value;
+		var city = document.getElementById("office-form_city").value;
+		var state = "<%= @state.abbr %>";
+		var zip = document.getElementById("office-form_zip").value;
+		var address = street + " " + suite + " " + city + ", " + state + " " + zip;
+		var latInput = document.getElementById("office-form_lat");
+		var lngInput = document.getElementById("office-form_lng");
+
+	  var geocoder = new google.maps.Geocoder();
+	  geocoder.geocode({'address': address}, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        latInput.value = results[0].geometry.location.lat();
+	    	lngInput.value = results[0].geometry.location.lng();
+	    	form.submit();
+      } else {
+      	submitContainer.style.display = "block";
+				spinner.style.display = "none";
+        alert("Failed to locate " + address + " on Google Maps. Try again with a valid address.");
+      }
+    });
+  }
+</script>

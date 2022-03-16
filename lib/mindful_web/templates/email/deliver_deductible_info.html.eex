@@ -1,0 +1,25 @@
+<p>
+  Your insurance details have been received.<br>
+
+  <ul>
+    <li>
+      Individual Deductible In Net: <%= @data.individual_deductible_in_net || "$0.00" %>
+    </li>
+    <li>
+      Individual Deductible Remaining In Net: <%= @data.individual_deductible_remaining_in_net || "$0.00" %>
+    </li>
+    <li>
+      Individual OOP Remaining In Net: <%= @data.individual_oop_remaining_in_net || "$0.00" %>
+    </li>
+    <li>
+      Co-Insurance In Net: <%= @data.co_insurance_in_net %>
+    </li>
+    <li>
+      Co-Pay In Net: <%= @data.co_pay_in_net %>
+    </li>
+  </ul>
+</p>
+
+<p>
+  You may reply to this email with any questions you have.
+</p>

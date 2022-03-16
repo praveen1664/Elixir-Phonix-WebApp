@@ -1,0 +1,10 @@
+<p>
+  Hi,<br><br>
+
+  You can confirm your email address by visiting the URL below:<br>
+  <a href="<%= @url %>" target="_blank"><%= @url %></a>
+</p>
+
+<p>
+  If you didn't create an account with us, please ignore this.
+</p>

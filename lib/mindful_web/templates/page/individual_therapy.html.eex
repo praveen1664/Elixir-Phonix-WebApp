@@ -1,0 +1,283 @@
+<div id="ind-therapy" class="sub-serv-page legacy-page">
+	<div class="paintcrumb has-text-centered">
+		<img src="https://files.mindful.care/images/pinkishbgsmearsmall.png">
+		<div><%= link "SERVICES", to: Routes.page_path(@conn, :services) %></div>
+	</div>
+
+	<section class="atf-hero">
+		<div class="lead-side">
+			<img src="https://files.mindful.care/images/ojdecpaintspot.png">
+			<h1 class="nowrap">MicroTherapy <small class="text-gray-400" style="font-size:10px;" title="service mark">SM</small></h1>
+			<div class="subtext">
+				Individual Therapy<br>
+				that fits your life today.
+			</div>
+			<div class="atf-cta-container">
+				<%= link "SCHEDULE NOW", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+			</div>
+		</div>
+		<div class="tail-side">
+			<img src="https://files.mindful.care/images/woman_in_therapy.jpg" alt="Woman in individual therapy">
+		</div>
+	</section>
+
+	<section class="about-therapy has-text-centered">
+		<img class="bg-top-curve" src="https://files.mindful.care/images/asymmetriccurvetop.svg">
+		<div class="dec-p-wrapper">
+			<img class="dec-p1" src="https://files.mindful.care/images/watercolor_big_leaves.png">
+		</div>
+		<div class="t-wrapper">
+			<h2>
+				About MicroTherapy
+			</h2>
+			<p>
+				MicroTherapy is Individual Therapy that fits your life today.
+			</p>
+			<p>
+				Schedule a same-day 20-minute appointment with a trained therapist, 8 a.m. to 7 p.m., and leave with a plan to move forward.
+			</p>
+			<p>
+				MicroTherapy was designed to meet the needs and realities of 2021: tech-enabled, time-sensitive, and solution-focused – we are here for you now. Get the support you need in the moment and quickly gain relevant skills to better cope with life’s challenges.
+			</p>
+		</div>
+
+		<div class="benefits observe has-text-centered">
+			<div class="benefit">
+				<img src="https://files.mindful.care/images/piggybank.svg" alt="piggy bank">
+				<div class="title">
+					Cost
+				</div>
+				<p>
+					Accepts insurance through most providers. <span class="nowrap">Self-pay</span> options are available.
+				</p>
+			</div>
+
+			<div class="benefit">
+				<img src="https://files.mindful.care/images/location.svg" alt="location point">
+				<div class="title">
+					Location
+				</div>
+				<p>
+					Connect through a privacy-compliant video-conferencing platform from wherever you are.
+				</p>
+			</div>
+
+			<div class="benefit">
+				<img src="https://files.mindful.care/images/lrgclockicon.svg" alt="clock">
+				<div class="title">
+					Time
+				</div>
+				<p>
+					We offer morning, afternoon, and evening sessions from 8 AM-7 PM.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="dec-ribbon-container has-text-centered">
+		<img src="https://files.mindful.care/images/paintedwavespiral.png">
+	</div>
+
+	<section class="mid-text has-text-centered">
+		<h2 class="observe">
+			Individual Therapy that fits <span class="nowrap">your life today.</span>
+		</h2>
+		<div class="cta-container">
+			<%= link "SCHEDULE NOW", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+		</div>
+	</section>
+
+	<section class="accord">
+		<h3 class="has-text-centered">Frequently Asked Therapy Questions</h3>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What does MicroTherapy cost?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Most major insurance plans are accepted. Self-pay rates are available for $50 a session.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Is 20 minutes enough time to help?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Absolutely. We use a structured and targeted approach to get you to start feeling better and take those actions that will support you.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		How does it work?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	We use evidence-based solutions that offer here-and-now solutions and coping mechanisms. You will leave the session with a meaningful way to move forward.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What will we talk about?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Anything you want. You decide. What do you need support with right now?
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What if I have more to talk about?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Simply schedule another session.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		How do I get started?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	Follow this link to schedule your appointment. You will be asked to complete a brief intake document and identify what you would like to address.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		What if I want other services?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	In addition to MicroTherapy, we provide <%= link "group therapy", to: Routes.page_path(@conn, :group_therapy) %> and medication management services.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Who will I see? How are your therapist’s trained?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	All our therapists are Licensed Mental Health Paraprofessionals (LMHC). We can’t guarantee that your preferred therapist will always be available, but we can guarantee same day availability with other trained LMHCs.
+		    </p>
+		  </div>
+		</details>
+		<details>
+	    <summary>
+	    	<div class="wrapper">
+		    	<span>
+		    		Are these sessions online?
+		    	</span>
+		    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+		    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+		    </div>
+	    </summary>
+	    <div class="wrapper">
+		    <p>
+		    	All sessions take place via a telehealth video session using a HIPAA compliant platform to protect your confidentiality.
+		    </p>
+		  </div>
+		</details>
+	</section>
+
+
+	<div class="ribbon-sep">
+		<img src="https://files.mindful.care/images/watercolorbrightribbon.png">
+	</div>
+
+	<section class="very-bot">
+		<div class="article-cta">
+			<div class="wrapper">
+				<h4 class="has-text-right">
+					Mindful Care offers Group Therapy telehealth appointments for patients in New York
+				</h4>
+				<div class="link-container">
+					<%= link "LEARN MORE", to: Routes.page_path(@conn, :group_therapy), class: "btn btn-white nowrap" %>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-link-container has-text-centered">
+			Have a question?
+			<%= link to: Routes.page_path(@conn, :faqs) do %>
+				See our <span class="nowrap">frequently asked questions</span>
+			<% end %>
+		</div>
+	</section>
+</div>
+
+<script>
+	// animate in elements on scroll
+	const options = {
+		root: null,
+		rootMargin: '0px',
+		threshold: .2
+	}
+	let callback = (entries) => {
+		entries.forEach(entry => {
+			if(entry.isIntersecting) {
+				entry.target.classList.add('is-visible');
+			}
+		});
+	}
+	let observer = new IntersectionObserver(callback, options);
+	document.querySelectorAll('.observe').forEach(el => { observer.observe(el) });
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

@@ -1,0 +1,314 @@
+<div id="insomnia-page" class="sub-serv-page treat-page legacy-page">
+	<div class="paintcrumb has-text-centered">
+		<img src="https://files.mindful.care/images/pinkishbgsmearsmall.png">
+		<div>
+			<a href="/what-we-treat">WHAT WE TREAT</a>
+		</div>
+	</div>
+
+	<div class="hero">
+		<div class="lead-side">
+			<img src="https://files.mindful.care/images/ojdecpaintspot.png">
+			<h1>
+				Insomnia
+			</h1>
+			<p>
+				Almost everybody has a sleepless night now and then. However, if insomnia has you tossing, turning, and counting endless sheep more than three nights a week, you should seek professional insomnia treatment. We offer immediate treatment through telepsychiatry for insomnia. We diagnose and treat sleep problems, as well as the mental health issues that often cause them, to help you get more quality rest.
+			</p>
+		</div>
+		<div class="tail-side">
+			<img src="https://files.mindful.care/images/treatinsomnia.jpg" alt="sleepless woman">
+		</div>
+	</div>
+
+	<section class="btf-top has-text-centered">
+		<img class="bg-top-curve" src="https://files.mindful.care/images/asymmetriccurvetop.svg">
+		<div class="dec-p-wrapper">
+			<img class="dec-p1 observe" src="https://files.mindful.care/images/featheryplant.png">
+		</div>
+		<div class="t-wrapper">
+			<h2 class="observe">
+				Licensed New York, New Jersey, and Chicago Psychiatrists for Insomnia
+			</h2>
+			<p class="observe">
+				At Mindful Care, our team of compassionate mental health professionals will provide you with urgent care for insomnia the very day you choose to ask for help. You will be invited into a comfortable front office, with relaxing music and refreshments, helping you feel at ease while taking that all-important first step.
+			</p>
+			<p class="observe">
+				We now offer telehealth virtual consultation, group therapy, and in person consultation in our offices throughout New York, New Jersey, and Chicago.
+			</p>
+			<div class="cta-dbl observe">
+				<%= link "SCHEDULE NOW", to: Routes.page_path(@conn, :schedule), class: "btn btn-med" %>
+				<div class="call-container">
+					Or call <a href="tel:15164478897">516-447-8897</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="dec-ribbon has-text-centered">
+		<img src="https://files.mindful.care/images/paintedwavespiral.png">
+	</div>
+
+	<section class="qa">
+		<h3 class="has-text-centered">
+			Insomnia <span class="nowrap">Q & A</span>
+		</h3>
+
+		<div class="accord">
+			<details>
+		    <summary>
+		    	<div class="wrapper">
+			    	<span>
+			    		What is insomnia?
+			    	</span>
+			    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+			    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+			    </div>
+		    </summary>
+		    <div class="wrapper">
+			    <p>
+			    	Insomnia is a sleep disorder that interferes with the amount of quality sleep you get. You may have trouble falling asleep or staying asleep, or you may wake up too early and not be able to get back to sleep.
+			    </p>
+			    <p>
+			    	You may experience acute or chronic insomnia. Acute insomnia is the occasional sleepless night caused by stress, overeating, or another short-term issue. Chronic insomnia, on the other hand, affects your sleep more than three times a week and can have widespread side effects.
+			    </p>
+			    <p>
+			    	For example, in addition to making you feel fatigued and sluggish during the day, chronic insomnia contributes to a wide range of health problems, including heart disease and diabetes.
+			    </p>
+			  </div>
+			</details>
+			<details>
+		    <summary>
+		    	<div class="wrapper">
+			    	<span>
+			    		What causes insomnia?
+			    	</span>
+			    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+			    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+			    </div>
+		    </summary>
+		    <div class="wrapper">
+			    <p>
+			    	You may have insomnia for several reasons. For example, mental health conditions such as depression, anxiety, bipolar disorder, and post-traumatic stress disorder all contribute to insomnia and other sleep disturbances. These conditions often cause your body to release hormones that prevent you from sleeping well.
+			    </p>
+			    <p>
+			    	Additionally, periods of intense stress can interfere with your sleep. If you travel a lot for work or have irregular working hours or swing shifts, you may not have regular sleep cycles. Poor sleep habits, such as using your cell phone right before bed or having a television in your bedroom, can also interfere with your sleep.
+			    </p>
+			  </div>
+			</details>
+			<details>
+		    <summary>
+		    	<div class="wrapper">
+			    	<span>
+			    		How is insomnia treated?
+			    	</span>
+			    	<svg class="down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronDown"><path d="M4 9l8 8 8-8"/></svg>
+			    	<svg class="up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ai ai-ChevronUp"><path d="M4 15l8-8 8 8"/></svg>
+			    </div>
+		    </summary>
+		    <div class="wrapper">
+			    <p>
+			    	The insomnia doctors at Mindful Care provide a comprehensive assessment of your physical and mental health to begin your insomnia treatment online. As part of urgent care for insomnia, your provider may request blood work and other tests to identify any conditions, such as thyroid disease, that contribute to your sleeplessness.
+			    </p>
+			    <p>
+			    	After your initial evaluation, your provider designs a personalized treatment plan to treat your insomnia and resolve the conditions causing it. Your provider may recommend lifestyle modifications to your diet, exercise habits, and sleep habits, in addition to treating any mental or physical health conditions that contribute to your insomnia.
+			    </p>
+			    <p>
+			    	For example, you may benefit from practicing meditation to quiet and relax your mind and adding physical activity to your day to burn off extra energy. In some cases, your provider may prescribe medication or supplements to help you get increased high-quality sleep.
+			    </p>
+			    <p>
+			    	Call Mindful Care or make an appointment online today for urgent care for sleep problems.
+			    </p>
+			  </div>
+			</details>
+		</div>
+	</section>
+
+	<section class="our-locations">
+		<h2 class="has-text-centered observe">
+			Our Psychiatry Locations:
+		</h2>
+
+		<h3 class="observe">
+			<a href="/locations/new-york">New York</a>
+		</h3>
+		<div class="locs observe">
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>Fort Greene</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>Grand Central</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>Flatiron District</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>Long Island City</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>Hicksville</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>West Hempstead</span>
+			</div>
+			<div class="loc">
+				<img src="https://files.mindful.care/images/paintbgcheck.png">
+				<span>White Plains</span>
+			</div>
+		</div>
+
+		<div class="region-wrapper">
+			<div>
+				<h3 class="observe">
+					<a href="/locations/new-jersey">New Jersey</a>
+				</h3>
+				<div class="locs observe">
+					<div class="loc">
+						<img src="https://files.mindful.care/images/paintbgcheck.png">
+						<span>Hoboken</span>
+					</div>
+					<div class="loc">
+						<img src="https://files.mindful.care/images/paintbgcheck.png">
+						<span>Jersey City</span>
+					</div>
+				</div>
+
+				<h3 class="observe">
+					<a href="/locations/illinois">Illinois</a>
+				</h3>
+				<div class="locs observe">
+					<div class="loc">
+						<img src="https://files.mindful.care/images/paintbgcheck.png">
+						<span>Fulton Market</span>
+					</div>
+					<div class="loc">
+						<img src="https://files.mindful.care/images/paintbgcheck.png">
+						<span>Near North Side</span>
+					</div>
+				</div>
+			</div>
+			<div class="pic-container observe">
+				<img src="https://files.mindful.care/images/watercolor_leaf_stem.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonials">
+		<div class="wave-topper">
+			<img src="https://files.mindful.care/images/testimonials_wave_topper.svg">
+		</div>
+		<div class="content">
+			<h3 class="has-text-centered">Our patients love <span class="nowrap">what we do</span></h3>
+			<div class="testimonials-container">
+				<div id="left-arrow" class="arrow" onclick="plusTestimonials(-1)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronLeft" alt="previous testimonial button"><path d="M15 4l-8 8 8 8"/></svg>
+				</div>
+				<div class="quote-area">
+					<div class="quotation-mark left-mark">
+						<img src="https://files.mindful.care/images/quotation_marks.svg">
+					</div>
+					<div class="testimonial-quote-container prime">
+						<p>
+							Very easy to schedule and really outstanding practitioners who listen well, ask the right questions and provide quality support.
+						</p>
+						<div class="patient-name">
+							Michelle R
+						</div>
+					</div>
+					<div class="testimonial-quote-container">
+						<p>
+							This place has been the single most positive interaction with the mental healthcare sphere that I have ever had in my life.
+						</p>
+						<div class="patient-name">
+							Connor C
+						</div>
+					</div>
+					<div class="testimonial-quote-container">
+						<p>
+							Easy scheduling, always on time, super convenient.
+						</p>
+						<div class="patient-name">
+							Vincent A
+						</div>
+					</div>
+					<div class="quotation-mark right-mark">
+						<img src="https://files.mindful.care/images/quotation_marks.svg">
+					</div>
+				</div>
+				<div id="right-arrow" class="arrow" onclick="plusTestimonials(1)">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronRight" alt="next testimonial button"><path d="M8 4l8 8-8 8"/></svg>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="very-bot">
+		<div class="article-cta observe">
+			<div class="wrapper">
+				<h4 class="has-text-right">
+					Mindful Care offers telepsychiatry appointments for patients in IL, NJ and NY
+				</h4>
+				<div class="link-container">
+					<%= link "SCHEDULE TODAY", to: Routes.page_path(@conn, :schedule), class: "btn btn-white nowrap" %>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-link-container has-text-centered">
+			Have a question?
+			<%= link to: Routes.page_path(@conn, :faqs) do %>
+				See our <span class="nowrap">frequently asked questions</span>
+			<% end %>
+		</div>
+	</section>
+</div>
+
+<script>
+	// testimonials carousel
+	var testimonialIndex = 1;
+	showTestimonials(testimonialIndex);
+
+	function plusTestimonials(n) {
+	  showTestimonials(testimonialIndex += n);
+	}
+
+	function currentTestimonial(n) {
+	  showTestimonials(testimonialIndex = n);
+	}
+
+	function showTestimonials(n) {
+	  var i;
+	  var testimonials = document.getElementsByClassName("testimonial-quote-container");
+	  if (n > testimonials.length) {testimonialIndex = 1}
+	  if (n < 1) {testimonialIndex = testimonials.length}
+	  for (i = 0; i < testimonials.length; i++) {
+	      testimonials[i].style.display = "none";
+	  }
+	  testimonials[testimonialIndex-1].style.display = "block";
+	}
+
+	// animate in elements on scroll
+	const options = {
+		root: null,
+		rootMargin: '0px',
+		threshold: .2
+	}
+	let callback = (entries) => {
+		entries.forEach(entry => {
+			if(entry.isIntersecting) {
+				entry.target.classList.add('is-visible');
+			}
+		});
+	}
+	let observer = new IntersectionObserver(callback, options);
+	document.querySelectorAll('.observe').forEach(el => { observer.observe(el) });
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

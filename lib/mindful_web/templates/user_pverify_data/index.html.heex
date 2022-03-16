@@ -1,0 +1,86 @@
+<div class="p-8">
+  <div class="text-xs mb-2">
+    <%= link "< Back to admin dash", to: Routes.admin_path(@conn, :index) %>
+  </div>
+  <h1 class="text-3xl">
+    User Pverify Self-Verification Attempts
+  </h1>
+  <div class="mt-6" style="display:inline-block">
+    <%= for {key, val} <- @user_pverify_data do %>
+      <div class="text-3xl" style="margin-bottom: 10px; font-family: auto">
+        <%= key %>
+      </div>
+
+      <%= for data <- val do %>
+        <div class="mb-4" style="border: 1px solid black; border-radius: 10px; padding: 15px">
+
+          <div class="text-gray-600" style="margin-bottom: 10px">
+            Patient Name: <%= "#{data.user.first_name} #{data.user.last_name}" %>
+          </div>
+
+          <div class="text-xs" style="display:inline-block">
+            <table>
+              <tr>
+                <td>Phone</td>
+                <td><%= data.user.phone %></td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td><%= data.user.email %></td>
+              </tr>
+              <tr>
+                <td>Payer Code</td>
+                <td><%= data.payer_code %></td>
+              </tr>
+              <tr>
+                <td>Provider Name</td>
+                <td><%= data.provider_name %></td>
+              </tr>
+              <tr>
+                <td>Provider NPI</td>
+                <td><%= data.provider_npi %></td>
+              </tr>
+              <tr>
+                <td style="padding-right:20px">Subscriber Member ID</td>
+                <td><%= data.subscriber_member_id %></td>
+              </tr>
+              <tr>
+                <td>DOS Start Date</td>
+                <td><%= data.dos_start_date %></td>
+              </tr>
+              <tr>
+                <td>DOS End Date</td>
+                <td><%= data.dos_end_date %></td>
+              </tr>
+            </table>
+
+            <div style="max-width: 300px">
+              <%= if data.eligibility_details |> Enum.any?(&Map.has_key?(&1, "AdditionalInfo")) do %>
+                <br>
+                <%= data.eligibility_details |> List.first() |> Map.get("AdditionalInfo") %>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="text-xs" style="display:inline-block; margin-left:25px; vertical-align:top">
+            <%= if data.insurance_card_front do %>
+              <img class="relative w-40 h-40" src={VH.uploaded_img_url(data.insurance_card_front)} alt="insurance card front">
+            <% end %>
+          </div>
+
+          <div class="text-xs" style="display:inline-block; margin-left:25px; vertical-align:top">
+            <%= if data.insurance_card_back do %>
+              <img class="relative w-40 h-40" src={VH.uploaded_img_url(data.insurance_card_back)} alt="insurance card front">
+            <% end %>
+          </div>
+
+          <div>
+            <div style="padding-top: 1rem">
+              <%= link "Edit", class: "bg-sky-700 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex text-sm font-medium text-white hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500", to: Routes.user_pverify_data_path(@conn, :edit, data.id) %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,302 @@
+<div id="group-therapy" class="sub-serv-page legacy-page">
+	<div class="paintcrumb has-text-centered">
+		<img src="https://files.mindful.care/images/pinkishbgsmearsmall.png">
+		<div><%= link "SERVICES", to: Routes.page_path(@conn, :services) %></div>
+	</div>
+
+	<section class="atf-hero">
+		<div class="lead-side">
+			<img src="https://files.mindful.care/images/ojdecpaintspot.png">
+			<h1>
+				MindFit <small class="text-gray-400" style="font-size:10px;" title="service mark">SM</small><br>
+				Group Therapy
+			</h1>
+			<div class="subtext">
+				Come as you are.
+			</div>
+		</div>
+		<div class="tail-side">
+			<img src="https://files.mindful.care/images/groupsitting.jpg" alt="Diverse Group Therapy session">
+		</div>
+	</section>
+
+	<section class="about-therapy has-text-centered">
+		<img class="bg-top-curve" src="https://files.mindful.care/images/asymmetriccurvetop.svg">
+		<div class="dec-p-wrapper">
+			<img class="dec-p1" src="https://files.mindful.care/images/watercolor_big_leaves.png">
+		</div>
+		<div class="t-wrapper">
+			<h2>
+				About MindFit
+			</h2>
+			<p>
+				Life can be hard. You may feel lonely, stressed, anxious, depressed, unmotivated or unloved. When these reactions become too mindfulh you need the right support.
+			</p>
+			<p>
+				The most reported benefit of MindFit Group Therapy is the ability to connect with others and know you are not alone. With the support of a MindFit Group, you can also experience relief and validation for your unique challenges. You can speak or just listen, both are meaningful ways to participate.
+			</p>
+			<p>
+				Our licensed therapists guide an interactive conversation that makes a difference for everyone. The primary clinical approach we use is Cognitive Behavioral Therapy (CBT). This is a practical, skills-based intervention that allows you to challenge and change unhelpful thoughts, beliefs and behaviors.
+			</p>
+			<p>
+				In an inclusive, judgement-free environment learn to manage the difficult emotional experiences we all face as human beings. Soon you will begin to feel better and even thrive.
+			</p>
+		</div>
+
+		<div class="benefits observe has-text-centered">
+			<div class="benefit">
+				<img src="https://files.mindful.care/images/piggybank.svg" alt="piggy bank">
+				<div class="title">
+					Cost
+				</div>
+				<p>
+					Accepts insurance through most providers. <span class="nowrap">Self-pay</span> is $35 per session.
+				</p>
+			</div>
+
+			<div class="benefit">
+				<img src="https://files.mindful.care/images/location.svg" alt="location point">
+				<div class="title">
+					Location
+				</div>
+				<p>
+					Connect through a privacy-compliant video-conferencing platform from wherever you are.
+				</p>
+			</div>
+
+			<div class="benefit">
+				<img src="https://files.mindful.care/images/lrgclockicon.svg" alt="clock">
+				<div class="title">
+					Time
+				</div>
+				<p>
+					We offer morning, afternoon, and evening groups from 9 AM-7 PM. Groups meet weekly for one hour.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="dec-ribbon-container has-text-centered">
+		<img src="https://files.mindful.care/images/paintedwavespiral.png">
+	</div>
+
+	<section class="mid-text has-text-centered">
+		<h2 class="observe">
+			Do not wait another moment to get the help you need.
+		</h2>
+		<div class="cta-container">
+			<%= link "SCHEDULE NOW", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+		</div>
+	</section>
+
+	<div class="wave-topper">
+		<img src="https://files.mindful.care/images/testimonials_wave_topper.svg">
+	</div>
+	<section class="groups">
+		<h2 class="has-text-centered">
+			<img class="dec-spot-oj" src="https://files.mindful.care/images/ojdecpaintspot.png">
+			<span>Our Groups</span>
+		</h2>
+		<div class="group-container">
+			<div class="word-side observe">
+				<h4>CALM</h4>
+				<div class="subtitle">
+					Group Therapy for Anxiety
+				</div>
+				<p>
+					This group focuses on reducing the power of your anxiety. Having some anxiety is normal but it can turn excessive and debilitating. Most of our anxiety is fueled by our fear of what might happen. Through the practice of mindfulness (being more aware) and the skills of Cognitive Behavioral Therapy (changing your thoughts and behavior), you will begin to feel more comfortable in your skin.
+				</p>
+				<div class="cta-container">
+					<%= link "Sign Up for CALM", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/calmwater.jpg" alt="calm water">
+			</div>
+		</div>
+		<div class="group-container reverse">
+			<div class="word-side observe">
+				<h4>RISE</h4>
+				<div class="subtitle">
+					Group Therapy for Life’s Challenges
+				</div>
+				<p>
+					In RISE, you will address challenges across the important areas of your life. Work to raise the bar from where you currently are to where you would like to be. Practice skills that allow you to identify and shift negative or inflexible thoughts and familiar behavior so that new outcomes are possible.
+				</p>
+				<div class="cta-container">
+					<%= link "Sign Up for RISE", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+					<img class="dec-gold-rise" src="https://files.mindful.care/images/gold_watercolor_smear.png">
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/stairsup.jpg" alt="going up stairs">
+			</div>
+		</div>
+		<div class="group-container">
+			<div class="word-side observe">
+				<h4>HOPE</h4>
+				<div class="subtitle">
+					Group Therapy for Depression
+				</div>
+				<p>
+					You may not feel like yourself anymore. Your energy is reduced, your thoughts are more negative and you may be forgetful. It can seem like nothing really matters. Cognitive Behavioral Therapy is one of the most effective treatments for depressive symptoms. Changing your thoughts and behavior can make a meaningful difference. The power of HOPE can change your experience of life.
+				</p>
+				<div class="cta-container">
+					<%= link "Sign Up for HOPE", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+					<img class="branch" src="https://files.mindful.care/images/watercolor_leaf_stem.png">
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/flowerpic.jpg" alt="flower">
+			</div>
+		</div>
+		<div class="group-container reverse">
+			<div class="word-side observe">
+				<h4>SHINE</h4>
+				<div class="subtitle">
+					Support Group for the LGBTQA+ Community
+				</div>
+				<p>
+					The LGBTQA+ community represents authenticity, understanding, compassion, respect, diversity, and love. This therapy group is no different. LGBTQA+ individuals are at an increased risk of experiencing depression, anxiety, suicide, and substance-use, among other struggles. Together, we will tackle challenges through an inclusive, non-judgmental, and person-centered approach and promote self-acceptance. Learning to love and own who you are is a superpower. Take pride in all that is fabulously you and SHINE.
+				</p>
+				<p>
+					*This group is exclusively for LGBTQA+ identifying individuals.*
+				</p>
+				<div class="cta-container">
+					<%= link "Sign Up for SHINE", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+					<img class="dec-paint-sq" src="https://files.mindful.care/images/paintedinblock.png">
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/shininglights.jpg" alt="shining lights">
+			</div>
+		</div>
+		<div class="group-container">
+			<div class="word-side observe">
+				<h4>CONNECT</h4>
+				<div class="subtitle">
+					Group Therapy for Healthy Relationships
+				</div>
+				<p>
+					Finding a way to build healthy relationships is not easy. With our partners, friends, family, colleagues, bosses, roommates… all relationships can go south. In this group, you will master skills in communication, mindfulness, and CBT that allow for changes in perspective and behavior. Discover how to have relationships that work. Even in the most challenging circumstances, healthy relationships are possible.
+				</p>
+				<div class="cta-container">
+					<%= link "Sign Up for CONNECT", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/puzzleconnect.jpeg" alt="puzzle connecting">
+			</div>
+		</div>
+		<div class="group-container reverse">
+			<div class="word-side observe">
+				<h4>RECOVER</h4>
+				<div class="subtitle">
+					Group Therapy for Substance Use
+				</div>
+				<p>
+					Substance use can take over your life. Through psychoeducation and Cognitive Behavioral Therapy come to understand the nature of your addiction and that recovery is possible. Learn tools to conquer cravings, prevent relapse and re-engage with life in a substance-free way. Our approach is non-judgemental, patient-centered, and designed to reinforce your positive behaviors. Start to RECOVER and take back control of your life.
+				</p>
+				<div class="cta-container">
+					<%= link "Sign Up for RECOVER", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/windingroad.jpg" alt="a winding road">
+			</div>
+		</div>
+		<div class="group-container">
+			<div class="word-side observe">
+				<h4>WISE</h4>
+				<div class="subtitle">
+					A Skills Group for Handling Tough Emotions
+				</div>
+				<p>
+					Sometimes our thoughts and feelings are so overwhelming we react in ways that hurt ourselves and others. In this group, we use Dialectical Behavioral Therapy to help regulate these intense feelings. DBT is one of the most effective ways to treat diagnoses such as Borderline Personality Disorder and useful for depression and anxiety, as well. In WISE, we find balance in everyday life, through mindfulness, new skills and a non-judgmental approach.
+				</p>
+				<div class="cta-container">
+					<%= link "Sign Up for WISE", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/lightbulbs.jpg" alt="lit lightbulb">
+			</div>
+		</div>
+		<div class="group-container reverse">
+			<div class="word-side observe">
+				<h4>BALANCE</h4>
+				<div class="subtitle">
+					Group Therapy for Bipolar Disorder
+				</div>
+				<p>
+					Individuals living with Bipolar Disorder often struggle with both manic and depressive symptoms. Finding balance can be uniquely challenging. Here we address your experience and how it relates to the world around you. Through a strength-based approach and the skills of CBT, we support you to manage and transform the thoughts, feelings, and behaviors that can bind you, allowing for an overall and new sense of harmony.
+				</p>
+				<div class="cta-container">
+					<%= link "Sign Up for BALANCE", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/balancedrocks.png" alt="balanced rocks">
+			</div>
+		</div>
+		<div class="group-container">
+			<div class="word-side observe">
+				<h4>SAFE</h4>
+				<div class="subtitle">
+					A Group for Individuals with Trauma
+				</div>
+				<p>
+					SAFE is a highly structured 12-week psychotherapy group, divided among behavioral, cognitive and interpersonal topics, and designed for individuals with trauma. This group will address topics on, managing trauma symptoms, cope with life without the use of unhealthy coping mechanisms, learn to take good care of yourself, find safe people who can support you, free yourself from unhealthy relationships, prevent self-destructive acts, and find ways to feel good about yourself and enjoy life.
+				</p>
+				<div class="cta-container">
+					<%= link "Sign Up for SAFE", to: "https://hipaa.jotform.com/213184687137159", class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/groupsafehands.jpeg" alt="hands connected">
+			</div>
+		</div>
+
+	</section>
+
+	<section class="very-bot">
+		<div class="article-cta">
+			<div class="wrapper">
+				<h4 class="has-text-right">
+					Mindful Care now offers Individual Microtherapy in New York! Sign up today
+				</h4>
+				<div class="link-container">
+					<%= link "LEARN MORE", to: Routes.page_path(@conn, :individual_therapy), class: "btn btn-white nowrap" %>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-link-container has-text-centered">
+			Have a question?
+			<%= link to: Routes.page_path(@conn, :faqs) do %>
+				See our <span class="nowrap">frequently asked questions</span>
+			<% end %>
+		</div>
+	</section>
+</div>
+
+<script>
+	// animate in elements on scroll
+	const options = {
+		root: null,
+		rootMargin: '0px',
+		threshold: .2
+	}
+	let callback = (entries) => {
+		entries.forEach(entry => {
+			if(entry.isIntersecting) {
+				entry.target.classList.add('is-visible');
+			}
+		});
+	}
+	let observer = new IntersectionObserver(callback, options);
+	document.querySelectorAll('.observe').forEach(el => { observer.observe(el) });
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

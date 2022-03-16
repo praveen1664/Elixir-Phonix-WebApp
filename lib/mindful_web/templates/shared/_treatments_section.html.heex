@@ -1,0 +1,70 @@
+<section class="treatments">
+	<h3 class="has-text-centered observe">Urgent Care + Long-Term Treatment</h3>
+	<div class="boxes">
+		<div class="box psych observe">
+			<h4 class="has-text-centered">Psychiatry</h4>
+			<div class="subtext has-text-centered">
+				Safe & effective<br>
+				medication management
+			</div>
+			<div class="img-container">
+				<img src="https://files.mindful.care/images/pillsicon.png" alt="prescribed medication">
+			</div>
+			<ul>
+				<li>
+					12-week Urgent Care program for symptom stabilization
+				</li>
+				<li>
+					Long-Term Care appointments to maintain your health
+				</li>
+			</ul>
+			<div class="cta-container has-text-centered">
+				<%= link "GET STARTED", to: Routes.page_path(@conn, :schedule), class: "btn btn-med" %>
+			</div>
+		</div>
+		<div class="box therapy observe">
+			<h4 class="has-text-centered">Therapy</h4>
+			<div class="subtext has-text-centered">
+				Treatment & support<br>
+				by licensed therapists
+			</div>
+			<div class="img-container">
+				<img src="https://files.mindful.care/images/psychtalkicon.png" alt="person talking at therapy">
+			</div>
+			<ul>
+				<li>
+					12-week Individual MicroTherapy® program
+				</li>
+				<li>
+					Group Therapy for long-term care and support
+				</li>
+			</ul>
+			<div class="cta-container has-text-centered">
+				<%= link "GET STARTED", to: Routes.page_path(@conn, :schedule), class: "btn btn-med" %>
+			</div>
+		</div>
+		<div class="box psych-and-therapy observe">
+			<h4 class="has-text-centered">
+				Recovery Coaching
+			</h4>
+			<div class="subtext has-text-centered">
+				Modern Substance Use<br>
+				Coaching
+			</div>
+			<div class="img-container">
+				<img src="https://files.mindful.care/images/pillpsychtalkicon.png" alt="person talking at therapy and being prescribed medication">
+			</div>
+			<ul>
+				<li>
+					Personalized treatment and recovery plans
+				</li>
+				<li>
+					1-on-1 coaching and support via text, phone, and video
+				</li>
+			</ul>
+			<div class="cta-container has-text-centered">
+				<%= link "GET STARTED", to: Routes.page_path(@conn, :schedule), class: "btn btn-med" %>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,40 @@
+<div id="providers-page" class="legacy-page">
+	<section class="hero has-text-centered">
+		<div class="img-container">
+			<img src="https://files.mindful.care/images/watercolortree.png">
+		</div>
+		<div class="pretitle">MEET OUR</div>
+		<h1>Providers</h1>
+		<p>
+			Our team has been selected to provide compassionate care and support for our patients. Every patient deserves to be able to speak to a provider who will be an advocate for their mental health.
+		</p>
+	</section>
+	<%= if @providers != [] do %>
+		<section class="providers-container has-text-centered">
+			<%= for provider <- @providers do %>
+				<div class="p-container">
+					<%= link to: Routes.provider_path(@conn, :show, provider) do %>
+						<img src="<%= VH.uploaded_img_url(provider.image_path) %>" alt="provider portrait">
+						<div class="name">
+							<%= provider.first_name <> " " <> provider.last_name %>,
+							<span class="nowrap"><%= provider.credential_initials %></span>
+						</div>
+						<div class="job-title"><%= provider.job_title %></div>
+					<% end %>
+				</div>
+			<% end %>
+		</section>
+	<% else %>
+		<section class="has-text-centered">
+			<%= if VH.is_admin?(@current_user) do %>
+				<p>
+					No providers created.
+					<%= link "Add a provider?", to: Routes.provider_path(@conn, :new) %>
+				</p>
+			<% end %>
+		</section>
+	<% end %>
+</div>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

@@ -1,0 +1,181 @@
+<div id="urgent-care-page" class="sub-serv-page legacy-page">
+	<div class="paintcrumb has-text-centered">
+		<img src="https://files.mindful.care/images/pinkishbgsmearsmall.png">
+		<div><%= link "SERVICES", to: Routes.page_path(@conn, :services) %></div>
+	</div>
+
+	<section class="hero has-text-centered">
+		<h1>
+			Psychiatric <span class="nowrap">Urgent Care</span>
+		</h1>
+		<div class="subtitle">
+			Psychiatric care when you need it. In-person & virtually.
+		</div>
+		<div class="img-container">
+			<img src="https://files.mindful.care/images/mhucuser.png" alt="Woman getting mental health online">
+		</div>
+	</section>
+
+	<section class="main-para has-text-centered">
+		<div class="bg-top">
+			<img src="https://files.mindful.care/images/serviceswavetopbg.svg">
+		</div>
+		<p>
+			Mindful Care specializes in medication management and therapeutic services that promote mental strengthening. Our typical client is struggling with anxiety, depression, mood disorders, life adjustment concerns, and are seeking interventions that support long-lasting lifetime changes.
+		</p>
+		<div class="cta-container">
+			<%= link "GET STARTED", to: Routes.page_path(@conn, :schedule), class: "btn btn-med" %>
+		</div>
+		<div class="sec-imgs">
+			<img src="https://files.mindful.care/images/securehipaa.png" alt="HIPAA compliant and secure SSL badges">
+		</div>
+	</section>
+
+	<section class="benefits has-text-centered observe">
+		<div class="benefit">
+			<img src="https://files.mindful.care/images/stormyheadicon.svg" alt="person with mental stress">
+			<div class="title">
+				Urgent care
+			</div>
+			<p>
+				You won’t have to wait weeks before you can see a qualified mental health provider.
+			</p>
+		</div>
+
+		<div class="benefit">
+			<img src="https://files.mindful.care/images/medsicon.svg" alt="person with mental stress">
+			<div class="title">
+				At-home or in-person
+			</div>
+			<p>
+				Have a session at one of our local offices or online from the comfort of your home.
+			</p>
+		</div>
+
+		<div class="benefit">
+			<img src="https://files.mindful.care/images/docicon.svg" alt="person with mental stress">
+			<div class="title">
+				Within your budget
+			</div>
+			<p>
+				Save hundreds of dollars by using your insurance to pay.
+			</p>
+		</div>
+	</section>
+
+	<section class="steps-cta has-text-centered">
+		<div class="wrapper">
+			<h3>How Urgent <span class="nowrap">Care Works</span></h3>
+			<div class="steps-container">
+				<div class="step">
+					<div class="title">
+						<span class="count">1</span>
+						<span>Schedule an evaluation</span>
+					</div>
+					<p>
+						Schedule an in-person or video session with one of our board-certified providers.
+					</p>
+				</div>
+
+				<div class="step">
+					<div class="title">
+						<span class="count">2</span>
+						<span>Find the right treatment</span>
+					</div>
+					<p>
+						Psychiatry, therapy, or both. We will work with you to find the right care for your needs.
+					</p>
+				</div>
+
+				<div class="step">
+					<div class="title">
+						<span class="count">3</span>
+						<span>Get the care you deserve</span>
+					</div>
+					<p>
+						Now that you’ve made your mental health a priority, realize your full potential with an improved sense of well-being.
+					</p>
+				</div>
+			</div>
+			<div class="cta-container">
+				<%= link "SCHEDULE NOW", to: Routes.page_path(@conn, :schedule), class: "btn btn-white" %>
+			</div>
+		</div>
+	</section>
+
+	<section class="insurance">
+		<div class="word-side observe">
+			<img src="https://files.mindful.care/images/ojdecpaintspot.png">
+			<h3>
+				We're in network with most major insurance carriers.
+			</h3>
+			<div class="link-con">
+				<%= link to: Routes.page_path(@conn, :payment_options) do %>
+					See payment options
+					<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" display="block" id="ChevronRight"><path d="M8 4l8 8-8 8"/></svg>
+				<% end %>
+			</div>
+		</div>
+		<div class="pic-side">
+			<img src="https://files.mindful.care/images/insurancecarriers.png" alt="Insurance carrier logos">
+		</div>
+	</section>
+
+	<section class="bot-info">
+		<h3>
+			What We Provide?
+		</h3>
+		<p>
+			Mindful Care specializes in medication management and therapeutic services that promote mental strengthening. Our typical client is struggling with <%= link "anxiety", to: Routes.treat_path(@conn, :anxiety) %>, <%= link "depression", to: Routes.treat_path(@conn, :depression) %>, mood disorders, life adjustment concerns, and is seeking interventions that support long-lasting life changes.
+		</p>
+		<p>
+			Mindful Care has a commitment to prescribing medications safely and <%= link "does not prescribe habit-forming medications", to: Routes.page_path(@conn, :alt_substances) %>.
+		</p>
+
+		<h3>
+			When are we available?
+		</h3>
+		<p>
+			Our offices are conveniently open to those who need services during the weekdays, Monday-Friday 8am-6pm, and on Sundays, 8am-6pm.  We also offer our patients access to telepsychiatry from the convenience of their home, school or office, during select times.
+		</p>
+
+		<div class="article-cta">
+			<div class="wrapper">
+				<h4 class="has-text-right">
+					Mindful Care offers telepsychiatry appointments for patients in IL, NJ and NY
+				</h4>
+				<div class="link-container">
+					<%= link "SCHEDULE TODAY", to: Routes.page_path(@conn, :schedule), class: "btn btn-white nowrap" %>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-link-container has-text-centered">
+			Have a question?
+			<%= link to: Routes.page_path(@conn, :faqs) do %>
+				See our <span class="nowrap">frequently asked questions</span>
+			<% end %>
+		</div>
+	</section>
+</div>
+
+<script>
+	// animate in elements on scroll
+	const options = {
+		root: null,
+		rootMargin: '0px',
+		threshold: .2
+	}
+	let callback = (entries) => {
+		entries.forEach(entry => {
+			if(entry.isIntersecting) {
+				entry.target.classList.add('is-visible');
+			}
+		});
+	}
+	let observer = new IntersectionObserver(callback, options);
+	document.querySelectorAll('.observe').forEach(el => { observer.observe(el) });
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

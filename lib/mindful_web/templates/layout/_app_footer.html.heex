@@ -1,0 +1,137 @@
+<div class="legacy-page">
+  <footer class="static-footer">
+    <section class="corp">
+      <div class="logo-container">
+        <%= link to: "/" do %>
+          <img src='https://files.mindful.care/images/mindfulcareweblogo.svg' alt="Mindful Care logo" class="inline-block">
+        <% end %>
+      </div>
+      <div class="social-logos">
+        <a href="https://www.facebook.com/mindful.care.mental.health" target="_blank">
+          <img src="https://files.mindful.care/images/facebook_icon.svg" alt="facebook icon">
+        </a>
+        <a href="https://www.instagram.com/mindful.care.mental.health/" target="_blank">
+          <img src="https://files.mindful.care/images/instagram_icon.svg" alt="instagram icon">
+        </a>
+        <a href="https://twitter.com/mindfuluc" target="_blank">
+          <img src="https://files.mindful.care/images/twitter_icon.svg" alt="twitter icon">
+        </a>
+      </div>
+      <div class="copyright">
+        © 2021 Mindful Care, Inc.
+      </div>
+    </section>
+
+    <div class="list-container">
+      <div class="list-title">Find Care</div>
+      <div class="links">
+        <div class="link-item">
+          <%= link "Illinois", to: "/locations/illinois", class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "New Jersey", to: "/locations/new-jersey", class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "New York", to: "/locations/new-york", class: "black-link" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-container">
+      <div class="list-title">Services</div>
+      <div class="links">
+        <div class="link-item">
+          <%= link "Psychiatric Urgent Care", to: Routes.page_path(@conn, :urgent_care), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "Individual MicroTherapy", to: Routes.page_path(@conn, :individual_therapy), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "MindFit Group Therapy", to: Routes.page_path(@conn, :group_therapy), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "Virtual Care", to: Routes.page_path(@conn, :telehealth), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "Mindful Recovery", to: Routes.page_path(@conn, :substance_use), class: "black-link" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-container">
+      <div class="list-title">Patient Resources</div>
+      <div class="links">
+        <div class="link-item">
+          <%= link "Payment Options", to: Routes.page_path(@conn, :payment_options), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "Frequently Asked Questions", to: Routes.page_path(@conn, :faqs), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "GeneSight", to: Routes.page_path(@conn, :genesight), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "Refer a Patient", to: "https://hipaa.jotform.com/220037188085051", class: "black-link", target: "_blank" %>
+        </div>
+        <div class="link-item">
+          <%= link "Policies & Informed Consent", to: Routes.page_path(@conn, :policies), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "Prescription Policy", to: Routes.page_path(@conn, :prescription_policy), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <a href="https://hipaa.jotform.com/210345282490148" target="_blank" class="black-link">
+            Request Letters & Forms
+          </a>
+        </div>
+        <div class="link-item">
+          <a href="https://form.jotform.com/211024930988155" target="_blank" class="black-link">
+            Refill Requests
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-container">
+      <div class="list-title">Company</div>
+      <div class="links">
+        <div class="link-item">
+          <%= link "Our Mission", to: Routes.page_path(@conn, :mission), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "Careers", to: Routes.page_path(@conn, :careers), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "Blog", to: Routes.post_path(@conn, :index), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "Press", to: Routes.page_path(@conn, :press), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "Terms", to: Routes.page_path(@conn, :terms), class: "black-link" %>
+        </div>
+        <div class="link-item">
+          <%= link "Privacy", to: Routes.page_path(@conn, :privacy), class: "black-link" %>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="emergency-container has-text-centered">
+    <div class="info">
+      In case of a medical or mental health emergency, <strong class="nowrap">call 911 or go to your local ER.</strong>
+    </div>
+    <div class="get-help-lead">
+      The following resources provide free and <span class="nowrap">confidential 24/7 support:</span>
+    </div>
+    <div class="helpline">
+      <a href="https://suicidepreventionlifeline.org/" target="_blank">Suicide Prevention Lifeline</a> Call 1-800-273-8255
+    </div>
+    <div class="helpline">
+      <a href="https://www.crisistextline.org/" target="_blank">Crisis Text Line</a> Text HOME to 741741
+    </div>
+    <div class="helpline">
+      <a href="https://www.thetrevorproject.org/" target="_blank">Trevor Lifeline</a> Call 1-866-488-7386
+    </div>
+  </div>
+</div>

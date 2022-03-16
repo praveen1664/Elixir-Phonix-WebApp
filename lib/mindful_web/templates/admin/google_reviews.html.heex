@@ -1,0 +1,23 @@
+<div class="p-8">
+  <div class="text-xs mb-2">
+  <%= link "< Back to admin dash", to: Routes.admin_path(@conn, :index) %>
+  </div>
+  <h1 class="text-3xl">
+    Google Location IDs for use with Google Reviews
+  </h1>
+  <div class="mt-6">
+    <%= for loc <- @locations do %>
+      <div class="mb-4">
+        <div class="text-xl text-gray-600">
+          <%= loc.title %>
+        </div>
+        <div>
+          <%= loc.address %>
+        </div>
+        <div>
+          Location ID: <strong><%= loc.location_id %></strong>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

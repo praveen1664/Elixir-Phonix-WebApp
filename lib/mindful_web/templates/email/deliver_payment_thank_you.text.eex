@@ -1,0 +1,8 @@
+Thank you for the payment!
+
+  Amount: <%=  VH.cents_to_dollars(@amount) %>
+  Method: Card *<%= @user.cc_last_4 %>
+  Date: <%= Calendar.strftime(Timex.today("America/New_York"), "%b %-d, %Y") %>
+
+
+You may reply to this email with any questions you have.

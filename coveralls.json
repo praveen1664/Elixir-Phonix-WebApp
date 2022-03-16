@@ -1,0 +1,16 @@
+{
+  "skip_files":[
+    "lib/mindful.ex",
+    "lib/mindful/application.ex",
+    "lib/mindful_web.ex",
+    "lib/release.ex",
+    "test/support/channel_case.ex",
+    "lib/mix/tasks/populate_state_treatments.ex",
+    "deps",
+    "priv",
+    "test"
+  ],
+  "coverage_options": {
+    "minimum_coverage": 14
+  }
+}

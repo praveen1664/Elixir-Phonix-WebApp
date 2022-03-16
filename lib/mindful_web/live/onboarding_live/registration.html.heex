@@ -1,0 +1,341 @@
+<div class="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+  <div class="sm:mx-auto sm:w-full sm:max-w-md">
+    <%= link to: "/", class: "flex justify-center" do %>
+      <img class="mx-auto h-16 w-auto" src="https://files.mindful.care/images/mindfulcareiconcross.svg" alt="Mindful Care icon">
+    <% end %>
+    <h4 class="mt-6 text-center text-3xl font-extrabold text-gray-900" name="form_title">
+      <%= form_title(@current_step) %>
+    </h4>
+  </div>
+
+  <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+      <!-- Step 1: Visit urgency -->
+      <%= if @current_step == 1 do %>
+        <%= form_for @changeset, "#", [phx_change: :validate, phx_submit: "next_step", class: "space-y-6", name: "form_registration_step_1", id: "form_registration_step_1"], fn f -> %>
+          <div class="space-y-5" id="step-1">
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= radio_button f, :urgency, "premium", id: "premium", class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="premium" class="font-medium text-gray-700">Same or next day</label>
+                <p id="premium-description" class="text-gray-500">Premium: Insurance plans and self-pay only</p>
+              </div>
+            </div>
+
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= radio_button f, :urgency, "next_days", id: "next_days", class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="next_days" class="font-medium text-gray-700">Within the next days</label>
+              </div>
+            </div>
+
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= radio_button f, :urgency, "next_weeks", id: "next_weeks", class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="next_weeks" class="font-medium text-gray-700">Next few weeks</label>
+              </div>
+            </div>
+          </div>
+
+          <%= if @errors.message != "" do %>
+            <div class="rounded-md bg-red-50 p-4" id="error-message">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <!-- Heroicon name: solid/x-circle -->
+                  <svg class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="ml-3">
+                  <h3 class="text-sm font-medium text-red-800">There is an error with your submission</h3>
+                  <div class="mt-2 text-sm text-red-700">
+                    <ul role="list" class="list-disc pl-5 space-y-1">
+                      <li><%= @errors.message %></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+
+          <div>
+            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Next step</button>
+          </div>
+        <% end %>
+      <% end %>
+
+      <!-- Step 2: Select state -->
+      <%= if @current_step == 2 do %>
+        <%= form_for @changeset, "#", [phx_change: :validate, phx_submit: "next_step", class: "space-y-6", name: "form_registration_step_2", id: "form_registration_step_2"], fn f -> %>
+          <div class="space-y-5" id="step-2">
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= radio_button f, :state_abbr, "il", id: "il", class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="il" class="font-medium text-gray-700">Illinois</label>
+              </div>
+            </div>
+
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= radio_button f, :state_abbr, "nj", id: "nj", class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="nj" class="font-medium text-gray-700">New Jersey</label>
+              </div>
+            </div>
+
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= radio_button f, :state_abbr, "ny", id: "ny", class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="ny" class="font-medium text-gray-700">New York</label>
+              </div>
+            </div>
+
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= radio_button f, :state_abbr, "other_state", id: "other_state", class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="other_state" class="font-medium text-gray-700">Other state</label>
+              </div>
+            </div>
+          </div>
+
+          <%= if @errors.message != "" do %>
+            <div class="rounded-md bg-red-50 p-4" id="error-message">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <!-- Heroicon name: solid/x-circle -->
+                  <svg class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="ml-3">
+                  <h3 class="text-sm font-medium text-red-800">There is an error with your submission</h3>
+                  <div class="mt-2 text-sm text-red-700">
+                    <ul role="list" class="list-disc pl-5 space-y-1">
+                      <li><%= @errors.message %></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+
+          <%= if @redirect_to_locations_path do %>
+            <div>
+              <%= link "Next step", to: Routes.state_path(@socket, :index), id: "next_step", class: "w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
+            </div>
+          <% else %>
+            <div>
+              <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Next step</button>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+
+      <!-- Step 3: Treatments -->
+      <%= if @current_step == 3 do %>
+        <%= form_for @changeset, "#", [phx_change: :validate, phx_submit: "next_step", class: "space-y-6", name: "form_registration_step_3", id: "form_registration_step_3"], fn f -> %>
+          <div class="space-y-5" id="step-3">
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= checkbox f, :treatments, name: "user[treatments][medical_management]", id: "treatment_medical_management", checked: mark_treatment_as_checked?(@selected_treatments, "medical_management"), disabled: disable_treatment_checkbox?("medical_management", @available_treatments), class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="treatment_medical_management" class="font-medium">
+                  <%= if "medical_management" in @available_treatments do %>
+                    <span class="font-medium text-gray-700">Medical Management</span>
+                  <% else %>
+                    <span class="text-gray-400">[Coming soon] Medical Management</span>
+                  <% end %>
+                </label>
+              </div>
+            </div>
+
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= checkbox f, :treatments, name: "user[treatments][therapy]", id: "treatment_therapy", checked: mark_treatment_as_checked?(@selected_treatments, "therapy"), disabled: disable_treatment_checkbox?("therapy", @available_treatments), class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="treatment_therapy" class="font-medium">
+                  <%= if "therapy" in @available_treatments do %>
+                    <span class="font-medium text-gray-700">Therapy</span>
+                  <% else %>
+                    <span class="text-gray-400">[Coming soon] Therapy</span>
+                  <% end %>
+                </label>
+              </div>
+            </div>
+
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= checkbox f, :treatments, name: "user[treatments][substance_use_counseling]", id: "treatment_substance_use_counseling", checked: mark_treatment_as_checked?(@selected_treatments, "substance_use_counseling"), disabled: disable_treatment_checkbox?("substance_use_counseling", @available_treatments), class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="treatment_substance_use_counseling" class="font-medium">
+                  <%= if "substance_use_counseling" in @available_treatments do %>
+                    <span class="font-medium text-gray-700">Substance Use Counseling</span>
+                  <% else %>
+                    <span class="text-gray-400">[Coming soon] Substance Use Counseling</span>
+                  <% end %>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <%= if @errors.message != "" do %>
+            <div class="rounded-md bg-red-50 p-4" id="error-message">
+              <div class="flex">
+                <div class="flex-shrink-0">
+                  <!-- Heroicon name: solid/x-circle -->
+                  <svg class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="ml-3">
+                  <h3 class="text-sm font-medium text-red-800">There is an error with your submission</h3>
+                  <div class="mt-2 text-sm text-red-700">
+                    <ul role="list" class="list-disc pl-5 space-y-1">
+                      <%= if @errors.count == "" do %>
+                        <li><%= @errors.message %></li>
+                      <% else %>
+                        <li><%= String.replace(@errors.message, "%{count}", @errors.count) %></li>
+                      <% end %>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+
+          <div>
+            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Next step</button>
+          </div>
+        <% end %>
+      <% end %>
+
+      <!-- Step 4: Contact info -->
+      <%= if @current_step == 4 do %>
+        <%= form_for @changeset, "#", [phx_change: :validate, phx_submit: "save", class: "space-y-6", name: "form_registration_step_4", id: "form_registration_step_4"], fn f -> %>
+          <div class="space-y-5" id="step-4">
+            <div>
+              <%= label f, :first_name, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= text_input f, :first_name, id: "first_name", class: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md", placeholder: "First name" %>
+              </div>
+            </div>
+
+            <div>
+              <%= label f, :last_name, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= text_input f, :last_name, id: "last_name", class: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md", placeholder: "Last name" %>
+              </div>
+            </div>
+
+            <div>
+              <%= label f, :phone, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= telephone_input f, :phone, id: "phone", class: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md", placeholder: "5551231234", minlength: 10, maxlength: 11, pattern: "[0-9{10,11}$" %>
+              </div>
+              <p class="mt-2 text-sm text-gray-500" id="phone-description">Numbers only</p>
+            </div>
+
+            <div>
+              <%= label f, :dob, "Date of Birth", class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= date_select f, :dob, year: [options: 1930..2022], id: "dob", class: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md", placeholder: "MM/DD/YYYY" %>
+              </div>
+            </div>
+
+            <div>
+              <%= label f, :email, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= text_input f, :email, id: "email", class: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md", placeholder: "your@email.com" %>
+              </div>
+            </div>
+
+            <div>
+              <%= label f, :password, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= password_input f, :password, id: "password", value: input_value(f, :password), class: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" %>
+              </div>
+            </div>
+
+            <div>
+              <%= label f, :password_confirmation, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= password_input f, :password_confirmation, id: "password_confirmation", value: input_value(f, :password_confirmation), class: "shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" %>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= checkbox f, :terms_consent, hidden_input: false, id: "terms_consent", class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="terms-consent" class="ml-2 block text-sm text-gray-900">
+                  I agree to Mindful Care's <%= link "terms of use", to: Routes.page_path(@socket, :terms), target: "_blank" %> and <%= link "privacy policy", to: Routes.page_path(@socket, :privacy), target: "_blank" %>.
+                </label>
+              </div>
+            </div>
+
+            <div class="relative flex items-start">
+              <div class="flex items-center h-5">
+                <%= checkbox f, :treatments_consent, hidden_input: false, id: "treatments_consent", class: "focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" %>
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="terms-consent" class="ml-2 block text-sm text-gray-900">
+                  I agree to Mindful Care's <%= link "treatments of use", to: "", target: "_blank" %>.
+                </label>
+              </div>
+            </div>
+
+            <%= if @errors.messages != [] || @errors.message != "" do %>
+              <div class="rounded-md bg-red-50 p-4" id="error-message">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <!-- Heroicon name: solid/x-circle -->
+                    <svg class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <h3 class="text-sm font-medium text-red-800">There is an error with your submission</h3>
+                    <div class="mt-2 text-sm text-red-700">
+                      <ul role="list" class="list-disc pl-5 space-y-1">
+                        <%= if @errors.message != "" do %>
+                          <li><%= @errors.message %></li>
+                        <% else %>
+                          <%= for {field, error} <- @errors.messages do %>
+                            <li><%= "#{humanize_field(field)}: #{String.replace(error.message, "%{count}", error.count)}" %></li>
+                          <% end %>
+                        <% end %>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+
+            <div>
+              <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Save</button>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

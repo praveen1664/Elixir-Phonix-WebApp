@@ -1,0 +1,63 @@
+<div id="genesight-page" class="base-text-page legacy-page">
+	<div>
+    <h1>GeneSight</h1>
+    <p>
+      If you wonder whether medication is the best solution for your particular mental health concerns, the GeneSight® test has the answers you need. The experienced psychiatric care team at Mindful Care uses GeneSight testing to
+      analyze your DNA and get customized medication recommendations for your medication and treatment plan. Use online scheduling or call the office to arrange your GeneSight DNA testing today.
+    </p>
+  </div>
+
+  <div class="top-cta-container">
+    <%= link "SCHEDULE NOW", to: Routes.page_path(@conn, :schedule), class: "btn btn-med btn-white" %>
+  </div>
+
+  <div>
+    <h2>What is GeneSight?</h2>
+    <p>
+      GeneSight® is an advanced genetic testing tool for mental health treatment recommendations. With this test, your MIndful Urgent Care doctor determines exactly how your body responds to medication and which medication is
+      best for your specific DNA makeup. GeneSight testing saves you a great deal of trial-and-error when it comes to getting the relief you need.
+    </p>
+    <p>In a clinical study of the GeneSight psychotropic test, patients saw a 50% improvement in symptom relief when compared to patients who pursued a normal course of non-customized treatment.</p>
+    <h2>What kind of GeneSight testing is available?</h2>
+    <p>There are several types of GeneSight testing, including:</p>
+    <h3>Psychotropic</h3>
+    <p>
+      The psychotropic GeneSight test analyzes your body’s response to drugs for neuropsychiatric conditions like
+      <%= link "depression", to: Routes.treat_path(@conn, :depression), title: "Gene Sight Testing for Depression in New Jersey New York Chicago" %>,
+      <%= link "anxiety", to: Routes.treat_path(@conn, :anxiety), title: "Gene Sight Testing for Anxiety in New York New Jersey Chicago" %>,
+      <%= link "ocd", to: Routes.treat_path(@conn, :ocd), title: "Gene Sight Testing for OCD" %>, and
+      <%= link "bipolar disorder", to: Routes.treat_path(@conn, :bipolar), title: "Gene Sight for Bipolar Manic Depression in Chicago New York New Jerse" %>. It shows results for dozens of common neuropsychiatric
+      drugs like Wellbutrin®, Xanax®, Prozac®, and Ambien®.
+    </p>
+    <h3>MTHFR</h3>
+    <p>
+      The MTHFR test measures your body’s quantity and use of folic acid. You must convert folic acid into its active form, L-methylfolate, so you can make important neurotransmitters like dopamine. The MTHFR test tells your
+      doctor whether you need supplemental folic acid or L-methylfolate.
+    </p>
+    <h3>ADHD</h3>
+    <p>
+      The ADHD test analyzes your body’s response to attention deficit hyperactivity disorder (ADHD) medications, including both stimulants and nonstimulants. This test clearly shows which drugs are more likely to trigger side
+      effects and which are most likely to be effective based on your specific DNA.
+    </p>
+    <h3>Analgesic</h3>
+    <p>
+      The analgesic test evaluates your body’s response to pain relief medications. It identifies which prescription pain relievers, including opioids, NSAIDs, and muscle relaxants, work most effectively for you based on your
+      DNA.
+    </p>
+    <p>Depending on your conditions, you may need one or more GeneSight tests to help your doctor design the most effective and customized treatment plan based on your genetics.</p>
+    <h2>How does GeneSight testing work?</h2>
+    <p>
+      GeneSight testing is quick and easy. You’ll simply swab the inside of your cheek to collect the DNA sample and your Mindful Care provider places it in sterile packaging before sending it directly to the GeneSight clinical
+      lab for analysis.
+    </p>
+    <h2>When will I get GeneSight results?</h2>
+    <p>
+      The GeneSight lab sends the test results to your provider in less than 36 hours, and you’ll quickly have an appointment to review the results with your doctor. Your provider discusses your personalized treatment plan with
+      you, and you can begin treatment right away.
+    </p>
+    <p>
+      GeneSight testing takes the guesswork out of mental health treatment, and many commercial and government insurance plans even cover the testing. To learn more or schedule your GeneSight genetic testing, call Mindful Care
+      or book your appointment online now.
+    </p>
+  </div>
+</div>

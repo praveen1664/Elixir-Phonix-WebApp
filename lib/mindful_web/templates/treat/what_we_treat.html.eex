@@ -1,0 +1,278 @@
+<div id="we-treat-page" class="sub-serv-page legacy-page">
+	<section class="hero has-text-centered">
+		<h1>
+			<img src="https://files.mindful.care/images/pinkishbgsmearsmall.png">
+			What We Treat
+		</h1>
+		<div class="p-links">
+			<div>
+				<a href="#anxiety">Anxiety & Panic</a>
+			</div>
+			<div>
+				<a href="#depression">Depression</a>
+			</div>
+			<div>
+				<a href="#bipolar">Bipolar Disorder</a>
+			</div>
+			<div>
+				<a href="#adhd">ADHD</a>
+			</div>
+			<div>
+				<a href="#ptsd">PTSD</a>
+			</div>
+			<div>
+				<a href="#ocd">OCD</a>
+			</div>
+			<div>
+				<a href="#eating">Eating Disorders</a>
+			</div>
+			<div>
+				<a href="#insomnia">Insomnia</a>
+			</div>
+			<div>
+				<a href="#kids">Adolescent Disorders</a>
+			</div>
+			<div>
+				<a href="#paranoia">Paranoia</a>
+			</div>
+			<div>
+				<a href="#grief">Grief & Bereavement</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="wave-topper">
+		<img src="https://files.mindful.care/images/testimonials_wave_topper.svg">
+	</div>
+	<section class="groups">
+		<a id="anxiety"></a>
+		<div class="group-container">
+			<div class="word-side observe">
+				<h4>Anxiety & Panic</h4>
+				<p>
+					If you’re one of the 18% of Americans who live with an anxiety disorder, contact the team at Mindful Care. Our compassionate mental health experts offer comprehensive psychiatric care, including medication, therapy, and lifestyle modifications, to reduce your anxiety and enhance your overall wellness.
+				</p>
+				<div class="cta-container">
+					<%= link "Learn More", to: Routes.treat_path(@conn, :anxiety), class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/treatanxiety.jpg" alt="calm water">
+			</div>
+		</div>
+
+		<a id="depression"></a>
+		<div class="group-container reverse">
+			<div class="word-side observe">
+				<h4>Depression</h4>
+				<p>
+					Depression is a widespread mental health condition affecting more than 16 million American adults. Mindful Care offers customized assessments and treatments to reduce your depression symptoms and help you learn to better manage your thoughts and feelings.
+				</p>
+				<div class="cta-container">
+					<%= link "Learn More", to: Routes.treat_path(@conn, :depression), class: "btn btn-med" %>
+					<img class="dec-gold-rise" src="https://files.mindful.care/images/gold_watercolor_smear.png">
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/treatdepression.jpg" alt="going up stairs">
+			</div>
+		</div>
+
+		<a id="bipolar"></a>
+		<div class="group-container">
+			<div class="word-side observe">
+				<h4>Bipolar Disorder</h4>
+				<p>
+					Bipolar disorder is a common but widely misunderstood mental health condition characterized by intense mood swings. Bipolar disorder may be confusing and frightening, but the good news is that there are excellent treatments available. These treatments can give you the ability to regulate your emotions, so that you can feel the normal highs and lows of life without the distressing extremes that make it difficult to function.
+				</p>
+				<div class="cta-container">
+					<%= link "Learn More", to: Routes.treat_path(@conn, :bipolar), class: "btn btn-med" %>
+					<img class="branch" src="https://files.mindful.care/images/watercolor_leaf_stem.png">
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/treatbipolar.jpg" alt="flower">
+			</div>
+		</div>
+
+		<a id="adhd"></a>
+		<div class="group-container reverse">
+			<div class="word-side observe">
+				<h4>ADHD</h4>
+				<p>
+					Attention deficit hyperactivity disorder (ADHD) is a prevalent mental health condition that affects children, adolescents, and adults. ADHD disrupts your ability to concentrate, make decisions, and control your impulses. Around 11% of children and teenagers and 4% of adults live with attention deficit hyperactivity disorder (ADHD).
+				</p>
+				<div class="cta-container">
+					<%= link "Learn More", to: Routes.treat_path(@conn, :adhd), class: "btn btn-med" %>
+					<img class="dec-paint-sq" src="https://files.mindful.care/images/paintedinblock.png">
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/treatadhd.jpg" alt="shining lights">
+			</div>
+		</div>
+
+		<a id="ptsd"></a>
+		<div class="group-container">
+			<div class="word-side observe">
+				<h4>PTSD</h4>
+				<p>
+					Post-traumatic stress disorder (PTSD) is a mental health disorder that develops after you experience a horrifying or traumatic event such as a terrorist attack, active shooter situation, car accident, or personal assault.
+				</p>
+				<p>
+					It’s normal to experience anxiety and other symptoms after a traumatic event. However, in most cases, your symptoms subside with time. You may have PTSD if your symptoms persist or worsen and still interfere with your life months after the event.
+				</p>
+				<div class="cta-container">
+					<%= link "Learn More", to: Routes.treat_path(@conn, :ptsd), class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/treatptsd.jpg" alt="sitting on dock">
+			</div>
+		</div>
+
+		<a id="ocd"></a>
+		<div class="group-container reverse">
+			<div class="word-side observe">
+				<h4>OCD</h4>
+				<p>
+					Everyone follows certain rituals or routines. For example, consider what you do each day when you wake up or before you go to bed. However, if you’re driven to compulsive rituals by fears or negative thoughts, you could be one of the millions of Americans who live with obsessive-compulsive disorder (OCD).
+				</p>
+				<div class="cta-container">
+					<%= link "Learn More", to: Routes.treat_path(@conn, :ocd), class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/treatocd.jpg" alt="grid of shoes">
+			</div>
+		</div>
+
+		<a id="eating"></a>
+		<div class="group-container">
+			<div class="word-side observe">
+				<h4>Eating Disorders</h4>
+				<p>
+					Eating disorders are confusing for many people. We all go through periods when we eat a too mindfulh unhealthy food. Many people even have phases in which they skip meals when they’re focused on a goal. These habits may be unhealthy, but don’t signify any deeper problem. Eating disorders, however, aren’t really about the food at all.
+				</p>
+				<div class="cta-container">
+					<%= link "Learn More", to: Routes.treat_path(@conn, :eating), class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/treateating.jpg" alt="food">
+			</div>
+		</div>
+
+		<a id="insomnia"></a>
+		<div class="group-container reverse">
+			<div class="word-side observe">
+				<h4>Insomnia</h4>
+				<p>
+					Almost everybody has a sleepless night now and then. However, if insomnia has you tossing, turning, and counting endless sheep more than three nights a week, you should seek professional treatment.
+				</p>
+				<div class="cta-container">
+					<%= link "Learn More", to: Routes.treat_path(@conn, :insomnia), class: "btn btn-med" %>
+					<img class="dec-gold-rise" src="https://files.mindful.care/images/gold_watercolor_smear.png">
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/treatinsomnia.jpg" alt="sleepless woman">
+			</div>
+		</div>
+
+		<a id="kids"></a>
+		<div class="group-container">
+			<div class="word-side observe">
+				<h4>Adolescent Disorders</h4>
+				<p>
+					If you’re experiencing major behavioral issues with your adolescent child, they could be struggling with an adolescent disorder. Oppositional defiant disorder (ODD) and conduct disorder (CD) are serious conditions that are distressing for both you and your child. We can help.
+				</p>
+				<div class="cta-container">
+					<%= link "Learn More", to: Routes.treat_path(@conn, :adolescent), class: "btn btn-med" %>
+					<img class="branch" src="https://files.mindful.care/images/watercolor_leaf_stem.png">
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/treatkids.jpg" alt="child">
+			</div>
+		</div>
+
+		<a id="paranoia"></a>
+		<div class="group-container reverse">
+			<div class="word-side observe">
+				<h4>Paranoia</h4>
+				<p>
+					Paranoia is an overpowering feeling or belief that others are out to get you. When you’re paranoid, you may feel like others are conspiring against you, threatening you, or persecuting you. Paranoia is a facet of many different mental conditions, but it’s most common in psychotic disorders such as schizophrenia, schizoaffective disorder, and delusional disorder.
+				</p>
+				<div class="cta-container">
+					<%= link "Learn More", to: Routes.treat_path(@conn, :paranoia), class: "btn btn-med" %>
+					<img class="dec-paint-sq" src="https://files.mindful.care/images/paintedinblock.png">
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/treatparanoia.jpg" alt="man standing">
+			</div>
+		</div>
+
+		<a id="grief"></a>
+		<div class="group-container">
+			<div class="word-side observe">
+				<h4>Grief & Bereavement</h4>
+				<p>
+					Grief and bereavement are an inevitable part of life. As humans, we understand that we will all die one day, and that knowledge can strengthen us and help us value those we love. However, when a loved one dies, no one is truly ready for it. Grief crashes into you like a wave, both disorientating and overwhelming.
+				</p>
+				<div class="cta-container">
+					<%= link "Learn More", to: Routes.treat_path(@conn, :grief), class: "btn btn-med" %>
+				</div>
+			</div>
+			<div class="pic-side observe">
+				<img src="https://files.mindful.care/images/treatgrief.jpg" alt="supporting woman">
+			</div>
+		</div>
+	</section>
+
+	<div class="ribbon-sep">
+		<img src="https://files.mindful.care/images/watercolorbrightribbon.png">
+	</div>
+
+	<section class="very-bot">
+		<div class="article-cta">
+			<div class="wrapper">
+				<h4 class="has-text-right">
+					Mindful Care offers telepsychiatry appointments for patients in IL, NJ and NY
+				</h4>
+				<div class="link-container">
+					<%= link "SCHEDULE TODAY", to: Routes.page_path(@conn, :schedule), class: "btn btn-white nowrap" %>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq-link-container has-text-centered">
+			Have a question?
+			<%= link to: Routes.page_path(@conn, :faqs) do %>
+				See our <span class="nowrap">frequently asked questions</span>
+			<% end %>
+		</div>
+	</section>
+</div>
+
+<script>
+	// animate in elements on scroll
+	const options = {
+		root: null,
+		rootMargin: '0px',
+		threshold: .2
+	}
+	let callback = (entries) => {
+		entries.forEach(entry => {
+			if(entry.isIntersecting) {
+				entry.target.classList.add('is-visible');
+			}
+		});
+	}
+	let observer = new IntersectionObserver(callback, options);
+	document.querySelectorAll('.observe').forEach(el => { observer.observe(el) });
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

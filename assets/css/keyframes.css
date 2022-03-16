@@ -1,0 +1,138 @@
+ /* fadein */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.fadein { animation: fadein .3s; }
+
+ /* fadeinup */
+@-webkit-keyframes fadeinup {
+  from { 
+  	opacity: 0; 
+  	transform: translateY(30px);
+  }
+  to   { 
+  	opacity: 1; 
+  	transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeinup {
+  from { 
+  	opacity: 0; 
+  	transform: translateY(30px);
+  }
+  to   { 
+  	opacity: 1; 
+  	transform: translateY(0);
+  }
+}
+@-o-keyframes fadeinup {
+  from { 
+  	opacity: 0; 
+  	transform: translateY(30px);
+  }
+  to   { 
+  	opacity: 1; 
+  	transform: translateY(0);
+  }
+}
+@keyframes fadeinup {
+  from { 
+  	opacity: 0; 
+  	transform: translateY(30px);
+  }
+  to   { 
+  	opacity: 1; 
+  	transform: translateY(0);
+  }
+}
+
+.fadeinup { animation: fadeinup .3s; }
+
+ /* slidedown */
+@-webkit-keyframes slidedown {
+  from { 
+    transform: translateY(-70px);
+  }
+  to   { 
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes slidedown {
+  from { 
+    transform: translateY(-70px);
+  }
+  to   { 
+    transform: translateY(0);
+  }
+}
+@-o-keyframes slidedown {
+  from { 
+    transform: translateY(-70px);
+  }
+  to   { 
+    transform: translateY(0);
+  }
+}
+@keyframes slidedown {
+  from { 
+    transform: translateY(-70px);
+  }
+  to   { 
+    transform: translateY(0);
+  }
+}
+
+.slidedown { animation: slidedown .3s; }
+
+
+ /* spinner */
+@-webkit-keyframes spinner {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+ /* fadein left */
+@-webkit-keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fadeinleft { animation: fade-in-left .3s; }

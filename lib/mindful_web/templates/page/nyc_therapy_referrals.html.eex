@@ -1,0 +1,265 @@
+<div id="ref-nyc-therapy-referrals-page" class="base-text-page legacy-page">
+    <h1>NYC Referrals</h1>
+    <p>
+        Mindful Care believes that supplement therapy is imperative in completing the patient journey. Finding an
+        appropriate therapeutic resource can be hard to do, but we are here to help! Below are some of our partnering
+        resources:
+    </p>
+
+    <h3 class="main">MindFit Group Therapy</h3>
+
+    <p>
+        MindFit Group Therapy strengthens your mental health now. Therapists guide an interactive and supportive
+        conversation that makes a difference for everyone. We use a CBT-based approach. Cognitive Behavioral Therapy
+        (CBT) focuses on challenging and changing unhelpful thoughts, beliefs, attitudes and behaviors. CBT is a
+        practical approach to improve the quality of your life.
+    </p>
+    <p>
+        <%= link "MindFit Group Therapy", target: "_blank", to: Routes.page_path(@conn, :group_therapy) %>
+    </p>
+
+    <div>
+        <p>Best on-line resource for helping to find a therapist:</p>
+        <p>
+            <a href="https://www.zencare.co/us/new-york/therapists" target="_blank" title="zencare therapists">
+                Zencare
+            </a>
+        </p>
+    </div>
+
+    <div>
+        <p>Best Resource for finding affordable options:</p>
+        <a href="https://nycwell.cityofnewyork.us/en/find-services" target="_blank" title="zencare therapists">
+            NYC Well
+        </a>
+    </div>
+
+    <h3>Practice: Alma</h3>
+    <p>
+        Insurance: Many providers, some accept insurance some sliding scale
+    </p>
+    <p>
+        Email for intake: <a href="mailto:info@helloalma.com">info@helloalma.com</a>
+    </p>
+    <p>
+        Web: <a href="https://www.helloalma.com/" target="_blank" title="alma">www.helloalma.com</a>
+    </p>
+
+    <h3>Practice: Gotham MFT / Andi Kornfeld Psychotherapy</h3>
+    <p>
+        Insurance: Most major insurances
+    </p>
+    <p>
+        Email for intake: <a href="mailto:andi@kornfeldlmft.com">andi@kornfeldlmft.com</a>
+    </p>
+    <p>
+        Web: <a href="https://www.kornfeldlmft.com" target="_blank"
+                title="kornfeldlmft">https://www.kornfeldlmft.com</a>
+    </p>
+    <p>
+        Phone: 646-725-1192
+    </p>
+
+    <h3>Practice: City Therapy (Couples and Family Therapy)</h3>
+    <p>
+        Insurance: Cigna, Healthfirst, Aetna, Fidelis
+    </p>
+    <p>
+        Email for intake: <a href="mailto:info@citytherapy.nyc">info@citytherapy.nyc</a>
+    </p>
+    <p>
+        Web: <a href="http://www.citytherapy.nyc" target="_blank" title="city therapy">http://www.citytherapy.nyc</a>
+    </p>
+    <p>
+        Phone: 917-960-9500
+    </p>
+
+    <h3>Practice: Self Works</h3>
+    <p>
+        Insurance: BC-BS, some United
+    </p>
+    <p>
+        Lots of Groups
+    </p>
+    <p>
+        Web: <a href="https://selfworksgroup.com" target="_blank" title="selfworksgroup"> https://selfworksgroup.com</a>
+    </p>
+    <p>
+        Phone: 917-727-7497
+    </p>
+
+    <h3>Practice: Let’s Talk Psychological Wellness</h3>
+    <p>
+        Note: Offers free phone consult / intake
+    </p>
+    <p>
+        Insurance: Aetna, sliding scale
+    </p>
+    <p>
+        Email for intake: <a href="mailto:office@talkingforwellness.com">office@talkingforwellness.com</a>
+    </p>
+    <p>
+        Web: <a href="https://talkingforwellness.com/" target="_blank" title="talkingforwellness">
+        www.talkingforwellness.com</a>
+    </p>
+    <p>
+        Phone: 917-283-0738
+    </p>
+
+    <h3>Practice: The Fifth Avenue Center</h3>
+    <p>
+        Web: <a href="http://www.tfacc.org/" target="_blank" title="tfacc"> http://www.tfacc.org</a>
+    </p>
+    <p>
+        LGBTQ
+    </p>
+
+    <h3>myTherapyNYC</h3>
+    <p>
+        Insurance: BCBS
+    </p>
+    <p>
+        <a href="https://mytherapynyc.com/" target="_blank" title="mytherapynyc">mytherapynyc.com</a>
+    </p>
+    <p>
+        928 Broadway, Suite 806
+    </p>
+    <p>
+        New York, NY 10010
+    </p>
+    <p>
+        (c) 646.535.8540
+    </p>
+    <p>
+        Gender and LGBTQ
+    </p>
+
+    <h3>Callen Lorde</h3>
+    <p>
+        <a href="https://callen-lorde.org" target="_blank" title="callen lorde">https://callen-lorde.org</a>
+    </p>
+
+    <h3>Practice: Bloom</h3>
+    <p>Insurance: BCBS, Cigna</p>
+    <p>
+        <a href="https://nycbloomtherapy.com/" target="_blank" title="nyc bloom therapy">nycbloomtherapy.com</a>
+    </p>
+    <p>
+        <a href="mailto:info@nycbloomtherapy.com">info@nycbloomtherapy.com</a>
+    </p>
+
+    <h3>Practice: Training Institute for Mental Health</h3>
+    <p>Insurance: Aetna, College insurances: NYU</p>
+    <p>
+        Email for intake: <a href="mailto:patientcoordinator.timh@gmail.com">patientcoordinator.timh@gmail.com</a>
+    </p>
+    <p>
+        Web: <a href="https://www.timh.org/" target="_blank" title="timh">https://www.timh.org</a>
+    </p>
+    <p>
+        212-627-8181
+    </p>
+
+    <h3>
+        Practice: Gary Meier, LMHC
+    </h3>
+    <p>
+        Insurance: sliding scale
+    </p>
+    <p>
+        Email for Intake: <a href="mailto:gary@lcaw.org"></a>
+    </p>
+    <p>
+        Web: <a href="https://www.lcaw.org/" target="_blank" title="lcaw">www.lcaw.org</a>
+    </p>
+
+    <h3>Practice: Amanda Fuleihan</h3>
+    <p>
+        <a href="mailto:amanda@amandafuleihan.com">amanda@amandafuleihan.com</a>
+    </p>
+    <p>
+        <a href="https://www.amandafuleihan.com/" target="_blank" title="amandafuleihan">amandafuleihan.com</a>
+    </p>
+    <p>
+        Phone: 314-422-4111
+    </p>
+
+    <h3>Edgar Danielsen, PhD (English / Spanish)</h3>
+    <p>Insurance: Cigna, BCBS</p>
+    <p>
+        Email for Intake: <a href="mailto:edgar@edgardanielsen.com">edgar@edgardanielsen.com</a>
+    </p>
+    <p>
+        Web: <a href="https://edgarddanielsen.com/index.html" target="_blank" title="edgardanielsen">edgardanielsen</a>
+    </p>
+    <p>
+        Phone: 347-453-1601
+    </p>
+    <h3>Therapy 24 x 7 (no substance use)</h3>
+    <p>Multiple locations, Cigna, Blue Cross</p>
+    <p>
+        <a href="https://www.therapy24x7.com/" target="_blank" title="therapy24x7">therapy24x7.com</a>
+    </p>
+    <p>
+        <a href="mailto:scheduling@therap24x7.com">Scheduling@therap24x7.com</a>
+    </p>
+    <p>
+        646-360-0448
+    </p>
+    <p>
+        Substance Use and Transitional Adults Groups
+    </p>
+
+    <h3>
+        Andrea Sullivan, LCSW
+    </h3>
+    <p>
+        516-880-3337
+    </p>
+    <p>
+        <a href="mailto:andreasullivanlcsw@gmail.com" target="_blank" title="andreasullivanlcsw">andreasullivanlcsw@gmail.com</a>
+    </p>
+    <p>
+        Medicaid and Managed Care Plans
+    </p>
+
+    <h3>
+        Blanton Peale
+    </h3>
+    <p>
+        <a href="http://blantonpeale.org/" target="_blank" title="blantonpeale">blantonpeale.org</a>
+    </p>
+
+    <h3>Metropolitan Center For Mental Health</h3>
+    <p>
+        <a href="https://www.metropolitancenter.com" target="_blank"
+           title="metropolitancenter">metropolitancenter.com</a>
+    </p>
+
+    <h3>Karen Horney Clinic</h3>
+    <p>
+        <a href="https://www.karenhorneyclinic.org/" target="_blank" title="karenhorneyclinic">karenhorneyclinic.org</a>
+    </p>
+
+    <h3>Ross Center</h3>
+    <p>
+        <a href="http://rosscenter.com" target="_blank" title="ross center">rosscenter.com</a>
+    </p>
+
+    <h3 class="main">Lisa Berkoski, LMHC</h3>
+    <p>39 W 32nd Street #1500</p>
+    <p>New York, NY 10001</p>
+    <p>
+        <a href="https://www.lisaberkoski.com/" target="_blank" title="lisaberkoski.com">lisaberkoski.com</a>
+    </p>
+    <p>
+        631-903-1038
+    </p>
+    <p>
+        CBT (Cognitive Behavior Therapy)
+    </p>
+    <p>
+        Insurance: Beacon, Cigna, Emblem Health, Empire BlueCross Blue Shield, Fidelis, GHI, HealthFirst, MagnaCare,
+        NYSHIP Empire Plan
+    </p>
+</div>

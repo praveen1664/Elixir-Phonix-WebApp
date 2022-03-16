@@ -1,0 +1,66 @@
+<div class="min-h-full flex">
+  <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+    <div class="mx-auto w-full max-w-sm lg:w-96">
+      <div>
+        <%= link to: "/", class: "flex justify-center" do %>
+          <img class="h-12 max-w-xs" src="https://files.mindful.care/images/mindfulcarenavylogo.svg" alt="Mindful Care">
+        <% end %>
+        <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
+          Confirm your email
+        </h2>
+        <p class="mt-2 text-gray-600">
+          Enter your email address below and we'll resend confirmation instructions.
+        </p>
+      </div>
+
+      <div class="mt-8">
+        <div>
+          <.form let={f} for={:user} action={Routes.user_confirmation_path(@conn, :create)} class="space-y-6">
+            <div>
+              <%= label f, :email, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= email_input f, :email, required: true, class: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm", placeholder: "you@example.com" %>
+              </div>
+            </div>
+
+            <div>
+              <%= submit "Send confirmation instructions", class: "w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %>
+            </div>
+          </.form>
+        </div>
+        <div class="relative my-6">
+          <div class="absolute inset-0 flex items-center">
+            <div class="w-full border-t border-gray-300"></div>
+          </div>
+          <div class="relative flex justify-center text-sm">
+            <span class="px-2 bg-white text-gray-500">
+              Or
+            </span>
+          </div>
+        </div>
+        <div class="flex justify-between items-center">
+          <%= link "Register", to: Routes.user_registration_path(@conn, :new) %>
+          <%= link "Log in", to: Routes.user_session_path(@conn, :new) %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden lg:block relative w-0 flex-1 fadeinleft">
+    <img class="absolute inset-0 h-full w-full object-cover" src="https://files.mindful.care/images/happy_sand_face.jpg" alt="">
+  </div>
+</div>
+
+
+<script>
+  let htmlTag = document.querySelector("html");
+  let bodyTag = document.querySelector("body");
+  let mainTag = document.querySelector("main");
+  let navTag = document.querySelector("nav");
+
+
+  htmlTag.classList.add("h-full");
+  htmlTag.classList.add("bg-white");
+  bodyTag.classList.add("h-full");
+  mainTag.classList.add("lg:h-full");
+  navTag.classList.add("hidden");
+</script>

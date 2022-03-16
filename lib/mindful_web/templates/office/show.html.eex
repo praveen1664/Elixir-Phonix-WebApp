@@ -1,0 +1,270 @@
+<div id="office-page" class="locations-fam legacy-page">
+  <div class="h-banner">
+    <div class="t-container">
+      <h1>
+        <%= @office.name %><br>
+        <span class="nowrap">Psychiatry & Therapy</span>
+      </h1>
+    </div>
+  </div>
+
+  <div class="breadcrumbs">
+    <%= link @state.name, to: Routes.state_path(@conn, :show, @state) %>
+    <span>/</span>
+    <%= link @office.name, to: Routes.office_path(@conn, :show, @state, @office), class: "black-link", id: "office-link" %>
+    <div id="share-btn-container">
+      <button class="btn btn-small btn-white" onclick="showShareLinks()">SHARE THIS PAGE</button>
+    </div>
+    <div id="share-links">
+      <%= linkedin_link(@conn, @office) %>
+      <%= tweet_link(@conn, @office) %>
+      <%= fb_link(@conn, @office) %>
+    </div>
+  </div>
+
+  <%= if VH.is_admin?(@current_user) do %>
+    <div class="edit-link-container">
+      <%= link to: Routes.office_path(@conn, :edit, @state, @office), class: "lb-link" do %>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Edit"><path d="M16.474 5.408l2.118 2.117m-.756-3.982L12.109 9.27a2.118 2.118 0 0 0-.58 1.082L11 13l2.648-.53c.41-.082.786-.283 1.082-.579l5.727-5.727a1.853 1.853 0 1 0-2.621-2.621z"/><path d="M19 15v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3"/></svg>
+        edit office
+      <% end %>
+
+      <%= link to: Routes.office_manage_providers_path(@conn, :manage_providers, @state, @office), class: "green-link" do %>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-Network"><circle cx="18" cy="5" r="3"/><circle cx="18" cy="19" r="3"/><circle cx="6" cy="12" r="3"/><path d="M15.408 6.512l-6.814 3.975m6.814 7.001l-6.814-3.975"/></svg>
+        manage providers
+      <% end %>
+
+      <%= link to: Routes.office_path(@conn, :delete, @state, @office), method: :delete, data: [confirm: "Are you sure you want to delete #{@office.name}?"], class: "red-link" do %>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="TrashCan"><path d="M4 6h16l-1.58 14.22A2 2 0 0 1 16.432 22H7.568a2 2 0 0 1-1.988-1.78L4 6z"/><path d="M7.345 3.147A2 2 0 0 1 9.154 2h5.692a2 2 0 0 1 1.81 1.147L18 6H6l1.345-2.853z"/><path d="M2 6h20"/><path d="M10 11v5"/><path d="M14 11v5"/></svg>
+        delete office
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="content-wrapper">
+    <div class="provider-side flex-grow flex-shrink-0">
+      <h2><%= @office.city %> Mental Healthcare</h2>
+      <div class="blurb-container">
+        <%= text_to_html(@office.description) %>
+      </div>
+      <div class="pros-container">
+        <h3>Our Care Team</h3>
+        <div class="pros">
+          <%= for provider <- @office.providers do %>
+            <div class="pro-container has-text-centered">
+              <%= link to: Routes.provider_path(@conn, :show, provider) do %>
+                <img src="<%= VH.uploaded_img_url(provider.image_path) %>" alt="provider photo">
+                <div class="name-container">
+                  <%= provider.first_name <> " " <> provider.last_name %>,
+                  <span class="nowrap"><%= provider.credential_initials %></span>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="location-side flex-shrink flex-grow-0">
+      <div class="map-pic-container">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?zoom=18&size=530x300&maptype=roadmap&markers=color:blue%7C<%= "#{@office.lat},#{@office.lng}" %>&style=feature:poi|visibility:off&style=feature:transit%7Cvisibility:off&style=feature:administrative.neighborhood%7Cvisibility:off&style=feature:road.highway%7Celement:labels.icon%7Cvisibility:off&key=<%= System.get_env("GOOGLE_MAPS_API_KEY") %>" alt="Map of doctor's office">
+      </div>
+      <div class="has-text-centered">
+        <%= link "BOOK APPOINTMENT", to: Routes.page_path(@conn, :schedule), class: "btn book-btn" %>
+      </div>
+      <div class="office-loc-info">
+        <div class="block">
+          <div class="title">Address</div>
+          <div class="detail">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=<%= addy_encoded(@office) %>" target="_blank">
+              <%= @office.street %> <%= @office.suite %><br>
+              <%= @office.city <> ", " <> @office.state_abbr <> " " <> @office.zip %>
+            </a>
+          </div>
+        </div>
+        <div class="block">
+          <div class="title">Office Hours</div>
+          <div class="detail">
+            <%= text_to_html(@office.hours) %>
+          </div>
+        </div>
+        <div class="ph-block">
+          <div>
+            <div class="title">Phone</div>
+            <div class="detail">
+              <a href='tel:<%= String.replace(@office.phone, ~r/[^\d]/, "") %>'><%= @office.phone %></a>
+            </div>
+          </div>
+          <div>
+            <div class="title">Fax</div>
+            <div class="detail">
+              <a href='tel:<%= String.replace(@office.fax, ~r/[^\d]/, "") %>'><%= @office.fax %></a>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="title">Email</div>
+          <div class="detail">
+            <%= link @office.email, to: "mailto:#{@office.email}" %>
+          </div>
+        </div>
+        <%= if @reviews != [] do %>
+          <div class="block">
+            <div class="title">What Our Patients Say</div>
+            <div class="mb-3">
+              <button id="more-reviews-btn" class="group text-xs text-sky-500 hover:text-sky-600 flex items-center space-x-2 uppercase">
+                <span class="font-semibold">See More Reviews</span>
+                <div class="inline-flex items-center p-1 border border-transparent rounded-full shadow-sm text-white bg-sky-400 group-hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                  <!-- refressh icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" id="cycle-reviews-icon" class="h-3 w-3 transition duration-500 ease-in-out" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <%= for review <- @reviews do %>
+              <div class="google-review mb-4 hidden fadeinup">
+                <div class="mb-2 font-semibold text-sm">
+                  <%= review.name %>
+                </div>
+                <div class="mb-2 flex">
+                  <div class="mr-2 flex text-yellow-300">
+                    <img class="max-h-5 mr-1" src="https://files.mindful.care/images/google_logo.png" title="Review from Google">
+                    <%= for _count <- 1..review.rating do %>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    <% end %>
+                  </div>
+                  <div class="text-sm text-gray-500">
+                    <%= Timex.from_now(review.created_at) %>
+                  </div>
+                </div>
+                <div class="text-sm">
+                  <%= text_to_html(review.comment) %>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="ben-container">
+    <section class="benefits">
+      <div class="observe">
+        <div class="icon">
+          <img src="https://files.mindful.care/images/calendar_time_paint_icon.png" alt="same-day appointments icon">
+        </div>
+        <h3>Same or next-day care</h3>
+        <div class="detail">
+          You don't have to wait weeks before you can see a qualified mental health provider.
+        </div>
+        <%= link "Schedule a session", to: Routes.page_path(@conn, :schedule) %>
+      </div>
+      <div class="observe b2">
+        <div class="icon">
+          <img src="https://files.mindful.care/images/home_paint_icon.png" alt="telehealth from home icon">
+        </div>
+        <h3>At-home or in-person</h3>
+        <div class="detail">
+          Have a session at one of our local offices or online from the comfort of your home.
+        </div>
+        <%= link "Find a location", to: Routes.state_path(@conn, :index) %>
+      </div>
+      <div class="observe b3">
+        <div class="icon">
+          <img src="https://files.mindful.care/images/dollar_paint_icon.png" alt="save money icon">
+        </div>
+        <h3>Within your budget</h3>
+        <div class="detail">
+          Save hundreds of dollars by using your insurance to pay.
+        </div>
+        <%= link "Payment options", to: Routes.page_path(@conn, :payment_options) %>
+      </div>
+    </section>
+  </div>
+
+  <%= if VH.is_admin?(@current_user) do %>
+    <div class="content-admin-links has-text-centered">
+      <%= if @office.markdown_blob do %>
+        <%= link "[edit this content]", to: Routes.office_path(@conn, :edit_markdown, @state, @office), class: "lb-link" %>
+        <%= link "[delete this content]", to: Routes.office_path(@conn, :delete_markdown, @state, @office), method: :delete, data: [confirm: "Are you sure you want to delete this content?"], class: "red-link" %>
+      <% else %>
+        <%= link "[add content here]", to: Routes.office_path(@conn, :new_markdown, @state, @office), class: "lb-link" %>
+      <% end %>
+    </div>
+  <% end %>
+
+  <%= if @office.markdown_blob do %>
+    <section class="paras-container">
+      <%= VH.blob_to_html(@office.markdown_blob.body) %>
+    </section>
+  <% end %>
+
+  <%= render(MindfulWeb.SharedView, "_treatments_section.html", assigns) %>
+</div>
+
+<script>
+  // show social share links when share this page button is clicked
+  function showShareLinks() {
+    var btnContainer = document.getElementById('share-btn-container');
+    var shareLinksCont = document.getElementById('share-links');
+    btnContainer.style.display = 'none';
+    shareLinksCont.classList.add('open');
+  }
+
+
+  // handle displaying patient reviews
+  var reviewContainers = document.querySelectorAll('.google-review');
+  var moreReviewsBtn = document.getElementById('more-reviews-btn');
+  var cycleReviewsIcon = document.getElementById('cycle-reviews-icon');
+  var rotatedDeg = 180;
+  var reviewsIndex = 2;
+
+
+  // a function that takes a review container and removes the hidden class
+  function showReview(reviewContainer) {
+    if (reviewContainer) {
+      reviewContainer.classList.remove('hidden');
+    }
+  }
+
+  // a function that takes a review container and adds the hidden class
+  function hideReview(reviewContainer) {
+    if (reviewContainer) {
+      reviewContainer.classList.add('hidden');
+    }
+  }
+
+  // show 2 reviews initially
+  showReview(reviewContainers[0]);
+  showReview(reviewContainers[1]);
+
+  if (moreReviewsBtn) {
+    // when more reviews button is clicked, show the next 2 reviews, and when all reviews have been show, recycle the reviews
+    moreReviewsBtn.addEventListener('click', function() {
+      cycleReviewsIcon.style.transform = 'rotate('+rotatedDeg+'deg)';
+
+      if (reviewsIndex < reviewContainers.length + 1) {
+        hideReview(reviewContainers[reviewsIndex - 2]);
+        hideReview(reviewContainers[reviewsIndex - 1]);
+        showReview(reviewContainers[reviewsIndex]);
+        showReview(reviewContainers[reviewsIndex + 1]);
+        reviewsIndex += 2;
+      } else {
+        reviewsIndex = 0;
+        hideReview(reviewContainers[reviewContainers.length]);
+        hideReview(reviewContainers[reviewContainers.length- 1]);
+        showReview(reviewContainers[reviewsIndex]);
+        showReview(reviewContainers[reviewsIndex + 1]);
+        reviewsIndex += 2;
+      }
+
+      rotatedDeg += 180;
+    });
+  }
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '49cc6579-0c3f-4f5a-918e-85cb0f493e78')</script>

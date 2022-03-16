@@ -1,0 +1,12 @@
+Hello,
+
+In order for us to process payments for your account, you need to sign up for an account on our website. To sign up, simply click the link below and follow the instructions:
+
+<%= @url %>
+
+
+Once you have signed up, you will be able to connect a payment method to your account by clicking the billing tab in your account settings. We can then process payments for you automatically.
+
+
+
+If you have any trouble or need any help, please reply to this email.
