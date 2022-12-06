@@ -1,4 +1,4 @@
-# Mindful
+# Meb app using elixir
 
 ## First Time Setup
 
